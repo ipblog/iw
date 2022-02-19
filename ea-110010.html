@@ -1,0 +1,547 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	企业构架的Zachman框架简介-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="企业构架的Zachman框架简介-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="企业构架的Zachman框架简介-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化,企业架构" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='ea-110010.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/ea-110010.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBQ8vZWEtMTEwMDEwLmFzcHgWEAIPDw8WBh4IQ3NzQ2xhc3MFLWFydC1sYXlvdXQtY2VsbCBhcnQtc2lkZWJhcjEgbGVmdHNpZGUgY21zem9uZR4EXyFTQgICHgdWaXNpYmxlaGRkAhEPDxYEHwIFOWFydC1sYXlvdXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8DAgJkFgICBQ9kFgJmD2QWAgICDw8WBB8CBQhhcnQtcG9zdB8DAgJkFgICAw9kFgICAw8PFgQfAgUPYXJ0LXBvc3Rjb250ZW50HwMCAmQWAgIBD2QWBAIBDw8WAh4LQ29udGVudEd1" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="aWQoKVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5JDg5M2UwZWJiLTliNTYtNGU5Yy1hYjVjLWMwN2RmMWU5YzBkZmQWAgIBD2QWAmYPZBYGAgEPZBYCAgEPFgIeBFRleHQFEVJhdGUgdGhpcyBDb250ZW50ZAIFD2QWAmYPFg4eCkNhbGxiYWNrSUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nHgdKc29uVXJsBTNodHRwOi8vbG9jYWxob3N0L1NlcnZpY2VzL0NvbnRlbnRSYXRpbmdTZXJ2aWNlLmFzaHgeCkJlaGF2aW9ySUQFMWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19Vc2VyUmF0aW5nQmVoYXZpb3IeCUNv" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="bnRlbnRJZAUkODkzZTBlYmItOWI1Ni00ZTljLWFiNWMtYzA3ZGYxZTljMGRmHhNUb3RhbFZvdGVzRWxlbWVudElkBS1jdGwwMF9tYWluQ29udGVudF9jdGwwMF9SYXRpbmdfbGJsUmF0aW5nVm90ZXMeD0NvbW1lbnRzRW5hYmxlZGgeDEF1dG9Qb3N0YmFja2hkAgsPDxYCHwRoZBYIAgEPDxYCHwYFGOWvueS6m+WGheWuueWPkeihqOWPjemmiGRkAgUPDxYCHwYFFeeUteWtkOmCruS7tiAo5Y+v6YCJKWRkAgkPDxYCHwYFBuWPkemAgWRkAgsPDxYCHwYFDOS4je+8jOiwouiwomRkAg0PDxYCHwRoZBYCAgEPZBYCZg9kFgICBQ9kFgJmDxYCHwcFL2N0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZ0JvdHRvbSRVc2VyUmF0aW5nZAITDw8WBh8CBS5hcnQtbGF5b3V0" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="LWNlbGwgYXJ0LXNpZGViYXIyIHJpZ2h0c2lkZSBjbXN6b25lHwMCAh8EaGRkAhUPDxYGHwIFE2FsdGNvbnRlbnQxIGNtc3pvbmUfAwICHwRoZGQCFw8PFgYfAgUTYWx0Y29udGVudDIgY21zem9uZR8DAgIfBGhkZAIzDw8WAh8EaGRkAj0PDxYCHwRoZGQCQQ8PFgIfBGhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUdY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaDL9+hoSepx9Of08OqKOG+hsXBoH9w==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAYPrlQrFtJB/KTQbGl/3ZgXh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespafrRunOWU0U6ycVQeLPaXPK9bnfXA==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module133' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="893e0ebb-9b56-4e9c-ab5c-c07df1e9c0df" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p class="lqtitle1">
+	企业构架的Zachman框架简介</p>
+<p class="lqtitle1a">
+	作者：张雄​ 译</p>
+<div class="n1_1_5m f12 close" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 5px; padding-right: 30px; padding-bottom: 5px; padding-left: 30px; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 1px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; overflow-x: hidden; overflow-y: hidden; border-top-color: rgb(238, 238, 238); border-top-style: solid; line-height: 22px; border-bottom-color: rgb(238, 238, 238); border-bottom-style: solid; color: rgb(0, 0, 0); font-family: 宋体, Arial, Helvetica, sans-serif; ">
+	<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; ">摘要：&nbsp;</strong>第一个最有影响力的框架方法论就是Zachman框架，它是John&nbsp;Zachman首次在1987年提出的。<br />
+	<br />
+	<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; ">关键词：&nbsp;</strong><a class="keyword" href="http://www.ciotimes.com/tag.php?tag=Zachman" style="margin-right: 10px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; text-decoration: none; color: rgb(0, 0, 0); ">Zachman</a></div>
+<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; float: left; ">
+	&nbsp;</div>
+<p style="margin-top: 0px; margin-bottom: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: 宋体, Arial, Helvetica, sans-serif; line-height: 26px; ">
+	&nbsp;</p>
+<p style="margin-top: 0px; margin-bottom: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: 宋体, Arial, Helvetica, sans-serif; line-height: 26px; ">
+	　　第一个最有影响力的框架方法论就是Zachman框架，它是John Zachman首次在1987年提出的。<br />
+	　　在理解Zachman框架之前，我们需要了解的是，它并不是一个框架，至少从框架的定义上严格地来看，它不是。从《美国传统词典》上，我们可以找到框架的定义如下：<br />
+	　　支持或封装其他事情的一种结构，尤其是作为其他的一些已经创建的东西的基础给予其骨架支持；一种外部的工作平台；脚手架；一种基本结构；组成观察显示的一系列的假想、内容、价值和实践。<br />
+	　　而在分类学中，它是这样定义的：<br />
+	　　在显示自然关系的有序系统中的有机分类；科学、法律或者理论的分类；系统化；划分成有序的组或类别。<br />
+	　　Zachman"框架"实际上是一种组织构架工具（用来设计文档、需求说明和模型的工具）的一种分类学。包括工具的目标（例如，商业拥有者、创建者）是谁，哪些特殊的问题（例如，数据、功能）需要阐明。<br />
+	　　而Zachman是这样描述他的杰作的：<br />
+	　　当这个框架应用于企业时，它仅仅是用来分类和组织企业（在这些企业里，企业的管理和企业系统的开发同样重要）的描述形式的逻辑结构。<br />
+	　　许多Zachman框架的支持者认为它是跨学科的，它的影响不仅仅局限于IT行业。例如，一本关于Zachman的书中这样说：<br />
+	　　在适当的时候，你会发现框架不仅仅是存在于IT项目中，它存在于你所做的每一件事情中。当你完全理解了这个框架之后，做任何事情都会变得高效。我指的是任何事情，这个断言并不武断。<br />
+	　　在和Zachman讨论问题的时候，他本人也曾说：<br />
+	　　这个框架已经存在了几千年，而且我敢肯定它在以后的几千年将继续存在。稍微有些改变的是我们对它的理解和怎样使用它。<br />
+	　　Zachman在解释他的IT分类学时，最初试用了建筑行业作为类比。在建筑行业里，构架材料通过使用二维表格表示出来。表格其中的一维是变量"游戏中的角色"。对于一个建筑物来说，这些选手就是拥有者（谁为这个项目付款）、构造者（负责构建的人）、城市规划委员会（负责确保建筑遵循当地建筑标准的人）。<br />
+	　　建筑构架为不同的角色提供不同的材料。每个角色都需要完整的信息，不过对于不同的角色而言，所需的完整信息也是不同的。拥有者感兴趣的完整描述是建筑物的功能和美感。构造者感兴趣的完整描述是建筑材料和构建过程。拥有者并不关心墙里面的螺栓钉在哪儿，构造者也不关心卧室的窗户如何排列，以便在早晨能够迎来第一缕阳光。<br />
+	　　正如Zachman在他的一篇文章中提到的：<br />
+	　　每个构架表现形式和其他的构架不同，其本质不仅仅是细节的层面。<br />
+	　　构架材料组织的第二维是材料的描述中心--和项目相关的什么（what）、怎样（how）、谁（who）、何时（when）、为什么（why）。这一维和第一维之间是相互独立的。构造者和拥有着都需要知道"什么"，但是"什么"是什么还得取决于问这个话的人是谁。<br />
+	　　在Zachman的第一篇论文和随后的详细解说中，Zachman建议有六个描述的焦点（数据、功能、网络、人员、动机）和六个角色的角度（规划者、拥有者、设计者、构造者、转包商、运营企业）。如图1-3所示<br />
+	　　以列描述中的"数据"为例。从商业拥有者的角度，"数据"意味着商业实体。它可能包括实体本身的信息，如客户和产品，也可能包括实体间关系的信息，如人口群体和库存。如果你打算和一个商业拥有者讨论数据，你应该用到这些语言。<br />
+	　　从数据库的实现者的角度来看，"数据"就不是商业实体了，而是保存在数据表中的行和列，还有通过连接（join）和映射（projection）生成的表。如果你在和一个数据库设计者讨论"数据"，不要讨论客户的群体，而应该讨论关系数据表。<br />
+	　　并不是从一个角色的角度看就比从另外一个角色的角度看要好，也不是越详细越好，也不是某一个的优先级比其他的更高。作为一个整体，无论是从谁的角度都很重要。正如Zachman说过的：<br />
+	　　我们在信息系统构架方面与另外的构架沟通时有很多困难，因为存在很多构架表现形式，而不是仅仅只有一个构架。其中一个出错了，其他的也跟着出错。构架是不同的。它们是附加的和补充的。选择为开发每个构架表现形式而支出资源是有原因的。如果不开发任何构架表现形式是有风险的。<br />
+	　　正如我前面提到的，Zachman框架由六个功能焦点组成，每个功能焦点都会从一个角色的角度考虑。Zachman框架的描述可参见图1，它描述得很清楚。</p>
+<p style="margin-top: 0px; margin-bottom: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: 宋体, Arial, Helvetica, sans-serif; line-height: 26px; text-align: center; ">
+	<img alt="zachman" src="/Data/Sites/1/media/LQ/EA/110010-01.jpg" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-style: initial; border-color: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 500px; height: 371px; " /></p>
+<p style="margin-top: 0px; margin-bottom: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: 宋体, Arial, Helvetica, sans-serif; line-height: 26px; ">
+	<br />
+	　　从图1中，你可以看到，在一个Zachman表格中，有36个方格，每个方格就是一个角色（例如商业拥有者）和每个描述焦点（如数据）的交汇。当我们在表格中水平移动（例如从左到右）时，我们会从同一个角色的角度，看到系统的不同描述。当在表格中竖直移动（例如从上到下）时，我们会看到从不同角色的角度，观察同一个焦点。<br />
+	　　关于Zachman表格有三条建议，相信它们在企业构架的开发中对我们会有帮助。<br />
+	　　第一条建议就是每一个构架材料应该存在于一个方格中，而且只能存在于一个方格中。在一个构架材料放在哪个方格里不应该含糊不清。如果某个构架材料的确不知道应该放在哪个方格中，问题很有可能处在构架材料本身。<br />
+	　　当组织在开发企业构架中开始积累材料的时候，它可以使用Zachman表格解释每个材料的焦点。例如，面向服务构架相关的材料很有可能就放在第三行（从设计着的角度看）。它们一般不会引起商业拥有者的兴趣。<br />
+	　　第二条建议：仅仅只有当所有的表格都填满了的时候，一个构架才能被称为是完整的构架。当所有的方格都填满了时候，整个表格才有足够的材料定义系统。<br />
+	　　只有当每个方格都填满了材料的时候，才有足够的信息描述系统：从每个角色（我们现在可以称之为"利益相关者"，Stakeholder）的角度观察系统的每个可能的视角（描述焦点）。所以一个组织可以使用Zachman表格确保企业构架中的所有重要利益相关者之间的讨论都是合适的。<br />
+	　　第三条建议：表格的每列的方格都是彼此相关的。例如，Zachman表格的数据列（第一列）。从商业拥有者的角度，数据就是关于商业的信息。从数据库管理人员的角度，数据就是数据库中的行和列。<br />
+	　　尽管商业拥有者对数据的看法和数据库管理员不同，但它们应该是有关系的。一个人可以遵循商业需求，并且显示出设计的数据就是被需求驱动的。如果有商业需求并没有追踪到数据库设计，那么就得想想商业需求是否与企业构架相符。另一方面，如果数据库设计的元素没有需求与之对应，我们就应该问问自己，在数据库层面是否存在不必要的设计。<br />
+	　　Zachman表格可以从以下五个方面帮助我们开发企业构架：<br />
+	　　确保每个利益相关着能够从描述的焦点考虑。<br />
+	　　通过把每个焦点精简到每个特殊观众涉及的焦点来提升构架材料的质量。<br />
+	　　确保每个商业需求能够追踪到技术实现。<br />
+	　　确保商业方面不会规划出多余没用的功能。<br />
+	　　确保技术组包含在商业组的规划中。<br />
+	　　但是Zachman本身并不是一个完整的解决方案。有太多的问题它都没有描述。例如，Zachman没有给出一步一步构造一个构架的过程。在决定我们将要构建的构架是否是最好的时候，Zachman没有提供更多的信息帮助我们作出决定。就此而言，Zachman也没有给出一种途径展示将来构架的需求。最重要的，从我们的角度，尽管Zachman表格可以帮助组织构架材料，但是它在描述企业复杂性方面几乎什么都没做。</p>
+<p style="margin-top: 0px; margin-bottom: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; vertical-align: baseline; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; font-family: 宋体, Arial, Helvetica, sans-serif; line-height: 26px; ">
+	&nbsp;</p>
+<p>
+	<a class="lqtextlink" href="http://www.ciotimes.com/ea/zachman/200910161636.html" target="_blank">原文链接</a></p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fea-110010.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fea-110010.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"893e0ebb-9b56-4e9c-ab5c-c07df1e9c0df","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

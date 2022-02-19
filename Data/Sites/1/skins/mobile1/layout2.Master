@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs"
+    Inherits="mojoPortal.Web.layout" %>
+<%@ Register Assembly="LQ.Features.UI" Namespace="LQ.Web.Controls" TagPrefix="lq" %>
+<%@ Register TagPrefix="lq1" TagName="LangSelect" Src="~/LQ/Controls/LangSelect.ascx" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<head id="Head1" runat="server">
+    <title></title>
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /> 
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<%-- JQueryUIThemeName valid options are: 
+	base, black-tie, blitzer, cupertino, dark-hive, dot-luv, eggplant, excite-bike, flick, hot-sneaks,
+	humanity, le-frog, mint-choc, overcast, pepper-grinder,
+	redmond, smoothness, south-street, start, sunny, swanky-purse, trontastic, ui-darkness, ui-lightness, vader
+	--%>
+    <portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" UseArtisteer3="true" JQueryUIThemeName="start"
+        UseIconsForAdminLinks="false" UseTextLinksForFeatureSettings="false" EnableNonClickablePageLinks="true"  />
+    <portal:IEStyleIncludes ID="IEStyleIncludes1" runat="server" IncludeHtml5Script="false"
+        IE6CssFile="style.ie6.css" IE7CssFile="style.ie7.css" />
+    <portal:MetaContent ID="MetaContent" runat="server" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    <portal:Favicon ID="Favicon1" runat="server" />
+    <portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludeJQueryMigrate="true" />
+    <portal:SkinFolderScript ID="sfs1" runat="server" ScriptFileName="script.js" AddToCombinedScript="true" />
+</head>
+<body class="pagebody" id="Body" runat="server">
+<portal:AnalyticsAsyncTopScript id="analyticsTop" runat="server" />
+    <form id="frmMain" runat="server">
+    <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+    <asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+    <asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+    <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+<%-- 					<div class="art-header-png"></div> --%>
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <portal:SiteTitle ID="SiteTitle" UseLink="false" OverrideTitle="知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务" runat="server"></portal:SiteTitle>
+<%--					    <portal:SkipLink ID="SkipLink1" runat="server" />
+					    <mp:InsecurePanel ID="InsecurePanel1" runat="server" CssClass="addthisbutton">
+					        <portal:mojoAddThisButton ID="at2" runat="server" AccountId="" ButtonImageUrl="~/Data/SiteImages/addthisbookmarkbutton.gif"
+					            Text="Share This Using Popular Bookmarking Services" CustomBrand="" CustomLogoUrl=""
+					            CustomLogoBackgroundColor="" />
+					    </mp:InsecurePanel>--%>
+<%--					    <h2 id="slogan-text" class="art-logo-text">
+					        <portal:SiteSlogan id="ss1" runat="server" />
+					    </h2>--%>
+                    </div>
+                
+<%--                <div id="art-flash-area">--%>
+                    <%--<div  id="art-flash-container">
+                        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="970" height="128">
+                            <param name="movie" value="/Title.swf" /> 
+                            <param name="quality" value="high" />--%>
+                            <%-- <PARAM NAME=wmode VALUE=transparent>--%>
+                            <%-- <embed src="/Title.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="970" height="128" />
+                        </object>
+                    </div>--%>
+<%--                </div>--%>
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    <portal:SiteMenu ID="SiteMenu1" runat="server" UseTreeView="false" HideMenuOnSiteMap="false" Direction="Horizontal" DynamicDisplayLevels="2"></portal:SiteMenu>
+                    <portal:SearchInput EnableViewState="False" ID="SearchInput1" LinkOnly="false" RenderAsListItem="false" runat="server"  ImageUrl="skinbase_btnsearch.png" ButtonCssClass="searchbutton" TextBoxCssClass="searchbox" />
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    <asp:Panel ID="divLeft" runat="server" CssClass="art-layout-cell art-sidebar1 leftside" Visible="True"
+                        SkinID="pnlPlain">
+                        <portal:PageMenu id="PageMenu1" runat="server" IncludeCornerRounders="true" UseTreeView="true" IsSubMenu="true" Direction="Vertical" StartingNodeOffset="3" TreeViewExpandDepth="3"/>
+                        <asp:ContentPlaceHolder ID="leftContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:Panel>
+                    <asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins"
+                        SkinID="pnlPlain">
+                        <portal:Breadcrumbs ID="Breadcrumbs" runat="server"></portal:Breadcrumbs>
+                        <portal:ChildPageMenu ID="ChildPageMenu" runat="server" CssClass="txtnormal"></portal:ChildPageMenu>
+                        <a id="startcontent"></a>
+                        <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:Panel>
+                    <asp:Panel ID="divRight" runat="server" Visible="True" CssClass="art-layout-cell art-sidebar2 rightside"
+                        SkinID="pnlPlain">
+                        <asp:ContentPlaceHolder ID="rightContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:Panel>
+					</div>
+                </div>
+            <asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+            	<asp:ContentPlaceHolder ID="altContent1" runat="server">
+           		</asp:ContentPlaceHolder>
+            </asp:Panel>
+            <asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+                <asp:ContentPlaceHolder ID="altContent2" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<lq:LQHyperLink runat="server" NavigateUrl="~/IPGet专利检索系统.aspx" Text= "IPGet专利检索系统" />、<lq:LQHyperLink runat="server" NavigateUrl="~/IPGet专利检索系统.aspx" Text= "IPGet专利下载软件" />、<lq:LQHyperLink runat="server" NavigateUrl="~/IPSys商标管理系统.aspx" Text= "IPSys商标管理系统" />等产品及<lq:LQHyperLink runat="server" NavigateUrl="~/IPGet专利检索系统.aspx" Text= "专利检索" />、<lq:LQHyperLink runat="server" NavigateUrl="~/IPGet专利检索系统.aspx" Text= "专利下载" />、<lq:LQHyperLink runat="server" NavigateUrl="~/IPGet专利检索系统.aspx" Text= "专利统计分析" />服务等知识产权信息化相关的解决方案<br/>
+                            <lq:LQHyperLink runat="server" NavigateUrl="~/">Copyright <portal:CopyrightLabel ID="cl1" runat="server" ShowYear="true" BeginYear="2011" />, <asp:Literal runat="server" Text="<%$ Resources:LQResources, AllRightsReserved %>" /></lq:LQHyperLink>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                <portal:WelcomeMessage ID="WelcomeMessage" runat="server" RenderAsListItem="true"
+                    ListItemCss="firstnav" />
+                <portal:HomeLink ID="HomeLink" runat="server" RenderAsListItem="true" />
+                <li class="topnavitem">
+		    <lq:LQHyperLink ID="forum" runat="server" NavigateUrl="~/forums.aspx" Text= "<%$ Resources:ForumResources, ForumsFeatureName %>" CssClass="sitelink forumlink" />
+                </li> 
+                <li class="topnavitem">
+                    <lq:LQHyperLink ID="blog" runat="server" NavigateUrl="~/blog.aspx" Text= "<%$ Resources:LQResources, BlogsFeatureName %>" CssClass="sitelink bloglink" />
+                </li> 
+                <portal:SiteMapLink ID="SiteMapLink2" runat="server" CssClass="sitelink topsitemaplink" RenderAsListItem="true" />
+                <portal:MyPageLink ID="MyPageLink1" runat="server" CssClass="sitelink mypagelink" RenderAsListItem="true" />
+                <portal:UserProfileLink ID="UserProfileLink" runat="server" CssClass="sitelink myprofilelink" RenderAsListItem="true" />
+                <portal:MailboxLink ID="MailboxLink1" runat="server" RenderAsListItem="true" />
+                <portal:MemberListLink ID="MemberListLink" CssClass="sitelink memberlistlink" runat="server" RenderAsListItem="true" />
+                <portal:RegisterLink ID="RegisterLink" runat="server" CssClass="sitelink registerLink" RenderAsListItem="true" />
+                <portal:LoginLink ID="LoginLink" runat="server" CssClass="sitelink loginlink" RenderAsListItem="true" />
+                <portal:LogoutLink ID="LogoutLink" runat="server" CssClass="sitelink logoutlink" RenderAsListItem="true" />
+                <li class="topnavitem">
+                    <lq1:LangSelect ID="langSelect1" runat="server" HostName1="http://www.ipwom.com" HostName2="http://en.ipwom.com"/>
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    <portal:AutoHidePanel ID="ah1" runat="server">
+        <div id="toolbarbut">
+            <span class="showbar"><a href="#"><asp:Literal ID="ShowBarLiteral" runat="server" Text="<%$ Resources:LQResources, ShowBar %>" /></a></span>
+        </div>
+        <div id="toolbar">
+            <div class="toolbarleft">
+                &nbsp;
+            </div>
+            <div class="toolbarright">
+                <span class="downarr"><a href="#"></a></span>
+                <portal:AdminMenuLink ID="lnkAdminMenu" runat="server" />
+                <portal:FileManagerLink ID="lnkFileManager" runat="server" />
+                <portal:NewPageLink ID="lnkNewPage" runat="server" />
+                <portal:PageEditFeaturesLink ID="lnkPageContent" runat="server" />
+                <portal:PageEditSettingsLink ID="lnkPageSettings" runat="server" />
+                <asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </portal:AutoHidePanel>
+    <portal:Woopra ID="woopra11" runat="server" />
+    </form>
+	<portal:AnalyticsAsyncBottomScript ID="analyticsBottom" runat="server" />
+</body>
+</html>

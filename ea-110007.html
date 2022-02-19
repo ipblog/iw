@@ -1,0 +1,1006 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	企业架构设计和集成架构框架-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="企业架构设计和集成架构框架-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="企业架构设计和集成架构框架-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化,企业架构" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='ea-110007.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/ea-110007.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBQ8vZWEtMTEwMDA3LmFzcHgWEAIPDw8WBh4IQ3NzQ2xhc3MFLWFydC1sYXlvdXQtY2VsbCBhcnQtc2lkZWJhcjEgbGVmdHNpZGUgY21zem9uZR4EXyFTQgICHgdWaXNpYmxlaGRkAhEPDxYEHwIFOWFydC1sYXlvdXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8DAgJkFgICBQ9kFgJmD2QWAgICDw8WBB8CBQhhcnQtcG9zdB8DAgJkFgICAw9kFgICAw8PFgQfAgUPYXJ0LXBvc3Rjb250ZW50HwMCAmQWAgIBD2QWBAIBDw8WAh4LQ29udGVudEd1" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="aWQoKVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5JGI5NGVkMWExLTRhYWYtNGQwOC05MzBmLTEyMjRhOTIwYzY2MGQWAgIBD2QWAmYPZBYGAgEPZBYCAgEPFgIeBFRleHQFEVJhdGUgdGhpcyBDb250ZW50ZAIFD2QWAmYPFg4eCkNhbGxiYWNrSUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nHgdKc29uVXJsBTNodHRwOi8vbG9jYWxob3N0L1NlcnZpY2VzL0NvbnRlbnRSYXRpbmdTZXJ2aWNlLmFzaHgeCkJlaGF2aW9ySUQFMWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19Vc2VyUmF0aW5nQmVoYXZpb3IeCUNv" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="bnRlbnRJZAUkYjk0ZWQxYTEtNGFhZi00ZDA4LTkzMGYtMTIyNGE5MjBjNjYwHhNUb3RhbFZvdGVzRWxlbWVudElkBS1jdGwwMF9tYWluQ29udGVudF9jdGwwMF9SYXRpbmdfbGJsUmF0aW5nVm90ZXMeD0NvbW1lbnRzRW5hYmxlZGgeDEF1dG9Qb3N0YmFja2hkAgsPDxYCHwRoZBYIAgEPDxYCHwYFGOWvueS6m+WGheWuueWPkeihqOWPjemmiGRkAgUPDxYCHwYFFeeUteWtkOmCruS7tiAo5Y+v6YCJKWRkAgkPDxYCHwYFBuWPkemAgWRkAgsPDxYCHwYFDOS4je+8jOiwouiwomRkAg0PDxYCHwRoZBYCAgEPZBYCZg9kFgICBQ9kFgJmDxYCHwcFL2N0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZ0JvdHRvbSRVc2VyUmF0aW5nZAITDw8WBh8CBS5hcnQtbGF5b3V0" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="LWNlbGwgYXJ0LXNpZGViYXIyIHJpZ2h0c2lkZSBjbXN6b25lHwMCAh8EaGRkAhUPDxYGHwIFE2FsdGNvbnRlbnQxIGNtc3pvbmUfAwICHwRoZGQCFw8PFgYfAgUTYWx0Y29udGVudDIgY21zem9uZR8DAgIfBGhkZAIzDw8WAh8EaGRkAj0PDxYCHwRoZGQCQQ8PFgIfBGhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUdY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaDKW7yOYOPi5scyl8Uod6AhoqxvKFw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAYxH2ASvNvJ8h4vPDYBLQvTh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespadqpFVZOEaRuqIwNqiGDd2UQPfqig==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module130' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="b94ed1a1-4aaf-4d08-930f-1224a920c660" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h1 style="margin-top: 10px; margin-bottom: 5px; font-size: 14.7px; color: rgb(102, 102, 102); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; text-align: center; ">
+	企业架构设计和集成架构框架</h1>
+<div class="date" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	Andrew Macaulay</div>
+<div class="overview" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+		CGEY</p>
+	<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+		介绍了Cap Gemini Ernst &amp; Young的集成结构框架和一个企业结构的模型，它有助于软件工程师们理解与何将业务当作一个整体来看待。</p>
+</div>
+<center style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<img alt="*" border="0" height="6" src="../img.microsoft.com/library/gallery/templates/MNP2.Common/images/3squares.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " title="" width="30" /></center>
+<div style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; height: 18px; ">
+	&nbsp;</div>
+<h5 style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; padding-top: 2px; ">
+	本页内容</h5>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 7px; margin-right: auto; margin-bottom: 12px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#E4" style="color: rgb(67, 113, 166); "><img alt="企业结构在上下文中" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#E4" style="color: rgb(67, 113, 166); ">企业结构在上下文中</a></td>
+		</tr>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#E4B" style="color: rgb(67, 113, 166); "><img alt="Cap Gemini Ernst &amp; Young的集成化结构框架" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#E4B" style="color: rgb(67, 113, 166); ">Cap Gemini Ernst &amp; Young的集成化结构框架</a></td>
+		</tr>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EIE" style="color: rgb(67, 113, 166); "><img alt="交流和结构管理" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EIE" style="color: rgb(67, 113, 166); ">交流和结构管理</a></td>
+		</tr>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EPE" style="color: rgb(67, 113, 166); "><img alt="连接结构和设计" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EPE" style="color: rgb(67, 113, 166); ">连接结构和设计</a></td>
+		</tr>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EOH" style="color: rgb(67, 113, 166); "><img alt="总结" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EOH" style="color: rgb(67, 113, 166); ">总结</a></td>
+		</tr>
+		<tr valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EWAAC" style="color: rgb(67, 113, 166); "><img alt="深入阅读" border="0" height="9" hspace="4" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_down.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " vspace="2" width="7" /></a></td>
+			<td class="onThisPage" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#EWAAC" style="color: rgb(67, 113, 166); ">深入阅读</a></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<a name="E4" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "></a></p>
+<h2 style="font-size: 13px; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; ">
+	企业结构在上下文中</h2>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	在过去的几年里，随着软件和系统工程的逐渐成熟，越来越需要用一种结构的观点来看待整个系统。这种需要源于整个系统和系统在业务之间的交互变得越来越复杂。而且对于降低IT投入，带来可靠效益的压力也不断加大，这些都需要我们更加深入的了解系统如何才能支持业务。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	系统（业务和IT系统）的结构化观点在ANSI/IEEE1471-2000标准中是这样定义的：“它是一个系统的基本组织，包含在它的各个组件里，这些组件之间的关系里，系统所处的环境中，以及指导它的设计和发展的原则中。”如同在建筑设计中有不同级别的结构（城市设计、地区设计以及建筑物设计）一样，对于业务和IT结构，也非常有必要将它们分为不同层次：</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>企业结构</strong>它在整个企业（包括合作者和相关的组织）范围内定义了系统（业务和IT）的整体形式和功能，为项目级别的结构提供一个框架，一套标准和指导。着眼企业结构有助于开发一个在整个企业范围内都协调适用得系统，可以随时随地的支持业务间的合作与整合。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>项目级别的结构</strong>它为一个项目中的系统（业务和IT）定义了形式和功能，但它不能使系统脱离企业结构而孤立存在。项目级别的结构是企业结构的一个精简版本，必须符合企业结构，在企业机构中发挥作用。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>应用结构</strong>它定义了用来实现系统功能的应用的形式和功能。有一些应用结构需要定义在企业和项目级别结构的内部（作为标准和指导）来优化性能并保证整个结构的一致性。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	传统的应对业务变化的方法是用自顶向下的方法，从人力和业务流程两个方面调整业务。但是，传统的软件和系统工程关注的却是如何实现特定功能使一项任务可以自动被完成。至于变更后的系统如何与其它系统交互，如何与其它业务合作以实现更大的效益，就更被忽视了。结果，高级业务结构与用来支持它的系统之间总是存在距离（换句话说，业务与IT之间的一致性很差）。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	要消除这个差距，很多组织都利用企业结构，从整体的角度定义系统（手动的和自动的）要如何支持业务。一个有效的企业结构可以涵盖一个业务各个方面，包括它的驱动者、发展前景、策略、实现策略的组织和服务以及用来实现这些服务的信息、系统和技术。（见图1）</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<img alt="AJ1EntArch01" src="/Data/Sites/1/media/LQ/EA/110007-01.gif" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 450px; height: 369px; " /></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>图1&nbsp;业务和系统的一致</strong></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	定义一个企业结构是很复杂的，因为它必须包含整个企业内部的所有系统。为了简化企业结构的定义，通常把一个业务或系统看作是一系列的相互作用的组件（或者服务），而忽略各个组件之间的具体设计设计细节。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	组件和它们之间的内部联系都必须根据它们实现的服务以及这些服务的特点，比如安全、测度、性能、集成性等来划分。这样划分出来的组件可以依据服务特点、分布性、功能以及其他业务驱动的方面来进行分组。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	虽然理想情况下，系统结构应该使用自顶向下的方法进行设计，但是很多组织受财力所限，只能放弃这种无法在短期内带来可靠回报的策略，让企业结构服从某一启用的大型项目。一旦时机合适，还是有很多机会去对它进行改进，体现企业结构的指导价值的。</p>
+<div style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; margin-top: 3px; margin-bottom: 10px; ">
+	<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); "><img alt="返回页首" border="0" height="9" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " width="7" /></a><a class="topOfPage" href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); ">返回页首</a></div>
+<p>
+	<a name="E4B" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "></a></p>
+<h2 style="font-size: 13px; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; ">
+	Cap Gemini Ernst &amp; Young的集成化结构框架</h2>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>在过去的十年间，</strong>Cap Gemini Ernst &amp; Young开发了一种对企业和项目级别结构进行分析和发展的方法，称为集成化结构框架（IAF）。这个方法现在已经出了第三个版本。它是基于工程师Cap Gemini Ernst 和Young的多年实践经验并结合理论基础形成的。在全球范围内，IAF已经被成功的应用于很多工程中。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	IAF将一个问题分解成很多相关的部分，包括业务（人和流程）、信息（包括知识）、信息系统以及底层技术，然后使用两个专门的部分解决上述所有部分的管理和安全问题。每个部分都可以被分成四种层次的抽象：<em>上下文环境</em>、<em>概念</em>、<em>逻辑</em>和<em>物理</em>，如图2所示。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<img alt="AJ1EntArch02" src="/Data/Sites/1/media/LQ/EA/110007-02.gif" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 450px; height: 240px; " /></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>图</strong><strong>2.&nbsp;</strong><strong>集成结构框架</strong></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	这种多层抽象的方法使得这个框架可以被应用在很多不同的情况下。这种灵活性将传统的流程化带来的影响降至最低，并且确保了各个部分的一致性。比如说，一个使用IAF的工程结构，在很多情况下，只需要充分利用业务和信息部分就可以为整个工程提供上下文环境。一个企业结构可能只关注上下文环境，概念和逻辑层次上的事情。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<em>上下文环境</em>层次将业务和其他驱动、策略以及它们的优先级统一到一个规则集合里。这个综合的声明集在各种策略决定上发挥作用，为那些业务驱动和策略等提供查询依据，展现出业务系统的一致性。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	虽然这项工作的很大一部分都仅仅是数据的收集，但是却不能忽视它的重要性。它将为整个结构设计提供基础。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<em>概念</em>层在上下文环境层中定义的规则的支持下更加详细的描述服务以及各个服务之间的关系。由于概念层是面向服务的（也就是说他不设计任何特定的产品和服务），除非业务本身发生根本性变动，比如改变范围和目标，它都将保持稳定。这为逻辑结构的生成奠定了稳固的基础。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	这个层次上的关键决定包括：</p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					在业务的那些部分使用IT进行支持？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					使用哪种整体的业务结构？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					系统如何反映组织或业务结构的意图？局部系统如何用一组核心应用来实现出来并且保证一个完整的服务内局部系统之间的灵活性。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<em>逻辑</em>层对服务和组件之间的整合和合作合同进行了清晰的定义。由于它依然保持与产品的独立性，这个结构层是相对稳定的。它可以反映自顶向下的变化，比如新的业务模型，和自底向上的变化，比如说技术可行性或者技术实现上的基本变化。通过它，可以清楚地看到业务部分和技术部分的变化。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	这一层的关键决定包括：</p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					逻辑组件如何被分组？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					逻辑组件怎么在系统范围内被共享？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					如何使用一个中央集成转换器支持各种业务系统？或者说通讯工具如何和数据库应用一起支持虚拟的团队？</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	一般来说，在逻辑层存在不止一种的解决方案（反映出了驱动的种类多样，比如说价值、灵活性、安全和管理能力）。在这一层的关键决定就是选择出一种解决方案可以在实现业务需要的同时，最好的反应指导原则。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<em>物理</em>层进一步说明了设计原则、标准和指导，包括关键部分中组件的分组以及应用模型。它为详细的设计提供了框架，也为需要开发和购买的产品提供了选择标准。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	就是在这一层。框架解决方案和结构比如说微软系统结构（MSA）才能被用来加速物理结构的开发，改进结构的质量并、减低工程风险。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	这一层的关键决定：</p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					那些物理组件需要被加入到解决方案中？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					这个解决方中还需要那些组件，以及开发这些组件的标准、指导（比如说语言、工具等）？</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					底层设备的标准和详细的挑选标准是什么？可能有很多候选的供应商和产品。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; margin-top: 3px; margin-bottom: 10px; ">
+	<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); "><img alt="返回页首" border="0" height="9" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " width="7" /></a><a class="topOfPage" href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); ">返回页首</a></div>
+<p>
+	<a name="EIE" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "></a></p>
+<h2 style="font-size: 13px; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; ">
+	交流和结构管理</h2>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>由于有大量股东的存在，企业结构需要使用合适的视觉表现手段和语言进行多种层次的交流。比如说对于高级管理层，结构必须告诉他们业务目标和动力是如何被支持的以及利益如何产生。而对于业务使用者来说，更关心的是他们的自己的业务领域。而</strong>IT管理者和工作人员关心的是技术组件。工程层的设计师们更关心标准和规则，因为它们可以提供充用的机会或者对他们的设计进行限制。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	项目和工程必须与企业结构保持一致，这样业务利润才能实现，系统和软件工程师们才能从企业结构中获得指导。而且，所有的结构一样，企业结构需要不断的维护，特别似乎物理部分，比如说技术标准。这样企业结构才能跟得上业务的变化。企业结构必须在一个企业范畴的管理部门的控制下，这样才能确认它与现行系统的一致性。即使是由于某种业务原因，没有实现一致，这个部门也可以更好的发现不一致的系统究竟带来怎样的后果，比如说持续增长的投入和缺乏灵活应变的能力。</p>
+<div style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; margin-top: 3px; margin-bottom: 10px; ">
+	<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); "><img alt="返回页首" border="0" height="9" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " width="7" /></a><a class="topOfPage" href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); ">返回页首</a></div>
+<p>
+	<a name="EPE" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "></a></p>
+<h2 style="font-size: 13px; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; ">
+	连接结构和设计</h2>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>现在，</strong><strong>“</strong><strong>结构</strong><strong>”</strong><strong>这个词已经越来越多的在商业和</strong>IT业中被使用，这里可能存在很多混淆。比如说，在很多组织里，结构和设计被看成是相同的。但是Cap Gemini Ernst 和Young不是这么认为的，因为设计和结构为解决方案提供的是不同的视角，确切的说，使互补的视角。Cap Gemini Ernst 和 Young使用IAF和Rational Unified Process (RUP;一种软件开发方法)将一个设计从结构变成了代码。表1表示出了结构（IAF）和设计（RUP，包括应用结构）之间的区别。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>表</strong><strong>1.&nbsp;</strong><strong>对比结构和设计</strong></p>
+<table cellpadding="0" cellspacing="0" class="dataTable" id="EEF" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<thead>
+		<tr class="stdHeader" valign="top">
+			<td id="colEGF" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				&nbsp;</td>
+			<td id="colEIF" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				实现</td>
+			<td id="colELF" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				不实现</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="record" valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					结构</p>
+			</td>
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; ">
+					<tbody>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									非功能需求</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									功能域和责任（谁干什么）</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									关键设计和产品选择</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									高层设计</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									设计限制</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; ">
+					<tbody>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									原形</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									综合功能需求</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									详细的数据分析</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									已经实现的系统</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr class="evenRecord" valign="top">
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					设计</p>
+			</td>
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; ">
+					<tbody>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									功能需求和它们如何被满足</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									详细的数据分析和数据模型</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									系统设计文档</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									已建系统</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+			<td style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; ">
+					<tbody>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									解决方案</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									综合的、可跟踪的非功能需求</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+								•</td>
+							<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+								<p class="lastInCell" style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+									安全和管理结构</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="dataTableBottomMargin" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	&nbsp;</div>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	就像建筑物的结构一样，软件结构和（详细的）设计事实上都是一个完整的设计集的一部分。结合IAF和RUP过程提供了一个综合一致的框架来支持这个设计集。而且，企业结构会为工程结构提供了很多环境参数，而同时工程结构也满足了方案的特殊需要。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	那些具有很大风险的工程，特别是复杂的大型工程，利用工程层次的机构方法可以保证对整个方案有一个全面清晰的理解，包括外部系统和影响方案的各种因素，从而降低风险。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	利用IAF，工程层次的技术结构与企业结构使用的基本方法是一样的，只是在细化程度上有所区别，更多地关注于信息、信息系统、底层技术、管理和安全领域的逻辑和物理层（使用在企业结构中定义好的上下文环境和业务结构）。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	因此，企业结构的输出可以直接作为工程层次的技术结构的输入。从特定工程的技术结构中，可以得到具体的设计原则、指导和标准以及限制，它们会为软件和系统工程的设计提供指示。在IAF的例子中，工程层次的技术结构的输出之间被映射到了RUP设计中的具体事务上，比如说业务使用、系统使用以及非功能说明。一般来说这些映射都不是一对一的，但是它们能够提供从结构到具体物理实现的可跟踪性，借此可以加快开发速度。</p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<img alt="AJ1EntArch03" border="0" height="336" src="../www.microsoft.com/china/MSDN/library/architecture/art/AJ1EntArch03.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " width="450" /></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>图</strong><strong>3</strong><strong>. </strong><strong>IAF</strong><strong>和</strong><strong>RUP</strong></p>
+<div style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; margin-top: 3px; margin-bottom: 10px; ">
+	<a href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); "><img alt="返回页首" border="0" height="9" src="../www.microsoft.com/library/gallery/templates/MNP2.Common/images/arrow_px_up.html" style="border-style: initial; border-color: initial; border-style: initial; border-color: initial; " width="7" /></a><a class="topOfPage" href="http://www.microsoft.com/china/MSDN/library/architecture/AJ1EntArch.mspx#top" style="color: rgb(67, 113, 166); ">返回页首</a></div>
+<p>
+	<a name="EOH" style="color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; background-color: rgb(255, 255, 255); "></a></p>
+<h2 style="font-size: 13px; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; line-height: 20px; ">
+	总结</h2>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	<strong>随着各系统和业务之间交互操作复杂性的不断增加，对于业务系统一致性以及有效利用信息技术实现企业利益的需求的增大，企业结构变得越来越重要了。企业结构（和工程层次的技术结构）通过帮助工程师总体的了解业务，为应用结构和具体设计提供了输入信息。</strong></p>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	企业结构的关键目标是<em>理解</em>：</p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					整体业务的相关部分，在上下文环境中（比如说，外部合作者）</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					终端到终端的流程（包括外部流程）</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					非功能的需求（包括安全和管理）</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	对<em>方案产生影响：</em></p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					满足非功能的需求，可能需要特定的组件支持。比如说特定的跨区域安全需求或者用基于服务的方法提供灵活性。</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					在整个业务的上下文环境和终端到终端的流程中是否体现出，比如说服务层次的目标可能存在于整个业务处理时间里，而且会往来与多个业务之间</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					与业务原则联系起来，这样设计阶段的一些变化所带来的影响可以在业务层面上进行评估。</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					推动和限制设计。为了完全的实现方案，包括非功能需要，对应用和底层的设计需要受限于结构。</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					是否对于每个元素的定义和功能都有了一个清晰的理解</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; color: rgb(75, 75, 75); font-family: georgia, verdana, Arial, helvetica, sans-seriff; font-size: 13px; line-height: 20px; ">
+	而且<em>提供基本原理</em></p>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; font-family: georgia, verdana, Arial, helvetica, sans-seriff; ">
+	<tbody>
+		<tr>
+			<td class="listBullet" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; " valign="top">
+				•</td>
+			<td class="listItem" style="font-family: Verdana, Helvetica, Arial; font-size: 12px; word-wrap: break-word; line-height: 18px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(192, 192, 192); border-right-color: rgb(192, 192, 192); border-bottom-color: rgb(192, 192, 192); border-left-color: rgb(192, 192, 192); border-collapse: collapse; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; ">
+				<p style="margin-top: 5px; margin-right: auto; margin-bottom: 5px; margin-left: auto; ">
+					为支持业务目标和动力的决策、标准和产品选择</p>
+				<div>
+					&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	<a class="lqtextlink" href="http://www.cnblogs.com/zcjian/articles/884313.html" target="_blank">原文链接</a></p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fea-110007.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fea-110007.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"b94ed1a1-4aaf-4d08-930f-1224a920c660","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

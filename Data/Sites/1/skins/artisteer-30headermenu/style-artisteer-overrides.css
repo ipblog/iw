@@ -1,0 +1,92 @@
+﻿/* overrides for Artisteer you should not modify the files exported from Artisteer such as style.css, you can override things as needed here or in stylemojo.css */
+
+/* this is needed because the artisteer buttons otherwise looke enabled even when disable */
+input.art-button[disabled="disabled"] { background-color: #ccccff !important; color: #9999cc !important; }
+
+/* this keeps the background images out of the editor and dialog pages */
+body.dialogpage ,
+body.filedialog,
+body.wysiwygeditor
+{
+	background-color: white;
+	background-image: none;
+	font-size: 12px; 
+	min-width: 100px;
+}
+
+body.help-page
+{
+	color:black;
+	background-color: white;
+	background-image: none;
+	
+}
+
+body.wysiwygeditor  p
+{
+  font-size: 14px;
+  margin: 12px 0;
+  
+}
+
+body.wysiwygeditor ul li
+{
+  text-decoration: none;
+  line-height: 125%;    
+  padding: 0 0 0 13px;
+  margin-left:20px;
+  background-image: url('images/blockcontentbullets.png');
+  background-repeat: no-repeat;
+}
+
+body.wysiwygeditor  h1 { font-size:28px; }
+body.wysiwygeditor  h2 {font-size :24px;}
+body.wysiwygeditor  h3 { font-size: 22px; }
+body.wysiwygeditor  h4 { font-size: 18px; }
+body.wysiwygeditor  h5 { font-size: 16px; }
+
+body { overflow-x:hidden;  }
+form { height:100%; }
+
+img
+{
+  border: 0!important;
+}
+
+/* if your design has an icon for the headings in the center column then uncoment this 
+h2.moduletitle {  background:url('images/postheadericon.png') no-repeat; background-position:left;  padding-left:35px;  }
+*/
+
+/* this keeps side bar background images from pushing past the footer in some designs */
+.leftside , .rightside{ overflow: hidden;} 
+
+
+/* this is needed to correct alignment on lists in the  list/links feature */
+.linksmodule  ul li { background-position: 0px 7px; }
+
+.art-logo h1 a { text-decoration: none;}
+
+.topnav,
+a,
+a:link,
+a:visited,
+a:hover
+{
+  color: #1B2327;
+  font-size: 12px;
+}
+
+.art-menu{
+  padding: 14px 30px 0 10px;
+  
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+
+text-decoration: none;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+
+text-decoration: none;
+}

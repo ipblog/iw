@@ -1,0 +1,546 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	褚幼鸿：企业架构规划应从业务入手-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="褚幼鸿：企业架构规划应从业务入手-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="褚幼鸿：企业架构规划应从业务入手-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化,企业架构" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='ea-110020.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/ea-110020.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBQ8vZWEtMTEwMDIwLmFzcHgWEAIPDw8WBh4IQ3NzQ2xhc3MFLWFydC1sYXlvdXQtY2VsbCBhcnQtc2lkZWJhcjEgbGVmdHNpZGUgY21zem9uZR4EXyFTQgICHgdWaXNpYmxlaGRkAhEPDxYEHwIFOWFydC1sYXlvdXQtY2VsbCBhcnQtY29udGVudC13aWRlIGNlbnRlci1ub21hcmdpbnMgY21zem9uZR8DAgJkFgICBQ9kFgJmD2QWAgICDw8WBB8CBQhhcnQtcG9zdB8DAgJkFgICAw9kFgICAw8PFgQfAgUPYXJ0LXBvc3Rjb250ZW50HwMCAmQWAgIBD2QWBAIBDw8WAh4LQ29udGVudEd1" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="aWQoKVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5JGNlN2E0NzdlLTUxYjEtNDE5OS1iNTkzLWQwOWI3YjlmMThmZGQWAgIBD2QWAmYPZBYGAgEPZBYCAgEPFgIeBFRleHQFEVJhdGUgdGhpcyBDb250ZW50ZAIFD2QWAmYPFg4eCkNhbGxiYWNrSUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nHgdKc29uVXJsBTNodHRwOi8vbG9jYWxob3N0L1NlcnZpY2VzL0NvbnRlbnRSYXRpbmdTZXJ2aWNlLmFzaHgeCkJlaGF2aW9ySUQFMWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19Vc2VyUmF0aW5nQmVoYXZpb3IeCUNv" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="bnRlbnRJZAUkY2U3YTQ3N2UtNTFiMS00MTk5LWI1OTMtZDA5YjdiOWYxOGZkHhNUb3RhbFZvdGVzRWxlbWVudElkBS1jdGwwMF9tYWluQ29udGVudF9jdGwwMF9SYXRpbmdfbGJsUmF0aW5nVm90ZXMeD0NvbW1lbnRzRW5hYmxlZGgeDEF1dG9Qb3N0YmFja2hkAgsPDxYCHwRoZBYIAgEPDxYCHwYFGOWvueS6m+WGheWuueWPkeihqOWPjemmiGRkAgUPDxYCHwYFFeeUteWtkOmCruS7tiAo5Y+v6YCJKWRkAgkPDxYCHwYFBuWPkemAgWRkAgsPDxYCHwYFDOS4je+8jOiwouiwomRkAg0PDxYCHwRoZBYCAgEPZBYCZg9kFgICBQ9kFgJmDxYCHwcFL2N0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZ0JvdHRvbSRVc2VyUmF0aW5nZAITDw8WBh8CBS5hcnQtbGF5b3V0" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="LWNlbGwgYXJ0LXNpZGViYXIyIHJpZ2h0c2lkZSBjbXN6b25lHwMCAh8EaGRkAhUPDxYGHwIFE2FsdGNvbnRlbnQxIGNtc3pvbmUfAwICHwRoZGQCFw8PFgYfAgUTYWx0Y29udGVudDIgY21zem9uZR8DAgIfBGhkZAIzDw8WAh8EaGRkAj0PDxYCHwRoZGQCQQ8PFgIfBGhkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUdY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaDKkPxjffWPZeHIVxOAEPGt84KYVbA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAZOXOTxAKeIQ41AjGmWE5Soh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespaeTCmu9TcC9s5SRGblxw0k+yrb9BQ==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module143' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="ce7a477e-51b1-4199-b593-d09b7b9f18fd" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p>
+	&nbsp;</p>
+<p class="lqtitle1">
+	&nbsp;</p>
+<p class="lqtitle1">
+	&nbsp;</p>
+<p class="lqtitle1">
+	褚幼鸿：企业架构规划应从业务入手</p>
+<p class="lqtitle1a">
+	作者：刘继承 来源：CIO时代网</p>
+<p class="lqtext">
+	<strong>摘要</strong>： 本文就是我们系列访谈的第二篇，我们有幸采访了Open Group中国分会的首席技术官CTO褚幼鸿博士，请他来向你介绍企业架构的相关内容。&nbsp;</p>
+<p class="lqtext">
+	<strong>关键词</strong>： 企业架构EATOGAF褚幼鸿</p>
+<p class="lqtext">
+	为推动企业架构（EA）理论在中国传播，CIO时代网开设了企业架构的频道（http://www.ciotimes.com/ea/ ），并计划访谈业内的专家、顾问，请他们来向您讲解到底什么是企业架构？企业架构能为企业带来什么？本文就是我们系列访谈的第二篇，我们有幸采访了Open Group中国分会的首席技术官CTO褚幼鸿博士，请他来向你介绍企业架构的相关内容。下面就是本次访谈的内容。</p>
+<p class="lqtext">
+	<strong>CIO时代网</strong>：<strong>企业架构在中国的基本上还处于阳春白雪的状况，您能不能用简单的语言向别人说明什么是企业架构？它和企业战略、运营战略有什么异同？</strong></p>
+<p class="lqtext">
+	<strong>褚幼鸿</strong>：企业架构与一般IT架构的不同之处在于它包含了业务架构，业务架构可以用来分析商业模式，规划战略，建立组织模型及业务流程模型。有了业务架构之后，再建立常见的信息系统架构（应用和数据架构）和基础设施架构（系统软硬件及网络架构），可以保证IT架构与业务架构的对齐，建立随需应变的敏捷型企业。</p>
+<p class="lqtext">
+	企业架构框架如The Open Group Architecture Framework （TOGAF）提供了建立战略规划的元模型实体如业务原则，驱动力，目标，目的及度量，采用TOGAF建立的企业架构可以协助企业规划战略及运营模型。但企业架构并不输出长期及短期战略计划，其产出物为支撑战略及运营模型的业务架构。</p>
+<p class="lqtext">
+	<strong>CIO时代网：企业架构到底有什么用？是不是又是一个新的忽悠人的"三字经"？用这套方法能不能解决目前企业存在的信息孤岛、系统集成等问题？</strong></p>
+<p class="lqtext">
+	<strong>褚幼鸿</strong>：企业架构的历史非常悠久，在欧美有许多的成功案例，而最成功的实践，就是企业架构被列入了欧美政府的法案。有鉴于普遍存在的信息孤岛及系统集成等问题，及更严重的由于缺乏业务蓝图/架构系统重复发展或发展完成后已没有业务价值，造成经费及人力资源的浪费。美国联邦政府早在1996年代的信息技术管理重整法案及后续的1996年Clinger-Cohen法案规定了联邦政府机构在采购和管理信息资源时，必须建立完整的信息资源管理政策：保证信息资源具焦在支持战略愿景；实施资本规划和投资控制流程；在投资信息系统之前重新思考和重新架构化。</p>
+<p class="lqtext">
+	根据Clinger-Cohen法案，美国发展出了联邦企业架构框架（Federal Enterprise Architecture/FEA）来最大化政府部门的IT效益。TOGAF如同FEA，可协助企业最大化IT效益，通过业务架构蓝图，避免重复投资及产生信息孤岛，保证投资在高报酬的IT系统/项目。</p>
+<p class="lqtext">
+	<strong>CIO时代网：企业架构在欧美等国家的发展情况如何？取得了什么效果？还有什么问题？</strong></p>
+<p class="lqtext">
+	褚幼鸿：在国际上已有许多不同企业架构框架如：TOGAF、Zachman、DODAF、FEAF等等。根据Open Group的2009调研报告、The Infosys 2008/2009调研报告及Forrester 2009调研报告，各类企业架构框架的市场占用率如下图所示。目前，TOGAF已经被公认为是最开放、通用、完整和优秀的企业架构框架。截至目前，世界财富500强企业中的多数已经、正在或计划使用TOGAF发展他们自己特定的企业架构。</p>
+<p class="lqtext">
+	<img alt="" src="/Data/Sites/1/media/LQ/EA/110020-01.JPG" style="width: 496px; height: 267px; " /></p>
+<p class="lqtext">
+	美国和欧盟为首的发达国家已经为企业架构的推行制定了一系列强制性的法律法规，诸如：</p>
+<p class="lqtext">
+	美国的Clinger-Cohen法案（信息技术管理改革法案，1996）被设计成用来改善美国联邦政府获取和管理信息技术的方式。它强制美国的联邦机构必须使用正式的企业架构。</p>
+<p class="lqtext">
+	美国的Sarbanes-Oxley法案（美国公众公司会计改革和投资者保护法案，2002）被通过以响应诸多重要的法人和帐目清算的丑闻，其中还包括一些美国的著名公司如Enron和Worldcom。该法案规定，公司必须提供内部控制评估的证明，包括将信息技术相关的控制过程记录在案。</p>
+<p class="lqtext">
+	欧盟授予公共合同的指令：在欧盟内部，当供应商计划为欧盟提供产品和服务时，供应商被要求必须展示他们正在其业务中使用正式的企业架构。</p>
+<p class="lqtext">
+	这些强制性的法律/法规成为了政府机构和公司企业在其业务中采纳和使用企业架构的强大驱动力。从世界先进国家的发展经验和示范作用来看，企业架构的采纳和推行，是经济、社会、商业发展到一定阶段的必然产物。随着全球化的进展以及国家综合实力的不断增强，可以乐观的预计，未来企业架构在我国的政府部门/机构和企事业单位中具有很好的应用前景和发展空间，企业架构正在受到越来越多的关注。</p>
+<p class="lqtext">
+	在全球500大公司中，一般都会设立企业架构或IT架构部门，专门负责企业架构的发展，良好的企业架构能带来重要的业务效益，具体包括：</p>
+<p class="lqtext">
+	更高效率的IT运行：降低软件开发、支持和维护的成本；增强应用可移植性；提高互操作性和更为简单的系统和网络管理；提高处理关键性的企业范围的议题的能力，如安全；更容易的升级和系统构件的替换。</p>
+<p class="lqtext">
+	现有投资的更好收益，降低未来投资风险：降低IT基础设施的复杂度；现有IT基础设施投资回报率的最大化；开发、购买和外包IT解决方案的弹性；新投资以及IT拥有成本的全面风险的降低。</p>
+<p class="lqtext">
+	更快、更简单和更便宜的采购：采购决策更简单，因为在有条理的规划中，管控采购的信息是随时可用的；采购流程更快 - 最大化采购速度和灵活性而无需牺牲架构的一致性；采购异构、多供应商的开放系统的能力。</p>
+<p class="lqtext">
+	<strong>CIO时代网：国内对EA的接受程度如何，您在和企业的CIO或领导人沟通EA时遇到什么样的障碍？</strong></p>
+<p class="lqtext">
+	<strong>褚幼鸿</strong>：在2009年之前，中国并没有组织专门负责推广企业架构，金蝶在2009年5月19日与Open Group在北京宣布成立Open Group中国分会，引进企业架构标准，并将负责TOGAF今后在国内的所有推广工作。</p>
+<p class="lqtext">
+	国内对EA的接受程度正在提高，在和企业的CIO或领导人沟通EA时，普偏的问题是什么是企业架构？什么是企业架构的效益？在了解企业架构及其效益后，CIO或领导人想要引入企业架构时，又因为没有组织编制而进展缓慢。</p>
+<p class="lqtext">
+	Open Group中国分会的成立，就是为了要解决这些问题，推广企业架构，培训EA人才，及提高EA的接受程度。</p>
+<p class="lqtext">
+	<a class="lqtextlink" href="http://www.ciotimes.com/ea/togaf/200912231323.html" target="_blank">原文链接</a></p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fea-110020.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fea-110020.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"ce7a477e-51b1-4199-b593-d09b7b9f18fd","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

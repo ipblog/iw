@@ -1,0 +1,862 @@
+﻿div.topnavwrap { position:absolute; top:0; left:0;   margin:0px 0px 0px 0px; width:100%; z-index:100; padding:5px 0px 0px 0px; }
+div.topnav { width: 950px; }
+
+div.center-nomargins
+{
+	width : 100%;  /* 在Ie9的兼容模式下需要此句, 在ie6下其实是正常的 */
+}
+
+/* 解决页首登录等链接的位置问题 */
+img
+{
+	vertical-align:middle
+}
+
+/* 解决IE下链接周围的虚框问题 */
+a
+{
+	pickbar:expression(this.hideFocus=true);
+}
+
+div.topnav ul 
+{
+	float:right;
+}
+
+li.firstnav, li.topnavitem
+{
+	padding: 0px 8px 0px 0px;
+}
+
+/* 解决页首登录等链接的字体颜色问题 */
+div.topnav ul li, div.topnav ul li.topnavitem a.sitelink, div.topnav ul  li.firstnav a.sitelink, div.topnav ul  li.firstnav span.sitelink
+{ 
+	color: #666666; 
+	font-size:13px;
+	font-weight:400;
+}
+
+div.topnav ul li.topnavitem a.sitelink:hover, div.topnav ul  li.firstnav a.sitelink:hover
+{ 
+	color: #a41704;
+	text-decoration : underline
+}
+
+/* 解决给左侧加图标的问题 */
+a.sitelink
+{
+	padding: 0 0 0 14px;
+}
+
+a.topsitemaplink
+{
+	background: url('images/sitemap.gif') no-repeat;
+}
+
+a.homelink
+{
+	background: url('images/home.gif') no-repeat;
+}
+
+a.bloglink
+{
+	background: url('images/blog.png') no-repeat;
+}
+
+a.forumlink
+{
+	background: url('images/forum.gif') no-repeat;
+}
+
+a.mypagelink
+{
+	background: url('images/mypage.gif') no-repeat;
+}
+
+a.myprofilelink
+{
+	background: url('images/myprofile.gif') no-repeat;
+}
+
+a.memberlistlink
+{
+	background: url('images/members.png') no-repeat;
+}
+
+a.registerLink
+{
+	background: url('images/register.png') no-repeat;
+}
+
+a.loginlink
+{
+	background: url('images/login.gif') no-repeat;
+}
+
+a.logoutlink
+{
+	background: url('images/logout.gif') no-repeat;
+}
+
+span.langlbl
+{
+	background: url('images/language.png') no-repeat;
+	padding-left:16px;
+	background-position-y: 0px;
+}
+
+select.langddl
+{
+	margin-top: -3px;
+	width:100px;
+	border: 1px solid rgb(173, 216, 246); 
+	color: rgb(79, 130, 203);
+}
+
+select.langddl:hover {
+	border-color: rgb(254, 183, 41);
+}
+
+select.langddl:focus {
+	border-color: rgb(254, 183, 41);
+}
+
+.langhl img
+{
+	vertical-align:top;
+}
+
+.art-sheet
+{
+  top: 23px !important;
+  margin-bottom: 22px !important;
+}
+
+
+/* 解决Chrome下查询文本框被遮盖的问题 */
+div.art-nav-outer
+{
+	width : auto;
+}
+
+/*解决内容的最小高度及宽度问题， 在Chrome下min-height还是起不了作用,除非把display: table;去掉， 但这样导致三列宽度有问题*/
+div.art-content-layout
+{
+	/*background-color: rgb(210, 209, 208);*/
+	background-color: rgb(244, 244, 244);
+	/*margin: 0px 8px 0px 8px;
+	width: 954px;*/
+    min-height: 600px; height: auto !important;
+	>height: 600px;
+	>overflow: visible;
+}
+
+div.art-blockcontent, div.art-postcontent
+{
+	background-color: white;
+}
+
+/*查询按钮开始*/
+div.searchpanel
+{
+	float: right;
+	margin-top:6px;
+    margin-right:8px;
+}
+
+input.searchbox {
+	width:120px;
+	height:24px;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 12px; 
+	border: 1px solid rgb(173, 216, 246); 
+	color: rgb(79, 130, 203);
+}
+input.searchbox:hover {
+	border-color: rgb(254, 183, 41);
+}
+input.searchbox:focus {
+	border-color: rgb(254, 183, 41);
+}
+
+input.searchbutton
+{
+    position:relative;
+    top:0px;
+}
+
+/*查询按钮结束*/
+
+.modulecontent
+{
+	padding: 0px; /* 5是留给上部Rating的 */
+}
+
+div.modulecontent ul.linkitem 
+{  
+	top:0px;
+	left:0px;
+	padding: 2px; 
+	list-style-type: none; 
+	margin-top: 0px; 
+	margin-right: 0px;
+	margin-bottom: 0px; 
+	margin-left: 0px;
+}
+
+div.modulecontent ul.linkitem li:hover 
+{
+	border-left:2px solid white;
+}
+
+div.leftside div.modulecontent ul li
+{
+    background-position: left bottom;
+    background-image: url('images/linkitembk.jpg');
+    background-repeat: no-repeat;
+}
+
+cite.eventdate
+{
+    font-style: normal;
+    color: #0033CC;
+    float: left;
+    margin-right:4px;
+}
+
+div.center-rightandleftmargins cite.eventdate
+{
+	float: right;
+	margin-left:8px;
+}
+
+span.linkarrow
+{
+    margin:0px;
+    height:8px;
+    padding-right:2px;
+    border-width:0px;
+	background-position: center;
+	background-image: url('linkarrow.gif');
+	background-repeat: no-repeat;
+}
+
+div.leftside span.linkarrow
+{
+	background-image: url('linkarrow_l.gif');	
+}
+
+div.rightside span.linkarrow
+{
+	background-image: url('linkarrow_r.gif');	
+}
+
+div.modulecontent ul.linkitem a 
+{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+div.modulecontent ul.linkitem a.linkseleted
+{
+	font-weight: bold;
+}
+
+.settingrow .settinglabel,.settinglabelFixedHeight 
+{ 
+	font-weight:bold; font-size:13px;
+}
+
+input
+ { 
+	border: 1px solid #666666;
+	height: 20px;
+ }
+ 
+ /* 查找按钮的边框问题 */
+ input[type=image]
+ { 
+	border: 0px
+ }
+
+/*评论框应在最上层*/
+div.ratingcomments
+{
+	z-index :100
+}
+
+/*管理工具条*/
+span.showbar a { /* show button */
+  font-size: 12px;
+}
+
+div#toolbarbut { /* div for the 'hide status' */
+  width: 70px;
+  padding: 5px;
+}
+
+/*论坛相关*/
+/*h2.art-postheader.moduletitle
+{
+	text-align: left;
+}*/
+
+div.forums table, div.forumview table
+{
+	border: 1px solid #C0C0C0;
+	cellspacing:0;
+	cellpadding: 0;
+	rules:rows;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.fsubscribe, .fthreadcount, .fpostcount, .fstartedby, .fpostviews, .fpostreplies
+{
+	width:80px;
+}
+
+.fpostdate
+{
+	width:150px;
+}
+
+a.forumfeed 
+{ 
+	font-size: 14px; /*a.forumfeed 默认12px不能完整显示图标*/
+	margin-right: 8px;
+}
+
+div.forums table tr, div.forumview table tr
+{
+	border-top-style: solid; border-top-width: 1px; border-top-color: #d0d0d0;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #d0d0d0
+}
+
+div.forums tr.moduletitle,div.forumview tr.moduletitle
+{
+	background: #E5EDF2 url('forumtitlebg.png') repeat-x 0 0;
+	/* line-height: 20px; */
+	/* height: 32px;    min-height: 32px; min-height对chrome的table无效 */
+}
+
+/*
+div.forums tr.modulerow, div.forums tr.modulealtrow
+{
+	line-height: 16px;
+}
+
+div.forumview tr.modulerow, div.forumview tr.modulealtrow
+{
+	height: 30px;
+}*/
+
+/*
+div.forums  tr td
+{
+	padding: 10px 8px 10px 8px;
+}
+*/
+
+div.forums tr, div.forumview tr
+{
+	line-height: 16px;
+}
+
+div.forums tr.modulerow, div.forumview tr.modulerow
+{
+	background-color: #f2f2f2;
+}
+
+div.forums tr.modulealtrow, div.forumview tr.modulealtrow
+{
+	background-color: #eaeaea;
+}
+
+tr.modulerow h3, tr.modulealtrow h3
+{
+	margin: 0px;
+}
+
+/* padding 对tr无效
+div.forums  tr, div.forumview tr
+{
+	padding: 6px 8px 6px 6px;
+}
+*/
+
+div.forums  tr td, div.forumview tr td, div.forums  tr th, div.forumview tr th
+{
+	padding: 6px 8px 6px 6px;
+	/* height: 20px; min-height: 32px;对chrome的table无效 */
+}
+
+div.forums tbody td, div.forumview tbody td
+{
+	vertical-align: middle;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+div.forums th, div.forumview th,
+div.forums td, div.forumview td
+{
+	text-align: center;
+}
+
+div.forums tbody  td.ftitle,
+div.forumview tbody td.ftitle
+{
+	text-align: left;
+}
+
+tr.modulerow td span, tr.modulealtrow td span
+{
+	vertical-align : middle;
+}
+
+div.forumthreadview
+{
+	padding: 5px 8px 5px 8px;
+}
+
+div.forumthreadview div.modulecontent
+{
+	border: 1px solid #d0d0d0;	
+}
+
+div.postwrapper
+{
+	width: 100%;
+}
+
+.modulepager,
+h2.moduletitle,
+.art-postcontent .forumnotify,
+.art-postcontent .forumdesc,
+.art-postcontent .forumhead
+{
+	padding: 5px;
+}
+
+div.forumpostheader
+{
+	clear: left;
+	padding: 5px;
+	background-color: #F4FAFE;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #d0d0d0;
+}
+
+div.postwrapper
+{
+	border-top-style: solid; border-top-width: 1px; border-top-color: #d0d0d0;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #d0d0d0;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	background-color: #F4FAFE;
+}
+
+div.postwrapper div.postleft
+{
+	vertical-align : middle;
+	padding: 5px 0px 5px 0px;
+	float: left;
+	width: 20%;
+}
+
+div.postwrapper div.postright
+{
+	width: 80%;
+	padding: 0px;
+	float: right;
+	margin: 0px;
+}
+
+div.postright div.posttopic, div.postright div.postbody
+{
+	border-left-style: solid; 
+	border-left-width: 1px; 
+	border-left-color: #d0d0d0;
+}
+
+div.postright div.posttopic
+{
+	background-color: #FFFFFF;
+	border-bottom-style: dotted; 
+	border-width: 1px; 
+	border-color: #C0C0C0;
+	padding: 5px; 
+}
+
+div.postright div.postbody
+{
+	min-height: 250px; 
+	height: auto !important;
+	>height: 250px;
+	>overflow: visible;
+}
+
+div.postright div.posttopic h3
+{
+	margin: 0px;
+}
+
+div.forumthreadview div.modulecontent div.modulepager
+{
+	clear: left;
+	padding: 5px;
+}
+
+/*
+.art-post-body, .art-postcontent .modulecontent, .art-postcontent .postwrapper
+{
+	padding: 0px;
+}
+*/
+
+a.newthread,
+a.newpost
+{
+	background-position-y : center;
+	font-size:14px;
+}
+
+/* 子菜单开始 mojoportal 的子菜单多生成了span 导致样式不对  .art-hmenu li ul li a span.t, span.t无效 去掉才有效*/
+
+.art-hmenu  >  li  > a /* 一级菜单字体改为13px */
+{
+	font-size: 13px;
+}
+
+/* 二级菜单 */
+.art-hmenu li ul li  > a
+{
+  /* background-image : none;
+  background-color: #E1E1E1;
+  border-top-color: white;*/
+  
+  border-width: 0px 1px 0px 0px;
+  border-color: #99ADC2;
+  background-image: url("images/submenuitem.png");
+}
+
+.art-hmenu li ul li:hover  > a
+{
+  /*background-image : none; 
+  border-color: white #D9D9D9 #D9D9D9;*/ 
+  
+  border-color: #CCE3BB;
+  background-position: 0 -28px;
+}
+
+.art-hmenu li:hover ul li  > a span.t
+{
+  color: #344556;
+  /* color: #222E39; */
+  font-size: 12px;
+  /* font-weight: normal; */
+}
+
+.art-hmenu li:hover ul li:hover  > a span.t
+{  
+  color: #004090; */
+  /* color: #AA3B03; */
+}
+/* 子菜单结束 */
+
+
+/*博客开始*/
+
+h3.blogtitle
+{
+	border-bottom-style: dotted; 
+	border-width: 1px; 
+	border-color: #C0C0C0;
+	margin: 0px;
+	padding: 8px 5px 8px 5px;
+}
+
+div.blogdate, div.blogtext
+{
+	padding: 8px;
+}
+
+.blogwrapper
+{
+}
+
+.blogcenter-rightnav
+{
+	background-color: white;
+}
+
+div.blognavright 
+{
+	background-image: url('images/Blognavright_BG.jpg');
+	background-repeat: repeat-x;
+	background-position: top left;
+	
+	margin: 0px;
+	padding: 10px 0px 10px 10px;
+}
+
+.blognavright  > table
+{
+  margin: 0px;
+}
+
+div.blognavright div h3, ul.tag-cloud
+{
+	margin-left: 0px;
+}
+
+/*博客结束*/
+
+/*联系表单开始*/
+fieldset
+{
+	padding: 5px 5px 5px 5px;
+}
+/*联系表单结束*/
+/*标题开始*/
+.art-postmetadataheader
+{
+	/*background: #E5EDF2 url('images/Blognavright_BG.jpg') repeat-x 0 0;*/
+}
+/*标题结束*/
+
+/*RSS开始*/
+div.rsstitle div h3
+{
+	border-bottom-style: dotted; 
+	border-width: 1px; 
+	border-color: #C0C0C0;
+	margin: 0px;
+	padding: 8px 5px 8px 5px;
+}
+
+div.rssdate, div.rsstext
+{
+	padding: 5px 8px 5px 8px;
+}
+
+
+.rsscenter-rightnav
+{
+	background-color: white;
+	margin-right: 210px;
+}
+
+div.rssnavright 
+{
+	background-image: url('images/Blognavright_BG.jpg');
+	background-repeat: repeat-x;
+	background-position: top left;
+	
+	margin: 0px;
+	padding: 10px 0px 10px 10px;
+	
+	width: 200px;
+	min-height:480px;
+}
+
+.rssnavright  > table
+{
+	margin: 0px;
+}
+
+div.rssauthor 
+{
+	border-bottom: 1px solid #656C4A;
+}
+
+/*RSS结束*/
+
+/*页面路径开始*/
+div.breadcrumbs
+{
+	background-image: url('images/breadcrumbsbg.png');
+	background-position: top left;
+	margin: 0px;
+	padding: 12px 4px 4px 22px;
+	height: 26px;
+}
+
+div.breadcrumbs a
+{
+	font-size: 13px;
+}
+/*页面路径结束*/
+
+iframe
+{
+	overflow: hidden;
+}
+
+/*添加编辑页面开始*/
+fieldset.pagesettings, fieldset.pagelayout
+{
+	padding:0px;
+}
+
+.pagetabs, fieldset  div.settings
+{
+	padding:0px 2px 0px 2px;
+}
+
+fieldset  div.settings
+{
+	padding:0px 5px 0px 5px;
+}
+
+/*添加编辑页面结束*/
+
+/*联系信息和地图合并开始*/
+/*.modcontactinf  div.art-post-bl,.modcontactinf  div.art-post-br,.modcontactinf  div.art-post-bc,
+.modcontactmap  div.art-post-tl,.modcontactmap  div.art-post-tr,.modcontactmap  div.art-post-tc
+{
+	display: none;
+}
+
+div.modcontactmap
+{
+	margin-top: -42px;
+}
+
+div.gmap
+{
+	margin:0 auto;
+}*/
+/*联系信息和地图合并结束*/
+
+/*Child Sitemap开始*/
+.sitemap a
+{
+	text-decoration: none;
+}
+/*Child Sitemap结束*/
+
+/*首页开始*/
+div.slidecontainer, div.slidecontainer div div
+{
+	margin:0 auto;
+}
+/*首页结束*/
+
+/*文章开始*/
+
+/*正标题*/
+.lqtitle1
+{
+	font-size: 16px; 
+	font-weight: bold;
+	text-align: center;
+}
+
+/*副标题*/
+.lqtitle1a
+{
+	font-size: 16px; 
+	text-align: center;
+	margin-top: 7px;
+}
+
+/*段前标题*/
+.lqtitle2
+{
+	font-size: 14px; 
+	font-weight: bold;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+/*正文*/
+.lqtext
+{
+	font-size: 14px; 
+	text-indent: 2em;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.lqtextcenter
+{
+	text-align: center;
+}
+
+.lqtextleft
+{
+	text-align: left;
+}
+
+/*红色正文*/
+.lqtextred
+{
+	 color: #FF0000;
+}
+
+/*正文链接*/
+a.lqtextlink
+{
+	color: #A41704;
+	font-size: 14px; 
+}
+a.lqtextlink:visited
+{
+	color: #963;
+}
+
+a.lqtextlink:hover
+{
+	text-decoration: underline;
+	color: #C00;
+}
+
+.lqvertext
+{
+	font-size: 14px; 
+	text-indent: 2em;
+}
+
+/*文章结束*/
+
+.modulecontent, .modulecontent a
+{
+	font-size: 14px;
+}
+
+/*评分系统*/
+.ratingcontainer
+{
+	margin-top: 0px;
+}
+
+/*模块抬头的 更多 开始 */
+.art-blockheader h3.t a.more 
+{
+	font-size: 12px;
+	color: #28AD31;
+	text-decoration: none;
+	margin-right: 8px;
+	margin-top: 0;
+	display: inline;
+	position: absolute;
+	right: 0;
+	font-weight: 400;
+}
+
+.art-blockheader h3.t a.more:hover
+{
+	margin-right: 6px;
+	color: #39D043;
+	text-decoration: underline;
+}
+/*模块抬头的 更多 结束 */
+
+/*站点统计模块*/
+ul.userstats,
+ul.userstats li
+{ list-style-type:none; font-size:90%; margin:0px 0px 0px 5px; }

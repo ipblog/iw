@@ -1,0 +1,181 @@
+﻿.bbox
+{
+    -moz-box-sizing: border-box;  /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+}
+
+/* 图片垂直对齐这篇是最准确的http://www.noahlu.com/blog/website-design/css-vertical-align/*/
+.vAlign
+{ 
+	vertical-align:middle; 
+	display:inline-block; 
+	height:100%; 
+	width:1px; 
+	margin-left:-1px;
+}
+
+#BuyForm
+{
+    height:100%;
+    border: 0px;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+
+#BuyForm td
+{
+	padding: 1px;
+	white-space: nowrap;
+    vertical-align: middle;
+	color: rgb(64, 64, 64);
+}
+
+#BuyForm td.img > div
+{
+    margin: auto;
+    margin-top:10px;
+    text-align:center;
+}
+
+#Presentation
+{
+    cursor:pointer;
+}
+
+#BuyForm td.lbl
+{
+    padding-left: 15px;
+}
+
+#BuyForm td.val
+{
+	font-family: arial;
+    min-width:200px;
+}
+
+#BuyForm tr
+{
+    height: 25px;
+}
+
+#BuyForm tr.sep
+{
+    height: 10px;
+}
+
+#BuyForm em {
+	font-style: normal;
+}
+
+#BuyForm .tb-rmb {
+	margin-right: 4px;
+	font-family: arial;
+}
+
+#BuyForm .tb-rmb-num {
+	font-family: verdana,arial;
+}
+
+#BuyForm td.del {
+	color: #999;
+}
+
+#BuyForm .del .tb-rmb-num {
+	text-decoration: line-through;
+}
+
+#BuyForm td.val label.ui-button
+{
+    border-radius: 2px;
+    font-family: arial;
+    font-size: 13px;
+    background-image: none;
+    background-color: rgb(255,255,255);
+    color: rgb(64, 64, 64);
+    border: 1px solid rgb(200, 201, 205);
+    margin: 0px 4px 4px 0px;
+}
+
+#BuyForm td.val label.ui-button.ui-state-active,
+#BuyForm td.val label.ui-button:hover
+{
+    border: 2px solid rgb(255, 103, 1);
+	margin: -1px 3px 3px -1px;
+}
+
+#BuyForm td.val label.ui-button.ui-state-active
+{
+    background: url('buySel.gif') no-repeat right bottom;
+}
+
+#BuyForm .ui-widget-content
+{
+    border-radius: 2px;
+    font-family: arial;
+    font-size: 13px;
+    background-image: none;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(200, 201, 205);
+}
+
+#BuyForm .ui-spinner-input
+{
+    margin:0px;
+    height: 18px;
+    padding: 3px 2px 2px 3px;
+}
+
+#BuyForm .ui-widget-content .ui-spinner-button,
+#BuyForm .ui-state-default .ui-icon
+{
+    border:0px;
+    border-left:1px solid rgb(200, 201, 205);
+    margin:0px;
+    border-radius: 0px;
+    background: none;
+    background-color: rgb(255,255,255);
+    color: rgb(64, 64, 64);
+}
+
+#BuyForm .ui-widget-content .ui-spinner-button.ui-spinner-up
+{
+    background: url(buyNum.gif) no-repeat 0px -17px;
+    border-bottom:1px solid rgb(200, 201, 205);
+}
+
+#BuyForm .ui-widget-content .ui-spinner-button.ui-spinner-up.ui-state-hover
+{
+    background: url(buyNum.gif) no-repeat -32px -17px;
+}
+
+#BuyForm .ui-widget-content .ui-spinner-button.ui-spinner-down
+{
+    background: url(buyNum.gif) no-repeat 0px -1px;
+}
+
+#BuyForm .ui-widget-content .ui-spinner-button.ui-spinner-down.ui-state-hover
+{
+    background: url(buyNum.gif) no-repeat -32px -1px;
+}
+
+#BuyForm .ui-spinner-button .ui-button-text
+{
+    display:none;
+}
+
+#BuyForm  .buybutton
+{
+  display:block;
+  width:127px;
+  height:37px;
+  background:url(buy.gif) no-repeat 0 -37px;
+  text-indent:-9999px;
+  border: 0px;
+}
+
+#BuyForm  .buybutton:hover {
+  background-position: 0 0px;
+}

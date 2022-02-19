@@ -1,0 +1,536 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	深入剖析ERP实施失败率高成功率低的原因-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="深入剖析ERP实施失败率高成功率低的原因-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="深入剖析ERP实施失败率高成功率低的原因-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='it-arch-110023.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/it-arch-110023.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBRQvaXQtYXJjaC0xMTAwMjMuYXNweBYQAg8PDxYGHghDc3NDbGFzcwUtYXJ0LWxheW91dC1jZWxsIGFydC1zaWRlYmFyMSBsZWZ0c2lkZSBjbXN6b25lHgRfIVNCAgIeB1Zpc2libGVoZGQCEQ8PFgQfAgU5YXJ0LWxheW91dC1jZWxsIGFydC1jb250ZW50LXdpZGUgY2VudGVyLW5vbWFyZ2lucyBjbXN6b25lHwMCAmQWAgIFD2QWAmYPZBYCAgIPDxYEHwIFCGFydC1wb3N0HwMCAmQWAgIDD2QWAgIDDw8WBB8CBQ9hcnQtcG9zdGNvbnRlbnQfAwICZBYCAgEPZBYEAgEPDxYCHgtDb250" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="ZW50R3VpZCgpWFN5c3RlbS5HdWlkLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkkMDQwOWYxOTktYjVjZC00YTRiLWJhODgtNDczN2MxYjkyOGYzZBYCAgEPZBYCZg9kFgYCAQ9kFgICAQ8WAh4EVGV4dAURUmF0ZSB0aGlzIENvbnRlbnRkAgUPZBYCZg8WDh4KQ2FsbGJhY2tJRAUpY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nJFVzZXJSYXRpbmceB0pzb25VcmwFM2h0dHA6Ly9sb2NhbGhvc3QvU2VydmljZXMvQ29udGVudFJhdGluZ1NlcnZpY2UuYXNoeB4KQmVoYXZpb3JJRAUxY3RsMDBfbWFpbkNvbnRlbnRfY3RsMDBfUmF0aW5nX1VzZXJSYXRpbmdCZWhhdmlv" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="ch4JQ29udGVudElkBSQwNDA5ZjE5OS1iNWNkLTRhNGItYmE4OC00NzM3YzFiOTI4ZjMeE1RvdGFsVm90ZXNFbGVtZW50SWQFLWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19sYmxSYXRpbmdWb3Rlcx4PQ29tbWVudHNFbmFibGVkaB4MQXV0b1Bvc3RiYWNraGQCCw8PFgIfBGhkFggCAQ8PFgIfBgUY5a+55Lqb5YaF5a655Y+R6KGo5Y+N6aaIZGQCBQ8PFgIfBgUV55S15a2Q6YKu5Lu2ICjlj6/pgIkpZGQCCQ8PFgIfBgUG5Y+R6YCBZGQCCw8PFgIfBgUM5LiN77yM6LCi6LCiZGQCDQ8PFgIfBGhkFgICAQ9kFgJmD2QWAgIFD2QWAmYPFgIfBwUvY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nQm90dG9tJFVzZXJSYXRpbmdkAhMPDxYGHwIFLmFydC1s" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="YXlvdXQtY2VsbCBhcnQtc2lkZWJhcjIgcmlnaHRzaWRlIGNtc3pvbmUfAwICHwRoZGQCFQ8PFgYfAgUTYWx0Y29udGVudDEgY21zem9uZR8DAgIfBGhkZAIXDw8WBh8CBRNhbHRjb250ZW50MiBjbXN6b25lHwMCAh8EaGRkAjMPDxYCHwRoZGQCPQ8PFgIfBGhkZAJBDw8WAh8EaGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBR1jdGwwMCRTZWFyY2hJbnB1dDEkYnRuU2VhcmNoMr0N5MZF8cTTyU3262GJKcXKLs4V" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbL1f1wBufAbZLnwMRBT0+ph40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespafQQ5gTiImeF/96WbZ9ds9wZKShRw==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module119' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="0409f199-b5cd-4a4b-ba88-4737c1b928f3" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p>
+	&nbsp;</p>
+<p class="lqtitle1">
+	&nbsp;</p>
+<p class="lqtitle1">
+	&nbsp;</p>
+<p class="lqtitle1">
+	深入剖析ERP实施失败率高成功率低的原因</p>
+<p class="lqtitle1a">
+	作者: 阿朱</p>
+<p class="lqtext">
+	昨天在QQ群展开一个历时一天的大讨论，讨论的是主题是影响ERP实施成功率的原因到底是哪些？没想到这个主题异常受关注，观点鲜明针锋相对，问题剖析真实的一针见血都是现实问题。软件公司、企业信息部门，大家在没有利益牵扯的这个平台上，可以畅所欲言说出心中真实想法。这种共聚一堂共同面对问题思考解决方法的场面在现实实属罕见，因为一到现实，大家有的人爱较真，有的人性格内敛，国人都爱面子肯定不会现场驳面子，所以线下聚会讨论反而不如在线上。人们在线上可以换一种与现实不同的性格，更加反映人们内心真实想法。</p>
+<p class="lqtext">
+	从昨天的讨论来看，甲方乙方都有错。我们现在列举一下。先列举企业甲方。</p>
+<p class="lqtext">
+	企业有以下几个大问题，是影响ERP实施成功率的关键因素</p>
+<p class="lqtext">
+	1业务部门不参与。就是一帮企业信息科的人和软件公司的人折腾。企业信息科的人提需求，看软件哪里不顺眼就要求改哪里。到了真正上线运行，还是不符合业务部门需求，还得改，这就把软件公司改毛了。而且收集基础数据，是企业信息科自己找业务部门去要，业务部门不知从什么地方找出了一些数据然后信息科和软件公司人就内部折腾。道路真正上线运行，发现那些基础数据和真正业务部门现在最新用的根本对不上。说好的上线计划也就作废。</p>
+<p class="lqtext">
+	2到底以谁为主领导项目。不明确。软件方有项目经理，企业方也有信息科的项目经理。但是，项目组的各方，如软件公司派出的每个人、企业信息科派出的每个人、企业业务部门派出的每个人，到底每个人每个星期的每天该做什么事，该产出什么，产出的标准是什么，谁来复核质量。每个星期该开什么会，要解决什么问题，问题的来龙去脉的细节是什么。这种种问题谁来主导谁来做这些细节工作？很多项目实施，双方都不明说，遇到事解决事，听谁的意见看当时随机情况。</p>
+<p class="lqtext">
+	3没时间限制。软件方没有硬性阶段计划，企业方也没有硬性阶段计划。大家折腾了2-3个月，很疲劳，觉得做了很多工作，但仍然觉得上线需要做的事情很多，仍然没有做好上线准备。所以，必须要让谁来领导，谁来负责，是责任人来承担计划和组织、报告、推动、协调、异常监控与排除、过程质量控制。</p>
+<p class="lqtext">
+	4核心目标不清楚。需求边界不清楚。看到什么想到什么就提就要求改。却不知道这次购买ERP是核心为了解决什么问题。有限的钱，有限的时间，有限的人，只能做有限的事。要现实，不能一个项目中过去所有的问题都一古脑解决了。</p>
+<p class="lqtext">
+	5各部门经理不重视。开会，随便派个部门现在没事干的人，核心骨干都不派，都在第一线顶着干活，也有很多理由说忙无法派主力来。没事干的人往往是部门闲散人员。来了开会，也听不懂，也不敢拍板，也不敢发表意见。传话还失真，安排的事情回去让做，他人微言轻又调动不了本部门的人，交回来的产出自然质量很低。但是人家是业务部门的人，不管是信息科还是软件方项目经理都没法多说什么多要求什么。有时，有些事情需要部门经理拍板，传话人回去说了，部门经理呢，听完传话人的话，当时想想就拍了一个板（大家都能想到，下属站在你的办公桌前等你的意见，你不可能思考很久，最多10分钟）。这一个拍板，不深刻理解问题的周边影响，不深刻理解问题的根源和来龙去脉，就拍了板。可能当时脑子还很乱，或许中午和客户喝酒了，或许在业务上忙的焦头烂额，拍板只能是把事情搅的更乱。</p>
+<p class="lqtext">
+	6会前不细化问题。这其实是出在项目领导方，这就看项目领导方是谁。大家根本没有把流程、岗位责任、考核、报表内容理清楚，就是觉得这里面有问题，有不少矛盾的流程，也有不少异常业务特殊处理的流程，但都没有会前细化这些流程可能会是怎样。然后就召集大家开会，大家开会也是没有各方都没有做功能做提前思考准备，大家坐了一会议室，这就临时梳理问题，临时思考该怎么解决，临时思考会遇到哪些问题。你一言我一语的，有的问题还牵扯了其他部门的利益。其他部门为了躲来责任还说了许多不能这么做的原因，而每个部门的实际情况其他部门还不了解，只能相信这样的原因是存在的，这样，一个解决方法需要兼容所有大家所说的客观问题。这个解决方法可就难了。而且还有人嗓门大，有人权力大，有人有老资格，有人有人缘，各种因素夹杂，各有一个小算盘。所以每次出来的解决方法奇怪的很，需要兼容各种人的情况，所以软件功能异常负责，各种配置项尤其多，配置错了就偶尔走了不同的流程，软件因此稳定性也差。</p>
+<p class="lqtext">
+	7领导瞎重视。很多人提到，ERP实施最重要的就是领导重视。但是，我们更看到的是瞎重视。有的重视是来了鼓鼓劲，说说假大空的话就走了。还有的重视是临时来了听会议，让拿拍板意见，也是拍脑门，又没有全心全意从头到尾的参与，怎么会想到问题的旁根错枝，拍板意见是临时会山想出来的。但由于是领导说的，大家也不敢反驳，能执行下去的都尽力执行下去，没有特别大的困难或漏洞，也不敢向领导反映去。瞎下决策是很常见的现象。</p>
+<p class="lqtext">
+	8软件操作和过去不一样，觉得不顺手，员工反对用。反正也没有硬命令硬措施，现实做了业务，也不录入。录入也瞎录入。当然，软件的异常数据防范也做的不好，所以异常数据引起业务有问题，查还不好查BUG在哪里怎么修补这个漏洞。说新软件不好用，有问题，数据出错，而且影响业务处理速度，客户都等不急了。这些都是常见的借口。</p>
+<p class="lqtext">
+	9基础没人梳理。这里的基础包括基础数据、编码，也包括企业业务流程。企业的问题，不是简单的解决，它一定是产生在特定的企业文化、特殊的企业利益斗争格局、特殊的岗位设置、特殊的领导人（可能是老资格就一直坐了那把交椅）。所以，要解决问题，还是过去那套，就想用一套软件解决。而软件，走的是正规流程，和企业特殊形成的流程自然不能兼容。各个部门自然要求更改软件适合目前企业业务流程。到底企业所在的行当未来5年会发生什么变化，企业要在人力和流程上做好怎样的准备，软件应该怎样匹配，都不知道。软件公司是来实施软件的，软件装上去教会用户用是核心终极目标。这就矛盾了。软件被修改的面目全非，上了线，企业还跟过去一个样子。企业老板一看ERP一点用也没有，问题仍然没有解决。这就是问题没有解决的根源。所以我们老有一句话：最大的问题就是老板自己。</p>
+<p class="lqtext">
+	10人员变更。铁打的营盘流水的兵。软件是上线了，但企业员工流动快。而企业信息科又没有独立专业的培训能力，也不想付费培训。要求软件公司来继续培训，软件公司由于收不到持续培训的费用也不来。企业就骂软件公司实施验收前都是笑脸，验收后躲的远远的，让培训都不来。其实，问题是，谁也都是开企业的，培训也要付出人工，企业又不付。而企业也有道理，你的软件这么难用（也不想想软件为什么这么复杂的根源），还到处都是BUG，你拿我们做测试做实验，我们还没有跟你要损失费呢。就这样不断扯皮。就跟小学生吵架一样，你不给我尺子我就不给你橡皮，另一个孩子肯定说你不给我橡皮我就不给你尺子，谁也不让步，那怎么办呢？这就看最后谁能撼得动谁，互相较劲。</p>
+<p class="lqtext">
+	而软件公司呢，也应该打10板子。</p>
+<p class="lqtext">
+	1 现在各种投机都疯了。炒煤、炒矿、炒房地产、炒股票。暴利行业数钱都数的人手软。而软件行当呢，看着别人行业赚钱自己还在慢慢的辛苦爬行上升，心急啊。怎么能赚更多的钱呢？那就尽量多的签单。但是单子多就需要更多的人来做。但是不想多增加人啊，那怎么办。那只好两个办法，一个是一个人包打天下，万金油，一个人一个项目，或者一个高手带一个新手。另一个办法就是多招些新手充数量，反正工资低。这样的人员数量和人员能力，怎么能做好项目呢？本来只有四五个程序员，怕客户不签单，号称有20个开发员。客户心想，我要的需求功能也不复杂，你这么多人怎么这么磨蹭，签单的时候跟着屁股，签完单子就看不到人了，总是说还在做没完成，到底怎么回事？而软件公司的开发部也在叫苦连天，就这几杆子，活一个接一个，常年得不到舒展，反复修改，经常加班，紧急支持救援排查数据问题，还老被挨骂。</p>
+<p class="lqtext">
+	2想人少多挣钱。各个专业环节自然不会配置必备人员了。能省则省嘛。能撑的过去就可以了。于是，客户抱怨软件到处都是BUG，是因为软件公司根本没有测试人员。客户抱怨软件不会用，是根本没有专门作培训的人，更没有专门编写培训课本的人。客户抱怨项目失控，是因为根本没有负责项目计划和进度和项目协调的人。客户说有了问题都找不到人影，那是因为开发部正在加班开发，实施部都在外面出差，公司根本没有支持部门，当然找不到人。客户很生气，只能找软件公司老板和软件公司销售人员。而这些人呢，也没有办法，人少啊，只能看谁能干就把谁顶上去。这样，越能干的人越累。事都压在一个人身上，各种瓶颈都在一个人身上，到处救火。</p>
+<p class="lqtext">
+	3一个软件是否能越做越成功，一个项目是否能成功，很大因素在项目经理身上。但是，软件公司对项目经理的要求太高了，希望这个人什么都专业。既要会领导和兢兢业业的推进每个细节每个环节；又要深刻理解客户业务，还得深刻理解未来业务走向，能理解客户现状特殊还能指领客户需求；还得知道软件怎么改动才能让软件不会做死不会做复杂。很多软件，刚开始是功能弱，过几年就是功能复杂的谁也控制不了了。程序员不知道哪个功能会出BUG，保佑自己离职前不要出大事；实施人员说不清楚到底现在有多少功能，多少流程分支；支持人员和销售人员更说不清楚。全公司，居然没有对目前这个版本的软件能说清的人。就这样糊里糊涂实施，糊里糊涂前行。谁也没有责任。想要的神人始终找不到，找到了又不想付薪水。项目经理本来压力够大，来回出差，客户抱怨，各方平衡，各个项目切换，最终流失率也很高。这个行当待的时间长了，有的项目经理成了老油条能糊弄就糊弄，有的项目经理就转了销售或售前，有的干脆就不做这一个行当的。中层骨干的确实，让软件公司就剩下了最高的老板和最基层的员工。老板下不去细节，员工上升不了高度。互相难受，客户也跟着难受。其实分解成专门的项目经理、软件设计、软件开发经理，或者软件设计与软件开发经理于一身，或者项目管理与软件设计于一身，但软件开发经理和项目经理是必要的两个职位，千万不能开发经理和项目经理是一个人，或者是只有项目经理和程序员，没有软件开发经历职位，那事情就差了。但软件公司为了省钱又多挣钱，往往一个人当10个人用。老板还抱怨怎么咱们自己做的这么烂，看看IBM、看看微软。殊不知人家花费了多少人多少时间多少福利薪水。《程序员》杂志连年调查，81.3%的IT公司人数都在50人以下，而且这说的是全公司的人，都包括了财务和人事，可见真正做开发的能有几个人。而且这个调查是年年做，我跟踪了5年，人数变化和结构变化并不大。也就是说，就是这些50人的IT公司，在做着中国的软件为客户做着实施和服务支持，还希望做的单子越多越好，收入年年增长，人不要增长。为啥软件公司会如此想法，那还不是赚的少么（看着网络游戏行当一次并购就是上亿的回报，同样都是写代码的，怎么差距这么大，当然觉得赚的少）？没有做网络游戏赚大钱的能耐，又想赚钱，只能这样混，能赚点是点。</p>
+<p class="lqtext">
+	软件公司什么时候能踏踏实实做软件实施呢？我想，现有的社会形态，现在软件行当的盈利模式，决定了很难踏踏实实做。也就是说，这基本是无解的，除非是上市公司圈了钱，暂时没有后顾之忧，暂时安心做点事。对于疯狂想通过软件赚钱的软件公司，没有理由让它能踏踏实实。不过有些上市公司也不踏实，是因为它的股东要求年年都要有增长，运营团队非常有压力，所以会杀鸡取卵赶尽杀绝突飞猛进式的签单与实施。即使把我说的客户甲方的10个问题都解决了，也只是改进了项目质量，成功率会提高。但很难说能解决掉这10个问题，因为要解决问题需要双方共同努力，但软件公司连人也没有，怎么解决？</p>
+<p class="lqtext">
+	有人说我在唱衰ERP行业。其实我人微言轻怎么能唱衰呢。我只是真实的剖析问题面对问题，而不是稀里糊涂的欺骗客户欺骗自己混日子。我也想真正解决问题真正为企业带来好处。企业面对我说的这些现状，可能看了我上述所说，会更加踏实做好自己，什么是自己该做的什么是自己不擅长做的（不要乱指挥乱主导），怎么互相配合互相要求，也终于知道一个软件实施项目如何规避风险如何成功。</p>
+<p class="lqtext">
+	什么是破解困局的好方法呢？无非困局就是一个钱字。只要能让软件公司挣了大钱，这个困局才能缓解。那怎么能让软件公司挣了大钱呢？那就必须直接帮助企业挣了大钱，企业离开软件应用就挣不了大钱的时候，软件成为企业生存与挣钱的主要工具而非辅助工具的时候，这个困局才能解决。</p>
+<p class="lqtext">
+	从这个观点来说，电子商务，是一个好的入手。</p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fit-arch-110023.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fit-arch-110023.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"0409f199-b5cd-4a4b-ba88-4737c1b928f3","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

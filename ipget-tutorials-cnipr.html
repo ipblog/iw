@@ -1,0 +1,616 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	IPGet专利检索系统-教程1: 使用IPGet从CNIPR批量下载专利
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="IPGet专利检索系统-教程1: 使用IPGet从CNIPR批量下载专利-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="IPGet专利检索系统-教程1: 使用IPGet从CNIPR批量下载专利-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='ipget-tutorials-cnipr.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+	.ctl00_PageMenu1_ctl01_0 { text-decoration:none; }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/ipget-tutorials-cnipr.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="6" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBRsvaXBnZXQtdHV0b3JpYWxzLWNuaXByLmFzcHgWEAIPDw8WBB4IQ3NzQ2xhc3MFOWFydC1sYXlvdXQtY2VsbCBhcnQtc2lkZWJhcjEgbGVmdHNpZGUgbGVmdDJjb2x1bW4gY21zem9uZR4EXyFTQgICZBYCAgEPZBYCZg8PFgQfAgUJYXJ0LWJsb2NrHwMCAmQWAgIDD2QWAgIDDw8WBB8CBRBhcnQtYmxvY2tjb250ZW50HwMCAmQWAgIBD2QWAgIDD2QWAmYPZBYCAgEPZBYCZhA8KwAJAgAPFggeC18hRGF0YUJvdW5kZx4MRGF0YVNvdXJjZUlEBRFQYWdlTWFwRGF0YVNvdXJjZR4NUGF0" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="aFNlcGFyYXRvcgR8Hg1OZXZlckV4cGFuZGVkZGQIFCsAAwUHMDowLDA6MRQrAAIWEB4EVGV4dAUu5pWZ56iLMTog5L2/55SoSVBHZXTku45DTklQUuaJuemHj+S4i+i9veS4k+WIqR4FVmFsdWUFJDk2OTY4NzExLTE4ODYtNDBkYi1iZThmLTNkMjBhZWUzN2JjNR4LTmF2aWdhdGVVcmwFHH4vaXBnZXQtdHV0b3JpYWxzLWNuaXByLmFzcHgeCERhdGFQYXRoBQMzNDkeCURhdGFCb3VuZGceCFNlbGVjdGVkZx4QUG9wdWxhdGVPbkRlbWFuZGgeCEV4cGFuZGVkZ2QUKwACFg4fCAUt5pWZ56iLMjog5L2/55SoSVBHZXTku45TSVBP5om56YeP5LiL6L295LiT5YipHwkFJDc3MzM2YmVhLTE5NmYtNGI0OS04MDdiLTkwN2VlNjQ0YTRjMB8KBRt+L2lwZ2V0LXR1dG9yaWFs" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="cy1zaXBvLmFzcHgfCwUDMzUwHwxnHw5oHw9nZAUMY3RsMDAkY3RsMTh8ZAIRDw8WBB8CBTVhcnQtbGF5b3V0LWNlbGwgYXJ0LWNvbnRlbnQgY2VudGVyLWxlZnRtYXJnaW4gY21zem9uZR8DAgJkFgICBQ9kFgJmD2QWAgICDw8WBB8CBQhhcnQtcG9zdB8DAgJkFgICAw9kFgICAw8PFgQfAgUPYXJ0LXBvc3Rjb250ZW50HwMCAmQWAgIBD2QWBAIBDw8WAh4LQ29udGVudEd1aWQoKVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5JDY5NGRkZjNhLTg5NjQtNDAzOC1hYTM1LWY4M2U0MWU4NGM2M2QWAgIBD2QWAmYPZBYGAgEPZBYCAgEPFgIfCAURUmF0ZSB0" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="aGlzIENvbnRlbnRkAgUPZBYCZg8WDh4KQ2FsbGJhY2tJRAUpY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nJFVzZXJSYXRpbmceB0pzb25VcmwFM2h0dHA6Ly9sb2NhbGhvc3QvU2VydmljZXMvQ29udGVudFJhdGluZ1NlcnZpY2UuYXNoeB4KQmVoYXZpb3JJRAUxY3RsMDBfbWFpbkNvbnRlbnRfY3RsMDBfUmF0aW5nX1VzZXJSYXRpbmdCZWhhdmlvch4JQ29udGVudElkBSQ2OTRkZGYzYS04OTY0LTQwMzgtYWEzNS1mODNlNDFlODRjNjMeE1RvdGFsVm90ZXNFbGVtZW50SWQFLWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19sYmxSYXRpbmdWb3Rlcx4PQ29tbWVudHNFbmFibGVkaB4MQXV0b1Bvc3RiYWNraGQCCw8PFgIeB1Zpc2libGVoZBYIAgEP" />
+<input type="hidden" name="__VIEWSTATE4" id="__VIEWSTATE4" value="DxYCHwgFGOWvueS6m+WGheWuueWPkeihqOWPjemmiGRkAgUPDxYCHwgFFeeUteWtkOmCruS7tiAo5Y+v6YCJKWRkAgkPDxYCHwgFBuWPkemAgWRkAgsPDxYCHwgFDOS4je+8jOiwouiwomRkAg0PDxYCHxhoZBYCAgEPZBYCZg9kFgICBQ9kFgJmDxYCHxEFL2N0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZ0JvdHRvbSRVc2VyUmF0aW5nZAITDw8WBh8CBS5hcnQtbGF5b3V0LWNlbGwgYXJ0LXNpZGViYXIyIHJpZ2h0c2lkZSBjbXN6b25lHwMCAh8YaGRkAhUPDxYGHwIFE2FsdGNvbnRlbnQxIGNtc3pvbmUfAwICHxhoZGQCFw8PFgYfAgUTYWx0Y29udGVudDIgY21zem9uZR8DAgIfGGhkZAIzDw8WAh8YaGRkAj0PDxYCHxhoZGQCQQ8PFgIfGGhkZBgBBR5fX0Nv" />
+<input type="hidden" name="__VIEWSTATE5" id="__VIEWSTATE5" value="bnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUdY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaDIFFWN0bDAwJFBhZ2VNZW51MSRjdGwwMerm+eaCi9sEg5o7eVzLAh/5yYEo" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourcee55b.axd.js?d=-wj3zznTOZ_RXBgZh5j3Rp3mtJTk7yU4ESTV1D66j59b569JE_JoRkHkqelcbR6HW8KFC9k8bTne2AnMTg6ha5Uve2gb6LPBu9w72_rzJ-Q5V-j31XG9-9IS2g9WckuLvrfYf3iksMfT7q7T-Mizc25d-wRyGvpBNA-FltoHIPKfRcTOA8vR6et-_waEIYrEo7m0boTX66RfQ4aC7gI0tZni-ntamRDtTpUNYxf1A7KQEYt8MRPrqRtV50RHJuQ47VnCfmRQyjFuhCxT-0x86cYVJujn_lK0aed_vlMXloavC5biHd8MspvPGcLIFQrhSnlym6sCJbZl61uEfPkw6_HFnUnCgyRowPfACvnTGPFpwQlwwyKLQlHwZlfKN28uaUoLS_DBG7l3S4lzVspKtbfsESY2A14GB-O70sOeRdHmENfAxek29H4OHAYS74g7qKow4Oh2-yRyySDjyMCVsdrBEgBEf3HOpD4JT5t_YRH7U-zC1772KZc9qEXYt1Wo1vYeWe5h7QqfUYmB6vgWs7pfBj0vXq6jynKzun1ScijTe37S2lDDmoeoaQqCRRIgvrqe9ruLqPg88Ee9ZWKspAFNTGI1" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+document.getElementById('ctl00_ctl18').value = GetViewState__AspNetTreeView('ctl00_PageMenu1_ctl01_UL');
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAfbtNGT0QQG7U8xnOCsSHUhh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespadrDnHvfnEsnqVdEnQrwipHyZbasHOOUQfMM23YT+ci7lx3ASY=" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$PageMenu1$upMenu','','tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    <div id="ctl00_divLeft" class="art-layout-cell art-sidebar1 leftside left2column cmszone">
+	
+                        <div id='ctl00_PageMenu1_pnlOuterWrap' class='art-block'>
+<div class='art-block-tl'></div><div class='art-block-tr'></div><div class='art-block-bl'></div><div class='art-block-br'></div><div class='art-block-tc'></div><div class='art-block-bc'></div><div class='art-block-cl'></div><div class='art-block-cr'></div><div class='art-block-cc'></div><div class='art-block-body'>
+
+<div id='ctl00_PageMenu1_pnlInnerWrap' class='panelwrapper childpagesitemapmodule'>
+
+<div class='art-blockheader'><div class='l'></div><div class='r'></div><div class='art-header-tag-icon'><div class='t'><h3 class="t moduletitle"></h3></div></div></div>
+<div id='ctl00_PageMenu1_pnlOuterBody' class='art-blockcontent'>
+<div class='art-blockcontent-tl'></div><div class='art-blockcontent-tr'></div><div class='art-blockcontent-bl'></div><div class='art-blockcontent-br'></div><div class='art-blockcontent-tc'></div><div class='art-blockcontent-bc'></div><div class='art-blockcontent-cl'></div><div class='art-blockcontent-cr'></div><div class='art-blockcontent-cc'></div><div class='art-blockcontent-body'>
+<div id='ctl00_PageMenu1_pnlInnerBody' class='modulecontent'>
+
+
+
+<div id="ctl00_PageMenu1_upMenu">
+		
+
+		<div class="AspNet-TreeView" id="ctl00_PageMenu1_ctl01">
+				<ul id="ctl00_PageMenu1_ctl01_UL">
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf AspNet-TreeView-Selected">
+						<a href="ipget-tutorials-cnipr.html">
+							教程1: 使用IPGet从CNIPR批量下载专利</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-tutorials-sipo.html">
+							教程2: 使用IPGet从SIPO批量下载专利</a>
+					</li>
+				</ul>
+
+		</div>
+
+	</div>
+
+
+
+</div>
+<div id='ctl00_PageMenu1_divFooter' class='modulefooter'>
+
+</div>
+</div><div class='cleared'></div>
+</div>
+<div id='ctl00_PageMenu1_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div>
+</div>
+                        
+                    
+</div>
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content center-leftmargin cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<div class='art-postmetadataheader'><h2 id="module314" class="art-postheader moduletitle">教程1: 使用IPGet从CNIPR批量下载专利</h2></div>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">5</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="5" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="5" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Filled" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="694ddf3a-8964-4038-aa35-f83e41e84c63" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">1 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p class="lqtext">&nbsp;</p>
+
+<p class="lqtext">本教程使用<a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>个人版从CNIPR批量下载华为2011年1月申请公开的专利，步骤如下：(<a class="lqtextlink" href="ipget-videos-cnipr.html" target="_blank">查看完整视频</a>)</p>
+
+<p class="lqtext"><strong>注意</strong>：批量下载尽量避站点高峰期。线程数不要开太多，避免被封。如果非必要，不要批量下载<strong>全文</strong>、<strong>附图</strong>等耗时大的项。</p>
+
+<p class="lqtext">1. 安装<a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>，可以参考<a class="lqtextlink" href="ipget-help-install.html" target="_blank">安装指南</a>进行安装并使用本站用户名/密码登录<a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>。</p>
+
+<p class="lqtext">2. 在<strong>已下载</strong>节点下为本次下载新建一个<strong>华为201101</strong>子节点。如下图：</p>
+
+<p style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-01.jpg" style="width: 200px; height: 174px; " />&nbsp;&nbsp;&nbsp;<img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-02.jpg" style="width: 199px; height: 183px; " /></p>
+
+<p class="lqtext">3. 选中<strong>正在下载</strong>节点，点击表格工具栏的<strong>检索</strong>按钮，打开专利检索界面。如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-03.jpg" style="width: 330px; height: 266px; " /></p>
+
+<p class="lqtext">4．在<strong>专利检索界面</strong>中，<strong>站点</strong>下拉框选择<strong>CNIPR</strong>, 如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-04.jpg" style="width: 324px; height: 220px; " /></p>
+
+<p class="lqtext">5.&nbsp;在<strong>专利检索界面</strong>中，<b>保存位置</b>下拉框<strong>双击</strong>选择<strong>华为201101,&nbsp;</strong>如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-05.jpg" style="width: 230px; height: 249px; " /></p>
+
+<p class="lqtext">6. 在检索条件输入界面的<strong>申请日</strong>中输入<strong>201101</strong>, <strong>申请（专利权）人</strong>中输入<strong>华为</strong><strong>,&nbsp;</strong>如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-06.jpg" style="width: 600px; height: 188px; " /></p>
+
+<p class="lqtext" style="text-align: center; ">&nbsp;</p>
+
+<p class="lqtext">7. 滚动鼠标滑轮或点击右方滚动条，看到检索条件界面下方的<strong>检索</strong>按钮，点击<strong>检索</strong>按钮<strong>,&nbsp;</strong><strong>&nbsp;</strong>如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-07.jpg" style="width: 600px; height: 280px; " /></p>
+
+<p class="lqtext">如果点击<strong>检索</strong>没动静<strong>，</strong>不是系统不反应，而是网站的速度慢或者网速慢，不用多次点击检索，耐心等到不超过1分钟的时间，要么会出检索结果，要么就返回超时错误。</p>
+
+<p class="lqtext">8. 看到检索结果有153条公开专利(2012年1月12日数字)，工具栏上的下载按钮也由灰变<img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/task/IPGet专利检索系统-task-18.jpg" />为可用<img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/task/IPGet专利检索系统-task-16.jpg" />，选中工具栏上放的<strong>自动翻页</strong><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/task/IPGet专利检索系统-task-17.jpg" style="width: 76px; height: 35px; " />选择框，准备批量下载。如下图：</p>
+
+<p style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-08.jpg" style="width: 600px; height: 418px; " /></p>
+
+<p class="lqtext">9.点击工具栏上的下载<img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/task/IPGet专利检索系统-task-16.jpg" />按钮，专利检索界面的浏览器将不停翻页直到最后一页，每翻一页会将当页的<strong>专利列表</strong>下载到本地数据库。如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-09.jpg" style="width: 290px; height: 123px; " /></p>
+
+<p class="lqtext">如果翻页没动静<strong>，</strong>不是系统不反应，而是网站的速度慢或者网速慢，耐心等待不超过1分钟的时间，要么会翻到下一页，要么就返回超时错误。如果出错，很可能是网络原因，记下当前翻到了那一页。等网速恢复后直接翻到那一页，继续下载。如果实在等不及，可以点网页中的<strong>上一页</strong>链接，让网页恢复反应。由于我们已经选中了<strong>跳过已下载的专利</strong>选项，因此点网页中的<strong>上一页</strong>链接不会导致重复下载。如果点网页中的<strong>下一页</strong>链接倒是有可能导致<strong>当前页</strong>列表被跳过。</p>
+
+<p class="lqtext">10. 将<strong>专利检索</strong>界面移到一边或最小化，能看到主界面上<strong>正在下载</strong>节点中的专利正在下载著录信息。如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-10.jpg" style="width: 600px; height: 501px; " /></p>
+
+<p class="lqtext">11. 根据网络状况的不同，所需时间不同，一般5分钟左右,&nbsp;<strong>专利检索</strong>界面会翻到最后一页，<strong>专利列表</strong>下载完成。可以关闭<strong>专利检索</strong>界面。</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-11.jpg" style="width: 600px; height: 448px; " /></p>
+
+<p class="lqtext">12.&nbsp;根据网络状况的不同，所需时间不同，一般5~10分钟左右, 主界面上<strong>正在下载</strong>节点下的专利著录项就会全部完成。所有完成的专利会进入到上面第5步设置的<strong>华为201101</strong>节点下。</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-12.jpg" style="width: 600px; height: 500px; " /></p>
+
+<p class="lqtext">上面结果显示153项全部下载完成。</p>
+
+<p class="lqtext">13. <strong>双击</strong>上述结果列表中的第一项专利，查看其著录项下载的结果信息。如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Tutorials/cnipr/IPGet专利检索系统-CNIPR-13.jpg" style="width: 600px; height: 501px; " /></p>
+
+<p class="lqtext">结果显示著录项全部下载完成。</p>
+
+<p class="lqtext">本教程完成。本教程对应视频可看<a class="lqtextlink" href="ipget-videos-cnipr.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件">本站培训视频</a>。</p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fipget-tutorials-cnipr.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fipget-tutorials-cnipr.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    <div>
+	<input type="hidden" name="ctl00$ctl18" id="ctl00_ctl18" />
+</div>
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"694ddf3a-8964-4038-aa35-f83e41e84c63","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","Rating":5,"StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

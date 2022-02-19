@@ -1,0 +1,89 @@
+div.AspNet-TreeView
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 4px 0px;
+}
+
+.AspNet-TreeView-Hide { display:none;}
+
+div.AspNet-TreeView ul { list-style: none; margin: 0px 0px 0px 20px; padding: 0; }
+
+div.AspNet-TreeView  ul li
+{
+	padding: 2px 5px 2px 0px; 
+	display: block;
+	list-style:none;
+	color: #F1E3CB;
+	text-decoration:none;
+	border-top: #add1ff 1px solid;
+ }
+
+#ctl00_PageMenu1_upMenu li
+{
+	background-image: none;
+ }
+ 
+div.AspNet-TreeView ul li a.AspNet-TreeView-Collapse,div.AspNet-TreeView ul li a.AspNet-TreeView-Expand
+{
+	margin-left: -20px;
+	border-bottom: none;
+ }
+ 
+ a.AspNet-TreeView-Collapse,a.AspNet-TreeView-Collapse:hover, a.AspNet-TreeView-Expand, a.AspNet-TreeView-Expand:hover
+ {
+	text-decoration: none;
+ }
+
+div.AspNet-TreeView ul ul
+{
+	padding: 0px;
+	margin: 4px 0px 0px 0px;
+}
+div.AspNet-TreeView ul li.AspNet-TreeView-Root ul li 
+{ 
+	margin: 0px 0px 0px 20px;
+	padding: 3px 0px 2px 0px
+}
+ 
+div.AspNet-TreeView ul li ul li a { margin: 0px; padding: 0px;}
+
+div.AspNet-TreeView ul li img
+{border: none; vertical-align: middle; margin: 0 2px 0 0; }
+div.AspNet-TreeView li a {text-decoration: none;}
+
+div.AspNet-TreeView .AspNet-TreeView-ClickableNonlink { cursor: pointer;}
+div.AspNet-TreeView .AspNet-TreeView-Collapse
+{background: url(collapse.gif) 0 0 no-repeat; width: 20px; float:left; cursor: pointer; }
+div.AspNet-TreeView .AspNet-TreeView-Expand
+{background:  url(expand.gif) 0 0 no-repeat; width: 20px; float:left; cursor: pointer; }
+
+div.AspNet-TreeView a,
+div.AspNet-TreeView a:visited,
+div.AspNet-TreeView a:active,
+div.AspNet-TreeView a:link,
+div.AspNet-TreeView a:hover 
+{ 
+	color:#003399;
+}
+
+div.AspNet-TreeView .AspNet-TreeView-Selected a, 
+div.AspNet-TreeView .AspNet-TreeView-Selected ul a,
+div.AspNet-TreeView .AspNet-TreeView-Selected a:hover,
+div.AspNet-TreeView .AspNet-TreeView-Selected ul a:hover,
+.AspNet-TreeView-Root a:hover,
+li.AspNet-TreeView-Leaf a:hover
+{ font-weight: bold ;}
+
+/*选中的是父结点,因此子节点要还原*/
+li.AspNet-TreeView-Selected ul li.AspNet-TreeView-ParentSelected a 
+{font-weight: normal ; }
+
+
+li.AspNet-TreeView-ParentSelected ,
+li.AspNet-TreeView-Selected ul li.AspNet-TreeView-ParentSelected
+{ margin: 0px 0px 0px 0px; }
+
+li.AspNet-TreeView-Leaf img, li.AspNet-TreeView-Root img
+{
+    display: inline;
+}

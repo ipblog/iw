@@ -1,0 +1,252 @@
+<%@ Register Namespace="mojoPortal.Web.UI" Assembly="mojoPortal.Web" TagPrefix="portal" %>
+<%@ Register Namespace="mojoPortal.Web.Controls" Assembly="mojoPortal.Web.Controls" TagPrefix="mp" %>
+
+<%--
+@@@IMPORTANT@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+it is better to only set css classes and configuration properties, but not to set style properties such as colors fonts, borders etc here.
+Doing that causes rendering of inline styles on th elements and this bulks up the markup making the page heavier.
+It is far better to only set styles from CSS
+
+http://www.mojoportal.com/understanding-the-theme-skin-file.aspx
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+--%>
+
+    <asp:Panel  runat="server" SkinID="ModuleWrapper"
+        CssClass="panelwrapper"
+         />  
+
+     <mp:CornerRounderTop runat="server"
+        DoRounding="false"
+        />
+        
+     <mp:CornerRounderBottom runat="server"
+        DoRounding="false"
+        />
+		
+		<portal:mojoPanel runat="server" RenderArtisteer="true" UseLowerCaseArtisteerClasses="true" />
+		
+		
+<portal:ModuleTitleControl runat="server" 
+	DetectSideColumn="true"
+	Element="h2"
+	SideColumnElement="h3"
+	UseModuleHeadingOnSideColumns="false"
+	LiteralExtraTopContent="<div class='art-postmetadataheader'>"
+	LiteralExtraBottomContent="</div>"
+	SideColumnLiteralExtraTopContent="<div class='art-blockheader'><div class='l'></div><div class='r'></div><div class='art-header-tag-icon'><div class='t'>"
+	SideColumnLiteralExtraBottomContent="</div></div></div>"
+	ExtraCssClasses="art-postheader"
+	SideColumnExtraCssClasses="t"
+	/>
+	
+<portal:HeadingControl runat="server" 
+	LiteralExtraTopContent="<div class='art-postmetadataheader'>"
+	LiteralExtraBottomContent="</div>"
+	ExtraCssClasses="art-postheader"
+	/>		
+		
+		<portal:mojoButton runat="server" RenderArtisteer="true" CssClass="art-button" ArtButtonLeftClass="art-button-l" ArtButtonRightClass="art-button-r" />
+		
+		<portal:OuterWrapperPanel runat="server" 
+			Element="div"
+			ExtraCssClasses="art-post" 
+			RenderContentsOnly="false"
+			LiteralExtraTopContent="<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>"
+			LiteralExtraBottomContent="</div><div class='cleared'></div>"
+			DetectSideColumn="true"
+			SideColumnxtraCssClasses="art-block"
+			SideColumnLiteralExtraTopContent="<div class='art-block-tl'></div><div class='art-block-tr'></div><div class='art-block-bl'></div><div class='art-block-br'></div><div class='art-block-tc'></div><div class='art-block-bc'></div><div class='art-block-cl'></div><div class='art-block-cr'></div><div class='art-block-cc'></div><div class='art-block-body'>"
+			SideColumnLiteralExtraBottomContent="</div>"
+		/>
+		
+		<portal:OuterBodyPanel runat="server" 
+			Element="div"
+			ExtraCssClasses="art-postcontent" 
+			RenderContentsOnly="false"
+			DetectSideColumn="true"
+			SideColumnxtraCssClasses="art-blockcontent"
+			SideColumnLiteralExtraTopContent="<div class='art-blockcontent-tl'></div><div class='art-blockcontent-tr'></div><div class='art-blockcontent-bl'></div><div class='art-blockcontent-br'></div><div class='art-blockcontent-tc'></div><div class='art-blockcontent-bc'></div><div class='art-blockcontent-cl'></div><div class='art-blockcontent-cr'></div><div class='art-blockcontent-cc'></div><div class='art-blockcontent-body'>"
+			SideColumnLiteralExtraBottomContent="</div><div class='cleared'></div>"
+			/>
+		
+		<%-- this clears hard coded style from validators --%>
+		<asp:ValidationSummary runat="server" ForeColor="" CssClass="txterror" />
+		<asp:RangeValidator runat="server" ForeColor="" CssClass="txterror" />
+		<asp:RequiredFieldValidator runat="server" ForeColor="" CssClass="txterror" />
+		<asp:RegularExpressionValidator runat="server" ForeColor="" CssClass="txterror" />
+		<asp:CompareValidator runat="server" ForeColor="" CssClass="txterror" />
+		<asp:CustomValidator runat="server" ForeColor="" CssClass="txterror" />
+		
+		<portal:mojoMenu runat="server" SkinID="SiteMenu"
+			RenderContainerCssClass="true"
+			ContainerCssClass="art-nav-outer"
+			RenderImages="false"
+			UseMenuTooltipForCustomCss="true"
+			RenderCustomClassOnLi="true"
+			RenderCustomClassOnAnchor="false"
+			RenderLiSelectedCss="false"
+			RenderAnchorSelectedCss="true"
+			UlCssClass="art-hmenu"
+			LiCssClassWithChildren=""
+			LiCssClassWithoutChildren=""
+			LiSelectedCssClassWithChildren=""
+			LiSelectedCssClassWithoutChildren=""
+			LiChildSelectedCssClass=""
+			LiParentSelectedCssClass=""
+			AnchorCssClass=""
+			AnchorSelectedCssClassWithChildren="active"
+			AnchorSelectedCssClassWithoutChildren="active"
+			AnchorChildSelectedCssClass=""
+			AnchorParentSelectedCssClass=""
+			InnerSpanMode="Artisteer"
+			RenderingMode="Table"
+		/>
+		
+		<portal:mojoTreeView runat="server" SkinID="SiteMapPage"
+			ContainerCssClass="sitemap"
+			RootUlCssClass=""
+			RenderLiCssClasses="false"
+			RenderAnchorCss="true"
+			LiCssClass=""
+			LiRootExpandableCssClass=""
+			LiRootNonExpandableCssClass=""
+			LiNonRootExpnadableCssClass=""
+			LiSelectedCssClass=""
+			LiChildSelectedCssClass=""
+			LiParentSelectedCssClass=""
+			AnchorCssClass=""
+			AnchorSelectedCssClass=""
+			ExpandDepth="-1"
+			ShowExpandCollapse="false"
+			PopulateNodesFromClient="false"
+		
+		/>
+		
+		<portal:mojoTreeView runat="server" SkinID="ChildSiteMap"
+			ContainerCssClass="sitemap"
+			RootUlCssClass=""
+			RenderLiCssClasses="false"
+			RenderAnchorCss="true"
+			LiCssClass=""
+			LiRootExpandableCssClass=""
+			LiRootNonExpandableCssClass=""
+			LiNonRootExpnadableCssClass=""
+			LiSelectedCssClass=""
+			LiChildSelectedCssClass=""
+			LiParentSelectedCssClass=""
+			AnchorCssClass=""
+			AnchorSelectedCssClass=""
+			ExpandDepth="-1"
+			ShowExpandCollapse="false"
+			PopulateNodesFromClient="false"
+		
+		/>
+
+
+
+       
+       <asp:CheckBoxList  runat="server"
+       CssClass="aspcheckboxlist"
+       RepeatColumns="2"
+       RepeatDirection="horizontal"
+       RepeatLayout="Table"
+
+       />
+       
+       <asp:CheckBoxList  runat="server" SkinID="Roles"
+       CssClass="aspcheckboxlist"
+       RepeatColumns="2"
+       RepeatDirection="horizontal"
+       RepeatLayout="Table"
+       
+       />
+       
+       <asp:CheckBoxList  runat="server" SkinID="Blog"
+       CssClass="aspcheckboxlist"
+       RepeatColumns="4"
+       RepeatDirection="horizontal"
+       RepeatLayout="Table"
+       
+       />
+   
+
+<asp:Calendar  runat="server" SkinID="Blog"
+     CaptionAlign="Top"
+     CssClass="aspcalendarmain"
+     DayHeaderStyle-CssClass="aspcalendardayheader"
+     DayNameFormat="Shortest"
+     DayStyle-CssClass="aspcalendarday"
+     FirstDayOfWeek="sunday"
+     NextMonthText="+"
+     NextPrevFormat="CustomText"
+     NextPrevStyle-CssClass="aspcalendarnextprevious"
+     OtherMonthDayStyle-CssClass="aspcalendarothermonth"
+     PrevMonthText="-"
+     SelectedDayStyle-CssClass="aspcalendarselectedday"
+     SelectorStyle-CssClass="aspcalendarselector"
+     ShowDayHeader="true"
+     ShowGridLines="false"
+     ShowNextPrevMonth="true"
+     ShowTitle="true"
+     TitleFormat="MonthYear"
+     TitleStyle-CssClass="aspcalendartitle"
+     TodayDayStyle-CssClass="aspcalendartoday"
+     WeekendDayStyle-CssClass="aspcalendarweekendday"
+     Width="95%"
+    /> 
+
+
+    
+    <%--  this is the EventCalendar  --%>
+    
+     <mp:DataCalendar runat="server"
+     BackColor=""
+     BorderColor=""
+     BorderStyle="none"
+     CaptionAlign="Top"
+     CssClass="mpcalendarmain"
+     DayHeaderStyle-CssClass="mpcalendardayheader"
+     DayNameFormat="Short"
+     DayStyle-CssClass="mpcalendarday"
+     FirstDayOfWeek="sunday"
+     NextMonthText="+"
+     NextPrevFormat="CustomText"
+     NextPrevStyle-CssClass="mpcalendarnextprevious"
+     OtherMonthDayStyle-CssClass="mpcalendarothermonth"
+     PrevMonthText="-"
+     SelectedDayStyle-CssClass="mpcalendarselectedday"
+     SelectorStyle-CssClass="mpcalendarselector"
+     ShowDayHeader="true"
+     ShowGridLines="false"
+     ShowNextPrevMonth="true"
+     ShowTitle="true"
+     TitleFormat="MonthYear"
+     TitleStyle-CssClass="mpcalendartitle"
+     TodayDayStyle-CssClass="mpcalendartoday"
+     WeekendDayStyle-CssClass="mpcalendarweekendday"
+   
+    /> 
+    
+    
+    
+       
+   
+
+<asp:ListBox  runat="server" SkinID="PageTree"
+         BackColor=""
+         CssClass=""
+         Font-Bold="false"
+         Font-Italic="false"
+         Font-Names=""
+         Font-Overline="false"
+         Font-Size="small"
+         Font-Strikeout="false"
+         Font-Underline="false"
+         ForeColor=""
+         Height=""
+         Width="400px"
+            
+/>          
+

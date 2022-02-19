@@ -1,0 +1,759 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	IPGet专利检索系统-检索结果列表
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="IPGet专利检索系统-检索结果列表-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="IPGet专利检索系统-检索结果列表-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='ipget-help-maingrid.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+	.ctl00_PageMenu1_ctl01_0 { text-decoration:none; }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/ipget-help-maingrid.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="18" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBRkvaXBnZXQtaGVscC1tYWluZ3JpZC5hc3B4FhACDw8PFgQeCENzc0NsYXNzBTlhcnQtbGF5b3V0LWNlbGwgYXJ0LXNpZGViYXIxIGxlZnRzaWRlIGxlZnQyY29sdW1uIGNtc3pvbmUeBF8hU0ICAmQWAgIBD2QWAmYPDxYEHwIFCWFydC1ibG9jax8DAgJkFgICAw9kFgICAw8PFgQfAgUQYXJ0LWJsb2NrY29udGVudB8DAgJkFgICAQ9kFgICAw9kFgJmD2QWAgIBD2QWAmYQPCsACQIADxYIHgtfIURhdGFCb3VuZGceDERhdGFTb3VyY2VJRAURUGFnZU1hcERhdGFTb3VyY2UeDVBhdGhT" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="ZXBhcmF0b3IEfB4NTmV2ZXJFeHBhbmRlZGRkCBQrABEFRTA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcsMDo4LDA6OSwwOjEwLDA6MTEsMDoxMiwwOjEzLDA6MTQsMDoxNRQrAAIWEB4EVGV4dAUM5a6J6KOF5oyH5Y2XHgVWYWx1ZQUkNzRlNDY0YWEtZWYyNS00YzFjLWI3NDYtZDk0MzM0ZDgwNmQ4HgtOYXZpZ2F0ZVVybAUZfi9pcGdldC1oZWxwLWluc3RhbGwuYXNweB4IRGF0YVBhdGgFAzMxMB4JRGF0YUJvdW5kZx4QUG9wdWxhdGVPbkRlbWFuZGgeCEV4cGFuZGVkZx4JUG9wdWxhdGVkZxQrAAIFAzA6MBQrAAIWDh8IBRXkvIHkuJrniYjlronoo4XmjIfljZcfCQUkM2EyMTk3ZjYtMWM1OC00ZWEyLTkxZWYtYTViZTBlNGM3ZDgyHwoFJH4vaXBnZXQt" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="aGVscC1pbnN0YWxsLWVudGVycHJpc2UuYXNweB8LBQM0MjAfDGcfDWgfDmdkFCsAAhYQHwgFD+S4u+eVjOmdouW4g+WxgB8JBSQ5YTZlNDNmMC04YTliLTQyN2MtYTk5Mi0yOWFkMTBlODdjZDAfCgUWfi9pcGdldC1oZWxwLW1haW4uYXNweB8LBQMzMzEfDGcfDWgfDmcfD2cUKwAJBR8wOjAsMDoxLDA6MiwwOjMsMDo0LDA6NSwwOjYsMDo3FCsAAhYOHwgFFeW6lOeUqOeoi+W6j+iPnOWNleadoR8JBSQxNTViYzg1Ny04MmMzLTQ3MzctYjIyMC0zYjhlMzM5MTE4M2IfCgU0fi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3lupTnlKjnqIvluo/oj5zljZXmnaEuYXNweB8LBQM0ODgfDGcfDWgfDmdkFCsAAhYOHwgFFeW6lOeUqOeoi+W6j+W3peWFt+adoR8JBSQ1ZmY4" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="ZTg3NS01ZDcxLTRmZmEtYWIxMy0wZWQ0NzU5N2RiYjIfCgU0fi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3lupTnlKjnqIvluo/lt6XlhbfmnaEuYXNweB8LBQM0ODkfDGcfDWgfDmdkFCsAAhYOHwgFCeWvvOiIquagkR8JBSQwYTI2YzczMi03MDE2LTRlMjMtOGVmZS0xNjQzZjI3YTU4OGMfCgUofi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3lr7zoiKrmoJEuYXNweB8LBQM0OTAfDGcfDWgfDmdkFCsAAhYOHwgFD+ajgOe0oui+k+WFpeWMuh8JBSQ3ZDk0ZTRjZC0zOGFmLTQ4ZGQtODQ2MS1mYzJkZmVmNGE1MTcfCgUufi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3mn6Xor6LovpPlhaXljLouYXNweB8LBQM0OTEfDGcfDWgfDmdkFCsAAhYOHwgFD+WvvOiIquW3" />
+<input type="hidden" name="__VIEWSTATE4" id="__VIEWSTATE4" value="peWFt+adoR8JBSQ3ODcyNThlNi1iZTRhLTQ2MWItYmYyNy03OGM1MjEzMTgzN2IfCgUufi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3lr7zoiKrlt6XlhbfmnaEuYXNweB8LBQM0OTIfDGcfDWgfDmdkFCsAAhYOHwgFD+ihqOagvOagh+etvuagjx8JBSQxZTM1ZThkNS02ZTFjLTRlNjQtYmEzYS1kNmQ1ZGUxNTQ4NzgfCgUufi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3ooajmoLzmoIfnrb7moI8uYXNweB8LBQM0OTMfDGcfDWgfDmdkFCsAAhYOHwgFD+ihqOagvOW3peWFt+agjx8JBSRjMDNlM2NjYi0zZmY4LTQ3MTgtYjEzMS00ZWVlMjQyYzcwN2QfCgUufi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3ooajmoLzlt6XlhbfmoI8uYXNweB8LBQM0OTcfDGcfDWgf" />
+<input type="hidden" name="__VIEWSTATE5" id="__VIEWSTATE5" value="DmdkFCsAAhYOHwgFBuihqOagvB8JBSRiYTBiNDA2ZS0xMDE1LTRkMTQtODZhMy1jMTg1NWJkYjBjYWUfCgUlfi9JUEdldOS4k+WIqeajgOe0ouezu+e7ny3ooajmoLwuYXNweB8LBQM0OTYfDGcfDWgfDmdkFCsAAhYOHwgFEue9keS4iuS4k+WIqeajgOe0oh8JBSQzMjRlYzk0Yi1lMDkwLTRlYTctOGVmOS01YWY0MzE1YTA3NmMfCgUWfi9pcGdldC1oZWxwLXRhc2suYXNweB8LBQMzMzMfDGcfDWgfDmdkFCsAAhYOHwgFEuaJuemHj+WPt+eggeajgOe0oh8JBSRjYzk3NWVkNy1lZTU3LTQ3MDctYjM3NC01MDBhYTViZWM3ZjIfCgUefi9pcGdldC1oZWxwLW51bWJlcnNlYXJjaC5hc3B4HwsFAzQxNR8MZx8NaB8OZ2QUKwACFg4fCAUM5LiT5Yip5LiL6L29HwkFJDM1" />
+<input type="hidden" name="__VIEWSTATE6" id="__VIEWSTATE6" value="MjBlODMyLTlhNDgtNDUwYS04MjU0LTYzOWFiNTNjNmJlZR8KBR1+L2lwZ2V0LWhlbHAtZG93bmxvYWRpbmcuYXNweB8LBQMzMzUfDGcfDWgfDmdkFCsAAhYQHwgFDOS4k+WIqeeuoeeQhh8JBSRlZGZkN2E0MC01OTMzLTQwYTEtOTE0OS0wODEwYzdhNDJjNWQfCgUYfi9pcGdldC1oZWxwLW1hbmFnZS5hc3B4HwsFAzMzNh8MZx8NaB8OZx8PZxQrAA0FMTA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcsMDo4LDA6OSwwOjEwLDA6MTEUKwACFg4fCAUS5pys5Zyw5LiT5Yip5qOA57SiHwkFJDhmOTE1OGI4LTVhOGUtNDE5Yy05NjEzLTFhNDA1NDdiOTIzNx8KBRh+L2lwZ2V0LWhlbHAtc2VhcmNoLmFzcHgfCwUDMzM4HwxnHw1oHw5nZBQrAAIWEB8IBRLmo4Dn" />
+<input type="hidden" name="__VIEWSTATE7" id="__VIEWSTATE7" value="tKLnu5PmnpzliJfooagfCQUkOGVjMmY4YTctNDNmYS00MTIzLTk5NjMtOTBhOTU2ZmYzNmE1HwoFGn4vaXBnZXQtaGVscC1tYWluZ3JpZC5hc3B4HwsFAzM0Mh8MZx4IU2VsZWN0ZWRnHw1oHw5nZBQrAAIWDh8IBRLlpJrkurrkuJPliKnlhbHkuqsfCQUkZDdiMWU1NzQtM2M1Ni00YWM1LTgwYWEtODFmMTdhMGNkMTI4HwoFF34vaXBnZXQtaGVscC1zaGFyZS5hc3B4HwsFAzM0Mx8MZx8NaB8OZ2QUKwACFg4fCAUS5YWo6YOo5LiT5Yip566h55CGHwkFJDU5Yjk3YzYyLTgxZDAtNGQ0Ni05NDlmLWVkNWE1YTNhNDc3MB8KBRd+L2lwZ2V0LWhlbHAtYWxsaXAuYXNweB8LBQMzNDQfDGcfDWgfDmdkFCsAAhYOHwgFEuaJuemHj+WvvOWHuuS4k+WIqR8JBSQ3NWQyMDdm" />
+<input type="hidden" name="__VIEWSTATE8" id="__VIEWSTATE8" value="OS04NTU1LTQxMmUtODQ0OS02ODhjZDYzYmYyM2QfCgUefi9pcGdldC1oZWxwLWV4cG9ydGVmaWxlcy5hc3B4HwsFAzQyNB8MZx8NaB8OZ2QUKwACFg4fCAUV5a+85Ye6SVNJ5oiWUklT5qC85byPHwkFJDA1MzBhMDE3LTRmNzctNDFmMy04ZmFiLTc0YjFiOGQwMjVkNR8KBSN+L2lwZ2V0LWhlbHAtZXhwb3J0dG9vdGhmb3JtYXQuYXNweB8LBQM3NTgfDGcfDWgfDmdkFCsAAhYOHwgFDOaXtumZkOebkeaOpx8JBSRmNjVjZmI3NS1mMjNmLTRhN2UtYWI1OS1iZjJmNjNjMzZmNzMfCgUbfi9pcGdldC1oZWxwLXRpbWVsaW1pdC5hc3B4HwsFAzU2NB8MZx8NaB8OZ2QUKwACFg4fCAUG5Ye65Ye9HwkFJDk4MTFkMTBhLTRhY2YtNGViYi1iYWUyLWU4NTczYjZlNDMxNx8K" />
+<input type="hidden" name="__VIEWSTATE9" id="__VIEWSTATE9" value="BRd+L3BnZXQtaGVscC1nZW5kb2MuYXNweB8LBQM3MjUfDGcfDWgfDmdkFCsAAhYOHwgFD+eUteWtkOWNt+euoeeQhh8JBSQyMzg1MGE1NS01ZGQ1LTQ0MjktYmQ3OC01NjQ3MDllNmVkNjYfCgUYfi9pcGdldC1oZWxwLWVmaWxlcy5hc3B4HwsFAzcyNh8MZx8NaB8OZ2QUKwACFg4fCAUM57uf6K6h5YiG5p6QHwkFJDFhYTM5Njc4LTM0ODQtNDc2YS05ZmM5LTU3MDFjN2U2ODZmNB8KBRx+L2lwZ2V0LWhlbHAtc3RhdGlzdGljcy5hc3B4HwsFAzc1Nh8MZx8NaB8OZ2QUKwACFg4fCAUM5om56YeP5Yqg5belHwkFJGM1YzZjOTZjLWNhZDQtNGM4NC05NDAzLWE0NTc0ZWNlZmEwZR8KBSB+L2lwZ2V0LWhlbHAtYmF0Y2hjb3B5ZmllbGQuYXNweB8LBQM3NjcfDGcfDWgf" />
+<input type="hidden" name="__VIEWSTATE10" id="__VIEWSTATE10" value="DmdkFCsAAhYOHwgFD+S4k+WIqeWQjOaXj+Wbvh8JBSQ3NmJiZTk3MC04ODg2LTQxNzEtODUwOC05M2JhZjkwNTUzNGIfCgUdfi9pcGdldC1oZWxwLWZhbWlseWdyYXBoLmFzcHgfCwUDNzcyHwxnHw1oHw5nZBQrAAIWDh8IBQzlhajmlofnv7vor5EfCQUkOWFkNTQ5OWUtY2JjOC00MDU1LTk1ZDEtNGJiYzZlOTM4ODY4HwoFG34vaXBnZXQtaGVscC10cmFuc2xhdGUuYXNweB8LBQM1NDkfDGcfDWgfDmdkFCsAAhYOHwgFDOWuieWFqOeuoeeQhh8JBSRhMmJiYmU0OS0zYjAyLTQwMWEtYjU2OC0yMmYzNWE0NmEyZDEfCgUafi9pcGdldC1oZWxwLXNlY3VyaXR5LmFzcHgfCwUDMzQ1HwxnHw1oHw5nZBQrAAIWEB8IBQzlj4LmlbDphY3nva4fCQUkMjY0NzI2NTYtM2Fk" />
+<input type="hidden" name="__VIEWSTATE11" id="__VIEWSTATE11" value="MC00ZmM1LWJkMWQtOGUzZGE5YjE5ZmM3HwoFGH4vaXBnZXQtaGVscC1jb25maWcuYXNweB8LBQMzNDYfDGcfDWgfDmcfD2cUKwACBQMwOjAUKwACFg4fCAUb6YWN572u55S15a2Q5Y235a2Y5pS+5L2N572uHwkFJDFmY2IzMjk3LTAwNzctNDk5Zi1iMDI3LWFmZWI1YzljZWZhNx8KBSR+L2lwZ2V0LWhlbHAtY29uZmlnLWVsZWNiYXNlZGlyLmFzcHgfCwUDMzcwHwxnHw1oHw5nZBQrAAIWDh8IBQzpgInpobnphY3nva4fCQUkZTNkZmRhY2QtZjkzMi00MjI2LWE4NGMtYTA4NzRmZWVlYjQ0HwoFGX4vaXBnZXQtaGVscC1vcHRpb25zLmFzcHgfCwUDMzQ3HwxnHw1oHw5nZBQrAAIWDh8IBQzns7vnu5/ljbjovb0fCQUkNzdmOTIyNTEtNDA4OC00Yjg0LTlmMDItYTVj" />
+<input type="hidden" name="__VIEWSTATE12" id="__VIEWSTATE12" value="ODBjNjNmNTQ0HwoFG34vaXBnZXQtaGVscC11bmluc3RhbGwuYXNweB8LBQMzNjgfDGcfDWgfDmdkFCsAAhYQHwgFDOezu+e7n+WNh+e6px8JBSQwMTRmNDJmNC1lMTcyLTQ2N2UtOWNjMi0xZGJlYTdmNmUwZmUfCgUZfi9pcGdldC1oZWxwLXVwZ3JhZGUuYXNweB8LBQMzNzIfDGcfDWgfDmcfD2cUKwACBQMwOjAUKwACFg4fCAUM6Ieq5Yqo5Y2H57qnHwkFJDMxZjE4ODYzLWU2M2EtNDE1Yi05YmJmLTBiMWY0ZGRkZGJiNx8KBRh+L2lwZ2V0LWhlbHAtdXBkYXRlLmFzcHgfCwUDNzU3HwxnHw1oHw5nZBQrAAIWDh8IBSHlr7zlhaXkuKrkurrniYjmlbDmja7liLDkvIHkuJrniYgfCQUkNTk0YWIzNWQtNTQ5Yy00ZGU2LWE5ZWItMmJkMmQ4MDMzYjQxHwoFH34vaXBn" />
+<input type="hidden" name="__VIEWSTATE13" id="__VIEWSTATE13" value="ZXQtaGVscC1JbXBvcnQtQWNjZXNzLmFzcHgfCwUDNDIxHwxnHw1oHw5nZBQrAAIWDh8IBQznprvnur/nmbvlvZUfCQUkYmE4ZDBiY2EtZjYyZS00OWE0LTkyMTEtNTgwOWM4ZWViYTYyHwoFH34vaXBnZXQtaGVscC1sb2dpbm9uZmZsaW5lLmFzcHgfCwUDNzIxHwxnHw1oHw5nZBQrAAIWDh8IBRjlhajpg6jkuJPliKnkuI7kuJPpopjlupMfCQUkNzIyMmEyMmEtMGZlMy00ZjdiLTgxNWQtMzczYzcxMmYzNTExHwoFHn4vaXBnZXQtaGVscC1pcGFuZHByb2plY3QuYXNweB8LBQM3MjIfDGcfDWgfDmdkFCsAAhYOHwgFD+ajgOe0ouW8j+i9rOaNoh8JBSRkNDA3ZmE4Ni0xMjUzLTRkZGItOGVkNi1hMTI1MTBmOTBlMzQfCgUefi9pcGdldC1oZWxwLXRyYW5zbGF0ZWNx" />
+<input type="hidden" name="__VIEWSTATE14" id="__VIEWSTATE14" value="bC5hc3B4HwsFAzc2Mh8MZx8NaB8OZ2QFEWN0bDAwJGN0bDE4fGVlZWVlZAIRDw8WBB8CBTVhcnQtbGF5b3V0LWNlbGwgYXJ0LWNvbnRlbnQgY2VudGVyLWxlZnRtYXJnaW4gY21zem9uZR8DAgJkFgICBQ9kFgJmD2QWAgICDw8WBB8CBQhhcnQtcG9zdB8DAgJkFgICAw9kFgICAw8PFgQfAgUPYXJ0LXBvc3Rjb250ZW50HwMCAmQWAgIBD2QWBAIBDw8WAh4LQ29udGVudEd1aWQoKVhTeXN0ZW0uR3VpZCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5JDZmZTQzOTcxLTE4NDgtNDY3Zi05ZjA3LWVmZDI1ZjlmNDJiN2QWAgIBD2QWAmYPZBYGAgEPZBYCAgEPFgIfCAURUmF0ZSB0" />
+<input type="hidden" name="__VIEWSTATE15" id="__VIEWSTATE15" value="aGlzIENvbnRlbnRkAgUPZBYCZg8WDh4KQ2FsbGJhY2tJRAUpY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nJFVzZXJSYXRpbmceB0pzb25VcmwFM2h0dHA6Ly9sb2NhbGhvc3QvU2VydmljZXMvQ29udGVudFJhdGluZ1NlcnZpY2UuYXNoeB4KQmVoYXZpb3JJRAUxY3RsMDBfbWFpbkNvbnRlbnRfY3RsMDBfUmF0aW5nX1VzZXJSYXRpbmdCZWhhdmlvch4JQ29udGVudElkBSQ2ZmU0Mzk3MS0xODQ4LTQ2N2YtOWYwNy1lZmQyNWY5ZjQyYjceE1RvdGFsVm90ZXNFbGVtZW50SWQFLWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19sYmxSYXRpbmdWb3Rlcx4PQ29tbWVudHNFbmFibGVkaB4MQXV0b1Bvc3RiYWNraGQCCw8PFgIeB1Zpc2libGVoZBYIAgEP" />
+<input type="hidden" name="__VIEWSTATE16" id="__VIEWSTATE16" value="DxYCHwgFGOWvueS6m+WGheWuueWPkeihqOWPjemmiGRkAgUPDxYCHwgFFeeUteWtkOmCruS7tiAo5Y+v6YCJKWRkAgkPDxYCHwgFBuWPkemAgWRkAgsPDxYCHwgFDOS4je+8jOiwouiwomRkAg0PDxYCHxloZBYCAgEPZBYCZg9kFgICBQ9kFgJmDxYCHxIFL2N0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZ0JvdHRvbSRVc2VyUmF0aW5nZAITDw8WBh8CBS5hcnQtbGF5b3V0LWNlbGwgYXJ0LXNpZGViYXIyIHJpZ2h0c2lkZSBjbXN6b25lHwMCAh8ZaGRkAhUPDxYGHwIFE2FsdGNvbnRlbnQxIGNtc3pvbmUfAwICHxloZGQCFw8PFgYfAgUTYWx0Y29udGVudDIgY21zem9uZR8DAgIfGWhkZAIzDw8WAh8ZaGRkAj0PDxYCHxloZGQCQQ8PFgIfGWhkZBgBBR5fX0Nv" />
+<input type="hidden" name="__VIEWSTATE17" id="__VIEWSTATE17" value="bnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUdY3RsMDAkU2VhcmNoSW5wdXQxJGJ0blNlYXJjaDIFFWN0bDAwJFBhZ2VNZW51MSRjdGwwMfP/fWbFHG+8YRvEwXndU/kwdHzi" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourcee55b.axd.js?d=-wj3zznTOZ_RXBgZh5j3Rp3mtJTk7yU4ESTV1D66j59b569JE_JoRkHkqelcbR6HW8KFC9k8bTne2AnMTg6ha5Uve2gb6LPBu9w72_rzJ-Q5V-j31XG9-9IS2g9WckuLvrfYf3iksMfT7q7T-Mizc25d-wRyGvpBNA-FltoHIPKfRcTOA8vR6et-_waEIYrEo7m0boTX66RfQ4aC7gI0tZni-ntamRDtTpUNYxf1A7KQEYt8MRPrqRtV50RHJuQ47VnCfmRQyjFuhCxT-0x86cYVJujn_lK0aed_vlMXloavC5biHd8MspvPGcLIFQrhSnlym6sCJbZl61uEfPkw6_HFnUnCgyRowPfACvnTGPFpwQlwwyKLQlHwZlfKN28uaUoLS_DBG7l3S4lzVspKtbfsESY2A14GB-O70sOeRdHmENfAxek29H4OHAYS74g7qKow4Oh2-yRyySDjyMCVsdrBEgBEf3HOpD4JT5t_YRH7U-zC1772KZc9qEXYt1Wo1vYeWe5h7QqfUYmB6vgWs7pfBj0vXq6jynKzun1ScijTe37S2lDDmoeoaQqCRRIgvrqe9ruLqPg88Ee9ZWKspAFNTGI1" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+document.getElementById('ctl00_ctl18').value = GetViewState__AspNetTreeView('ctl00_PageMenu1_ctl01_UL');
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAcGhqFc1zPEhPWj3tc3rFqih40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespadrDnHvfnEsnqVdEnQrwipHLL263ntjitg8e4dssRX6eNWHy08=" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$PageMenu1$upMenu','','tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    <div id="ctl00_divLeft" class="art-layout-cell art-sidebar1 leftside left2column cmszone">
+	
+                        <div id='ctl00_PageMenu1_pnlOuterWrap' class='art-block'>
+<div class='art-block-tl'></div><div class='art-block-tr'></div><div class='art-block-bl'></div><div class='art-block-br'></div><div class='art-block-tc'></div><div class='art-block-bc'></div><div class='art-block-cl'></div><div class='art-block-cr'></div><div class='art-block-cc'></div><div class='art-block-body'>
+
+<div id='ctl00_PageMenu1_pnlInnerWrap' class='panelwrapper childpagesitemapmodule'>
+
+<div class='art-blockheader'><div class='l'></div><div class='r'></div><div class='art-header-tag-icon'><div class='t'><h3 class="t moduletitle"></h3></div></div></div>
+<div id='ctl00_PageMenu1_pnlOuterBody' class='art-blockcontent'>
+<div class='art-blockcontent-tl'></div><div class='art-blockcontent-tr'></div><div class='art-blockcontent-bl'></div><div class='art-blockcontent-br'></div><div class='art-blockcontent-tc'></div><div class='art-blockcontent-bc'></div><div class='art-blockcontent-cl'></div><div class='art-blockcontent-cr'></div><div class='art-blockcontent-cc'></div><div class='art-blockcontent-body'>
+<div id='ctl00_PageMenu1_pnlInnerBody' class='modulecontent'>
+
+
+
+<div id="ctl00_PageMenu1_upMenu">
+		
+
+		<div class="AspNet-TreeView" id="ctl00_PageMenu1_ctl01">
+				<ul id="ctl00_PageMenu1_ctl01_UL">
+					<li class="AspNet-TreeView-Root">
+						<a class="AspNet-TreeView-Collapse" onclick="ExpandCollapse__TreeView(this);return false;" href="ipget-help-install.html" title="收缩节点.">&nbsp;</a>
+						<a href="ipget-help-install.html">
+							安装指南</a>
+						<ul>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-install-enterprise.html">
+									企业版安装指南</a>
+							</li>
+						</ul>
+					</li>
+					<li class="AspNet-TreeView-Root">
+						<a class="AspNet-TreeView-Collapse" onclick="ExpandCollapse__TreeView(this);return false;" href="ipget-help-main.html" title="收缩节点.">&nbsp;</a>
+						<a href="ipget-help-main.html">
+							主界面布局</a>
+						<ul>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e5%ba%94%e7%94%a8%e7%a8%8b%e5%ba%8f%e8%8f%9c%e5%8d%95%e6%9d%a1.html">
+									应用程序菜单条</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e5%ba%94%e7%94%a8%e7%a8%8b%e5%ba%8f%e5%b7%a5%e5%85%b7%e6%9d%a1.html">
+									应用程序工具条</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e5%af%bc%e8%88%aa%e6%a0%91.html">
+									导航树</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e6%9f%a5%e8%af%a2%e8%be%93%e5%85%a5%e5%8c%ba.html">
+									检索输入区</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e5%af%bc%e8%88%aa%e5%b7%a5%e5%85%b7%e6%9d%a1.html">
+									导航工具条</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e8%a1%a8%e6%a0%bc%e6%a0%87%e7%ad%be%e6%a0%8f.html">
+									表格标签栏</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e8%a1%a8%e6%a0%bc%e5%b7%a5%e5%85%b7%e6%a0%8f.html">
+									表格工具栏</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f-%e8%a1%a8%e6%a0%bc.html">
+									表格</a>
+							</li>
+						</ul>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-task.html">
+							网上专利检索</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-numbersearch.html">
+							批量号码检索</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-downloading.html">
+							专利下载</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-ChildSelected">
+						<a class="AspNet-TreeView-Collapse" onclick="ExpandCollapse__TreeView(this);return false;" href="ipget-help-manage.html" title="收缩节点.">&nbsp;</a>
+						<a href="ipget-help-manage.html">
+							专利管理</a>
+						<ul>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-search.html">
+									本地专利检索</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf AspNet-TreeView-Selected">
+								<a href="ipget-help-maingrid.html">
+									检索结果列表</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-share.html">
+									多人专利共享</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-allip.html">
+									全部专利管理</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-exportefiles.html">
+									批量导出专利</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-exporttoothformat.html">
+									导出ISI或RIS格式</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-timelimit.html">
+									时限监控</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="pget-help-gendoc.html">
+									出函</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-efiles.html">
+									电子卷管理</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-statistics.html">
+									统计分析</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-batchcopyfield.html">
+									批量加工</a>
+							</li>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-familygraph.html">
+									专利同族图</a>
+							</li>
+						</ul>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-translate.html">
+							全文翻译</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-security.html">
+							安全管理</a>
+					</li>
+					<li class="AspNet-TreeView-Root">
+						<a class="AspNet-TreeView-Collapse" onclick="ExpandCollapse__TreeView(this);return false;" href="ipget-help-config.html" title="收缩节点.">&nbsp;</a>
+						<a href="ipget-help-config.html">
+							参数配置</a>
+						<ul>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-config-elecbasedir.html">
+									配置电子卷存放位置</a>
+							</li>
+						</ul>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-options.html">
+							选项配置</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-uninstall.html">
+							系统卸载</a>
+					</li>
+					<li class="AspNet-TreeView-Root">
+						<a class="AspNet-TreeView-Collapse" onclick="ExpandCollapse__TreeView(this);return false;" href="ipget-help-upgrade.html" title="收缩节点.">&nbsp;</a>
+						<a href="ipget-help-upgrade.html">
+							系统升级</a>
+						<ul>
+							<li class="AspNet-TreeView-Leaf">
+								<a href="ipget-help-update.html">
+									自动升级</a>
+							</li>
+						</ul>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-Import-Access.html">
+							导入个人版数据到企业版</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-loginonffline.html">
+							离线登录</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-ipandproject.html">
+							全部专利与专题库</a>
+					</li>
+					<li class="AspNet-TreeView-Root AspNet-TreeView-Leaf">
+						<a href="ipget-help-translatecql.html">
+							检索式转换</a>
+					</li>
+				</ul>
+
+		</div>
+
+	</div>
+
+
+
+</div>
+<div id='ctl00_PageMenu1_divFooter' class='modulefooter'>
+
+</div>
+</div><div class='cleared'></div>
+</div>
+<div id='ctl00_PageMenu1_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div>
+</div>
+                        
+                    
+</div>
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content center-leftmargin cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<div class='art-postmetadataheader'><h2 id="module306" class="art-postheader moduletitle">检索结果列表</h2></div>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="6fe43971-1848-467f-9f07-efd25f9f42b7" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p class="lqtext">&nbsp;</p>
+
+<p class="lqtext"><a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>对本地的检索结果提供了友好的展示方式。能管理大量的专利数据。</p>
+
+<p class="lqtext">而且由于可以启用分页显示方式，对于大量数据的显示也非常快。</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/maingrid/IPGet专利检索系统-maingrid-01.jpg" /></p>
+
+<p class="lqtext">列表显示了几乎所有的著录项目，而且列表支持自定义显示布局：</p>
+
+<p class="lqtext">用户可以隐藏某些不用的列，在列表标题行点右键，会弹出布局设置菜单，如下图：</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/maingrid/IPGet专利检索系统-maingrid-02.jpg" /></p>
+
+<p class="lqtext">也可以将常用顺序调整到前面，拽住列头拖动到适当位置即可。还可以锁定列．</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/maingrid/IPGet专利检索系统-maingrid-03.jpg" /></p>
+
+<p class="lqtext">还可以调整行高、列宽、列顺序等。</p>
+
+<p class="lqtext">注意所有调整完毕后要立刻点<strong>保存布局</strong>，本次调整才能保存。<span style="text-indent: 2em;">下次登录时，就是调整好的布局了。也可以通过切换节点(先选择其它节点，再选择该节点)让布局立刻生效。</span></p>
+
+<p class="lqtext">对于网页、首页、全文列、附图列分别提供了不同的图标进行显示，当点击图标时就可以打开相应的电子档。</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/maingrid/IPGet专利检索系统-maingrid-04.jpg" /></p>
+
+<p class="lqtext">对于大量的数据，可以启用分页显示，分页大小可以在<strong>应用程序菜单栏</strong>的<strong>工具</strong>－＞<strong>选项</strong>中进行设置。</p>
+
+<p class="lqtext" style="text-align: center; "><img alt="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件" src="/Data/Sites/1/media/LQ/IPGet/Help/maingrid/IPGet专利检索系统-maingrid-05.jpg" /></p>
+
+<p class="lqtext">结果也可以导出成Excel表。默认导出结果中不包含图片。在<strong style="text-indent: 2em;">导出Excel(</strong><strong style="font-size: 14px; text-indent: 2em;">高级</strong><strong style="text-indent: 2em;">)<img alt="" src="/Data/Sites/1/media/LQ/IPGet/Help/main/gridtoolbar/IPGet专利检索系统-表格工具栏-02.jpg" style="width: 162px; height: 53px;" /></strong><span style="text-indent: 2em;">中可以选者图片列，这样可以导出摘要附图。<strong>高级导出</strong>需要系统安装有Office Excel。</span></p>
+
+<p class="lqtext">如果在使用<a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>进行检索的过程中出现任何问题，欢迎到<a class="lqtextlink" href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件"><strong>IPGet专利检索系统</strong></a>的<a class="lqtextlink" href="forums.html" target="_blank" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件">论坛</a>中发表。</p>
+
+<p>&nbsp;</p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fipget-help-maingrid.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fipget-help-maingrid.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    <div>
+	<input type="hidden" name="ctl00$ctl18" id="ctl00_ctl18" />
+</div>
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"6fe43971-1848-467f-9f07-efd25f9f42b7","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

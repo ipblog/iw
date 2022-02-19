@@ -1,0 +1,1156 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	什么是企业软件-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="3条你必须知道的软件开发原则-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="3条你必须知道的软件开发原则-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='it-arch-140401.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/it-arch-140401.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBRQvaXQtYXJjaC0xNDA0MDEuYXNweBYQAg8PDxYGHghDc3NDbGFzcwUtYXJ0LWxheW91dC1jZWxsIGFydC1zaWRlYmFyMSBsZWZ0c2lkZSBjbXN6b25lHgRfIVNCAgIeB1Zpc2libGVoZGQCEQ8PFgQfAgU5YXJ0LWxheW91dC1jZWxsIGFydC1jb250ZW50LXdpZGUgY2VudGVyLW5vbWFyZ2lucyBjbXN6b25lHwMCAmQWAgIFD2QWAmYPZBYCAgIPDxYEHwIFCGFydC1wb3N0HwMCAmQWAgIDD2QWAgIDDw8WBB8CBQ9hcnQtcG9zdGNvbnRlbnQfAwICZBYCAgEPZBYEAgEPDxYCHgtDb250" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="ZW50R3VpZCgpWFN5c3RlbS5HdWlkLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkkODAyNzA3OTctZTcxYy00NmNkLWJiODUtYjE5NjMwMWY2Yjg4ZBYCAgEPZBYCZg9kFgYCAQ9kFgICAQ8WAh4EVGV4dAURUmF0ZSB0aGlzIENvbnRlbnRkAgUPZBYCZg8WDh4KQ2FsbGJhY2tJRAUpY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nJFVzZXJSYXRpbmceB0pzb25VcmwFM2h0dHA6Ly9sb2NhbGhvc3QvU2VydmljZXMvQ29udGVudFJhdGluZ1NlcnZpY2UuYXNoeB4KQmVoYXZpb3JJRAUxY3RsMDBfbWFpbkNvbnRlbnRfY3RsMDBfUmF0aW5nX1VzZXJSYXRpbmdCZWhhdmlv" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="ch4JQ29udGVudElkBSQ4MDI3MDc5Ny1lNzFjLTQ2Y2QtYmI4NS1iMTk2MzAxZjZiODgeE1RvdGFsVm90ZXNFbGVtZW50SWQFLWN0bDAwX21haW5Db250ZW50X2N0bDAwX1JhdGluZ19sYmxSYXRpbmdWb3Rlcx4PQ29tbWVudHNFbmFibGVkaB4MQXV0b1Bvc3RiYWNraGQCCw8PFgIfBGhkFggCAQ8PFgIfBgUY5a+55Lqb5YaF5a655Y+R6KGo5Y+N6aaIZGQCBQ8PFgIfBgUV55S15a2Q6YKu5Lu2ICjlj6/pgIkpZGQCCQ8PFgIfBgUG5Y+R6YCBZGQCCw8PFgIfBgUM5LiN77yM6LCi6LCiZGQCDQ8PFgIfBGhkFgICAQ9kFgJmD2QWAgIFD2QWAmYPFgIfBwUvY3RsMDAkbWFpbkNvbnRlbnQkY3RsMDAkUmF0aW5nQm90dG9tJFVzZXJSYXRpbmdkAhMPDxYGHwIFLmFydC1s" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="YXlvdXQtY2VsbCBhcnQtc2lkZWJhcjIgcmlnaHRzaWRlIGNtc3pvbmUfAwICHwRoZGQCFQ8PFgYfAgUTYWx0Y29udGVudDEgY21zem9uZR8DAgIfBGhkZAIXDw8WBh8CBRNhbHRjb250ZW50MiBjbXN6b25lHwMCAh8EaGRkAjMPDxYCHwRoZGQCPQ8PFgIfBGhkZAJBDw8WAh8EaGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBR1jdGwwMCRTZWFyY2hJbnB1dDEkYnRuU2VhcmNoMr5UhMF5mHSv6vjIwDQdq536UasY" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbKfFMR2D4womwUVTY3f5cYh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespafbUhBxbhavmf0EmzbGV5LBAx3cvQ==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module747' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">0</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="0" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="0" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Empty" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Empty" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="80270797-e71c-46cd-bb85-b196301f6b88" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">0 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p class="lqtitle1">&nbsp;</p>
+
+<p class="lqtitle1">&nbsp;</p>
+
+<p class="lqtitle1">什么是企业软件</p>
+
+<p class="AlignCenter"><a href="http://www.cnblogs.com/Netsharp/p/3665222.html" target="_blank">原文链接</a></p>
+
+<div id="cnblogs_post_body" style="margin-bottom: 20px; color: rgb(0, 0, 0); font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 24px;">
+<h1 style="font-size: 1.5em; padding-top: 1em; background-color: rgb(249, 249, 249); color: rgb(0, 0, 0); padding-left: 100px; height: 20px; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(0, 0, 0); margin-top: 0px; margin-bottom: 0px; padding-bottom: 30px; font-family: 'Courier New', Verdana, monospace; background-position: 10px 0.5em; background-repeat: no-repeat no-repeat;">第1章&nbsp;&nbsp;&nbsp;&nbsp; 企业软件</h1>
+
+<h2 style="margin-top: 10px; font-size: 1em;">1.1&nbsp;&nbsp;&nbsp;&nbsp; 什么是企业软件</h2>
+
+<p style="margin: 10px auto;">社会组织的主要形式有如下几种：</p>
+
+<ol style="padding-left: 50px;">
+	<li style="list-style-type: decimal;">政府单位</li>
+	<li style="list-style-type: decimal;">企业</li>
+	<li style="list-style-type: decimal;">个体户</li>
+	<li style="list-style-type: decimal;">非盈利组织</li>
+</ol>
+
+<p style="margin: 10px auto;">企业明显的区别于其他组织方式，企业一般有销售、采购、库存、市场、人力、行政、研发生产等部门，这些部门为了完成公司的目标有不同的职责和业务流程。当企业使用软件工具来辅助运营公司时，软件商提供的软件产品则可称之为企业软件。企业通过软件来进行公司管理的过程叫企业的信息化。</p>
+
+<p style="margin: 10px auto;">维基百科中“企业软件”有如下定义：</p>
+
+<table border="0" style="border: 1px solid silver; border-collapse: collapse;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px; background-color: rgb(238, 240, 240);">
+			<p style="margin: 10px auto;">企业级软件，也称企业软件（Enterprise software）或者企业级应用软件，指的是支持企业、事业单位或者政府等机构各项业务运作的软件系统。除了支持机构内部的协同工作之外，企业软件也支持企业与其供应商、业务伙伴和用户的协作与协调[1]。</p>
+
+			<p style="margin: 10px auto;">企业级软件可以按功能划分为财务会计、ERP（企业资源规划）、CRM（客户关系管理）、SCM（供应链管理）、HRM（人力资源管理）、BI（商务智能）、CMS（内容管理系统）和企业通信工具等。也可以按行业划分为制造业、零售业、医药业等解决方案。</p>
+
+			<p style="margin: 10px auto;">马汀·弗勒（Martin Fowler）在其《企业应用架构模式》一书中这样定义：企业级应用主要负责显示、操作和存储大量复杂数据，并对这些数据进行支持和自动化。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;"><span style="line-height: 1.5;">维基百科中有两点的观点与本文不同：</span></p>
+
+<ol style="padding-left: 50px;">
+	<li style="list-style-type: decimal;">企业软件不仅仅指企业，也包括政府等机构，本文并没有考虑政府等机构，本人认为维基的观点也可以接受。</li>
+	<li style="list-style-type: decimal;">Martin Flower从技术上进行定义，强调了“大量复杂数据”、“支持和自动化”等关键词，本人的理解这个定义没有什么价值，因为其强调的这些关键词模糊不清，不能形成有效的知识。但是需要说明的是，很多技术人员一般会把企业级软件理解为功能强大的、稳定的、健壮的面向一个领域的技术组件，本文不认同这种观点，因为这是从技术角度来定义的。</li>
+</ol>
+
+<p style="margin: 10px auto;">企业管理者一般对企业管理软件的期望是概括来说有如下几个：</p>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border: 1px solid silver; border-collapse: collapse; width: 741px; height: 839px;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="45">
+			<p align="center" style="margin: 10px auto;"><strong>编号</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="113">
+			<p align="center" style="margin: 10px auto;"><strong>企业期望</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="189">
+			<p align="center" style="margin: 10px auto;"><strong>说明</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="598">
+			<p align="center" style="margin: 10px auto;"><strong>常用软件或者模块</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="45">
+			<p style="margin: 10px auto;">1</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="113">
+			<p style="margin: 10px auto;">营销</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="189">
+			<p style="margin: 10px auto;">借助互联网进行品牌的宣传和推广，最终达成销售</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="598">
+			<p style="margin: 10px auto;">CMS、企业门户网站、商城系统、微博、微信。典型的是企业通过网站或者而购买关键词把流量引入自己网站（商城），推广自己。</p>
+
+			<p style="margin: 10px auto;">CRM管理系统，用来进行客户行为分析指导企业决策，CRM还可以进行客户二次营销。</p>
+
+			<p style="margin: 10px auto;">&nbsp;</p>
+
+			<p style="margin: 10px auto;">特别说明的是,相对于如下几点，营销类软件是市场是需求最强的，原因有如下几点：</p>
+
+			<ol style="padding-left: 50px;">
+				<li style="list-style-type: decimal;">很多企业营销是最重要的部分，营销可以给企业带来收入。只要有钱其他的问题重要性就不这么重要，即使企业管理混乱也可短期无视。而企业没有足够的收入则直接面临倒闭，管理混乱则不会立刻倒闭。</li>
+				<li style="list-style-type: decimal;">一般来说国内企业能够生存下去必须具备着三个条件之一：核心技术、强大的营销、过硬的资源。从技术上来说，因为技术的积累需要很大的成本，所以国内的企业有核心技术不多；资源也只掌握在部分人手中；如果不具备技术和资源，那么只能依靠营销。</li>
+				<li style="list-style-type: decimal;">基于第二点，国内市场产能开始过剩，企业没有能力进行技术上的积累，短期则更加抓住营销的救命稻草。</li>
+				<li style="list-style-type: decimal;">新技术的变化，导致营销方式一直在改变。</li>
+			</ol>
+
+			<p style="margin: 10px auto;">&nbsp;</p>
+
+			<p style="margin: 10px auto;">从技术上来说，营销类产品简单、通用性强；变化快，美工要求多；以网页形式展现。</p>
+
+			<p style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="45">
+			<p style="margin: 10px auto;">2</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="113">
+			<p style="margin: 10px auto;">提高效率</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="189">
+			<p style="margin: 10px auto;">使用软件工具提高工作效率</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="598">
+			<p style="margin: 10px auto;">使用专业工具一般有比较强的行业特性，比如广告公司用Photoshop，制造行业使用AutoCAD，建筑行业使用计价算量工具。计算机发展到现在，没有此类的软件工具，有些行业就没法工作。</p>
+
+			<p style="margin: 10px auto;">本文强调的是与企业管理软件整体结合的工具，而不是纯粹的专业工具，比如电商ERP本身具有的批量打印快递单功能。</p>
+
+			<p style="margin: 10px auto;">企业使用这些工具的目的本质是为了提高效率，不是为了管理。</p>
+
+			<p style="margin: 10px auto;">在中国，这类软件免费使用居多，用户没有付费习惯。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="45">
+			<p style="margin: 10px auto;">3</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="113">
+			<p style="margin: 10px auto;">管理</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="189">
+			<p style="margin: 10px auto;">使用软件工具辅助自己企业内部管理</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="598">
+			<p style="margin: 10px auto;">由于历史的原因，管理系统国内一般从两个角度来做，这一点的区分比较有趣而且非常重要：</p>
+
+			<p class="1" style="margin: 10px auto;">1．&nbsp; 基于工作协同的思路，如OA系统、工作流系统、IM、项目管理系统等等，强调工作流程，这种角度与真实的业务更适应，更容易操作。</p>
+
+			<p class="1" style="margin: 10px auto;">2．&nbsp; 基于数据的管理的思路，如财务会计、ERP、CRM、SCM、HR等等。</p>
+
+			<p style="margin: 10px auto;">&nbsp;</p>
+
+			<p style="margin: 10px auto;">基于工作协同和基于数据管理是基于其倾向性而言的，不是说基于工作协同的就不基于数据管理，或者基于数据的就不基于工作协同。总的来说他们将来应该是不进行区分，目前市场上也有两种结合到一起的产品。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="45">
+			<p style="margin: 10px auto;">4</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="113">
+			<p style="margin: 10px auto;">BI</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="189">
+			<p style="margin: 10px auto;">使用信息系统的数据作为企业决策的依据</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="598">
+			<p style="margin: 10px auto;">有时也称之为商业智能，基于大数据做的企业决策分析。容易理解，不再赘述.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<h2 style="margin-top: 10px; font-size: 1em;">1.2&nbsp;&nbsp;&nbsp;&nbsp; 当前信息化面临的核心问题</h2>
+
+<h3 style="font-size: 10pt; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(214, 214, 214); color: rgb(0, 0, 0); background-color: transparent;">1.2.1&nbsp; 客户化</h3>
+
+<p style="margin: 10px auto;">&nbsp;&nbsp;&nbsp; 对于一个人而言，欲望无限而其能力有限，这种主客体上的差距是其痛苦的根源；经济学的本质则是如何分配资源给有无限欲望的人类。同样,研发产能有限而客户软件需求无限则是管理软件的主要矛盾，这里有限产能指的是无法承担的成本或者无法完成的进度要求等。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">虽然通过高级语言、面向对象、技术组件及平台、MRP、ERP等的发展，问题得到一定程度的解决，但是问题仍然存在。目前，一方面软件从业者通过技术方面的框架或者平台积累，另一方面也在管理理论方面有所积累（如MRP和ERP），解决了一些通用的问题，这叫管理软件的<strong>标准化</strong>。但是每个行业和每个客户都有自己个性化的要求，解决仍然困难，这种现象本文称之为<strong>客户化</strong>。所以，如何解决标准化和差异化是企业管理软件的核心问题。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">本文尝试从企业的角度和技术的角度来对差异化进行考察。企业的角度是不同的企业主要在所处行业、企业规模、企业文化及企业制度三个方面有所不同，详细情况参见下表：</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border: 1px solid silver; border-collapse: collapse; width: 782px; height: 260px;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="83">
+			<p align="center" style="margin: 10px auto;"><strong>编号</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="142">
+			<p align="center" style="margin: 10px auto;"><strong>内容</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="283">
+			<p align="center" style="margin: 10px auto;"><strong>说明</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="437">
+			<p align="center" style="margin: 10px auto;"><strong>其他说明</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="83">
+			<p style="margin: 10px auto;">1</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="142">
+			<p style="margin: 10px auto;">所处行业</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="283">
+			<p style="margin: 10px auto;">金融、传媒、电信、石油、医疗、建筑施工等不同的企业所关注业务完全不同，这导致对软件的要求差别非常大</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="437">
+			<p style="margin: 10px auto;">不同的行业体现在不同的流程，以及不同的行业概念上，行业的概念对应的是不同的业务字段和业务规则。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="83">
+			<p style="margin: 10px auto;">2</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="142">
+			<p style="margin: 10px auto;">企业规模</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="283">
+			<p style="margin: 10px auto;">一个跨国公司和一个30人的小公司，企业管理也是不一样，对软件的要求也有天壤之别。</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="437">
+			<p style="margin: 10px auto;">不同的企业规模主要体现在组织机构以及业务流程上。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="83">
+			<p style="margin: 10px auto;">3</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="142">
+			<p style="margin: 10px auto;">企业文化及企业制度</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="283">
+			<p style="margin: 10px auto;">相同的企业，不同的管理者对企业不同的管理对软件的要求也不尽相同。</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="437">
+			<p style="margin: 10px auto;">如果企业信息化程度比较低，则适合软件简单一些，较少的改变现有员工工作方式，通过渐进的方式实现信息化，如果企业领导是一个完美主义者，则信息化失败的几率大大增加。</p>
+
+			<p style="margin: 10px auto;">另一方面，非软件从业人员肯定会错误的评估软件的复杂度和实施的难度，这是也导致软件不能成功的重要原因。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">&nbsp;&nbsp;&nbsp; 那么从技术角度来说，客户化的角度很多，下表按照由大到小的几次顺序介绍了常见的几种级别的客户化。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border: 1px solid silver; border-collapse: collapse; width: 714px; height: 453px;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p align="center" style="margin: 10px auto;"><strong>&nbsp;</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p align="center" style="margin: 10px auto;"><strong>差异化</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p align="center" style="margin: 10px auto;"><strong>内容</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<p align="center" style="margin: 10px auto;"><strong>常见解决方式</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">1</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">物理形态级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">是否基于互联网</p>
+
+			<p style="margin: 10px auto;">是否支持跨国应用</p>
+
+			<p style="margin: 10px auto;">等等</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<p style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">2</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">技术选型级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">一般要指定的操作系统、指定的开发语言、指定的数据库等</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<p style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">3</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">业务流程级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">任意新增流程或者改变现有流程</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<ol style="padding-left: 50px;">
+				<li style="list-style-type: decimal;">工作流可以解决业务不复杂的流程</li>
+				<li style="list-style-type: decimal;">复杂的业务流程解决起来有时成本很高，设计好可以通过业务插入的方式完成</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">4</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">系统选项级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">一般在工具选项中来停用启用某些功能</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<p style="margin: 10px auto;">此种方式比较常见，处理起来容易理解。但是其同其他级别的扩展很难通过插件的方式体现出来。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">5</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">单据级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">新增加一张单据类型</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<ol style="padding-left: 50px;">
+				<li style="list-style-type: decimal;">简单的单据可以通过平台完成，不需要开发</li>
+				<li style="list-style-type: decimal;">复杂的单据</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">6</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">字段级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">在现有业务对象上添加字段</p>
+
+			<p style="margin: 10px auto;">在现有的字段上添加一些逻辑</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<ol style="padding-left: 50px;">
+				<li style="list-style-type: decimal;">通过实体模型和界面模型一般可以解决</li>
+				<li style="list-style-type: decimal;">复杂逻辑通过实施和二次开发解决</li>
+			</ol>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="41">
+			<p style="margin: 10px auto;">7</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="118">
+			<p style="margin: 10px auto;">界面级别</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="217">
+			<p style="margin: 10px auto;">改变界面的布局和样式</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="290">
+			<p style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<h3 style="font-size: 10pt; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(214, 214, 214); color: rgb(0, 0, 0); background-color: transparent;">1.2.2&nbsp; 复用和扩展</h3>
+
+<p style="margin: 10px auto;">上文已经得出结论客户化是企业软件的核心问题，这是从产品功能的角度来说的。如果从技术角度来说，客户化其实就是软件的复用和扩展，所以也可以说复用和扩展是企业软件的核心问题。下面是本关于复用和扩展的几个观点：</p>
+
+<ol style="padding-left: 50px;">
+	<li style="list-style-type: decimal;">复用和扩展是统一的，有了复用才有可能扩展，因为扩展才能复用</li>
+	<li style="list-style-type: decimal;">基于可预见的需求的扩展是有意义的扩展，否则是过度设计</li>
+	<li style="list-style-type: decimal;">在敏捷里下面的几个原则是扩展相关的，开闭原则、里氏代换原则、依赖倒转原则、接口隔离原则、组合/聚合复用原则、迪米特法则</li>
+	<li style="list-style-type: decimal;">现在的系统技术上一般通过接口、IOC容器 、插件系统来进行扩展。插件是比较系统的一种方式，这种方式越来越被普及和认可。</li>
+</ol>
+
+<p style="margin: 10px auto;">复用和扩展也可以看成是企业软件客户化的解决方法，但是因为这种方式理解起来比较简单，所以可以认为他是一种现象。如何进行复用和扩展的具体技术手段则是解决方法中需要重点关注的。</p>
+
+<p style="margin: 10px auto;">复用和扩展的文章和著作较多，本文不再展开赘述。</p>
+
+<h2 style="margin-top: 10px; font-size: 1em;">1.3&nbsp;&nbsp;&nbsp;&nbsp; 企业信息化解决之道</h2>
+
+<h3 style="font-size: 10pt; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(214, 214, 214); color: rgb(0, 0, 0); background-color: transparent;">1.3.1&nbsp; 分析设计与技术架构</h3>
+
+<p style="margin: 10px auto;">本人认为从事企业软件的技术从业者需要两个能力，分别是分析设计与技术架构，这两点应该囊括一个企业软件开发者的所有能力；很多软件公司研发一般分成两个部分产品研发部（或者项目开发部）和平台部也是这种分类的方法。分析设计和技术架构的能力对于一个技术人员来说这两种能力是一体的。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;"><strong>分析设计</strong>是针对客户指定的需求，通过分析建模大脑的思维，最终以技术化的语言表达出来，成果就是其设计文档或者代码/伪代码，设计成果的标准有三个：无歧义、不重复、无遗漏；这三个标准是针对于设计成果的读者的，因为读者不同，所以设计的成果可能会不同的，有一种说法叫设计是基于一种认同，与此意思是相近的。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">分析设计一般针对于特定的问题，这些问题一般都是繁琐且复杂的，所以这些问题只有当事人关心，在软件技术社区中其他人员对其问题并不关心，所以一般分析设计的交流都是分析设计方法论的交流，比如UML就是一种分析设计的方法论，大家会一起讨论UML怎么用。本人把分析设计的过程总结为如下的一段话：</p>
+
+<table border="0" style="border: 1px solid silver; border-collapse: collapse;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px; background-color: rgb(241, 244, 246);">
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">企业软件的分析与设计是针对需求定义的问题域进行树状结构的合理分解（本文称之为分而治之的方法），分而治之的目的（也是分析设计的目的）是找到最小粒度的代码单位，容易理解的代码就是最小粒度代码单位。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">&nbsp;</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">依据上面内容下可以得出且需要强调的如下几种观点：</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">1， 设计的思维方式或者设计结果（代码组织或者设计文档组织）和需求是一致的。也就是说在理解需求的情况下，如果有技术经验是很容易理解代码的，或者基于代码就可以容易的了解需求。如果设计组织和需求文档的思维方式的不一致，极有可能是需求的不合理或者设计的不合理。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">2， 离开具体的需求就不存在设计，换言之离开具体的需求谈设计的好与坏是无意义的。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">3， 不了解需求的评审是无意义的。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">4， 设计分析过程是归纳的过程，体现的结果是层层展开的逻辑分树。只能是先具体后抽象的过程，这要求设计必须找到代码的最小逻辑单位，走遍所有的逻辑路径。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">5， 代码的多与少不是设计好与坏的关键因素，基于需求是否进行合理的分解，是否找到了最小粒度的代码单位才是设计好与坏的最主要因素。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">6， 设计是须有很强的代码经验。软件设计就是用程序语言描述问题域的过程，这和用进行文字创作有异曲同工之妙，他们都是人的思维通过语言的对别人的表达。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">7， 分而治之逻辑树上每个节点都对应一个完整的概念，每个概念的命名是第一性和至关重要的（且和尽量和需求的叫法一致），他是设计和开发沟通的基础。设计的思维比需求的思维要细密，所以概念也会比需求多。概念的创建不要多也不要少。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">8， 设计已经找到了最小粒度的代码单位，其走遍了所有问题域的逻辑路径，复用、扩展、重构等是水到渠成的，体现代码之美。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">9， 基于可预见需求的扩展才是有意义的扩展，否则是过度设计。</span></p>
+
+			<p style="margin: 10px auto;"><span style="font-size: 13px;">10， 分而治之方法的设计是归纳的过程，是一个迭代（否定之否定）的螺旋式的过程（重构）。</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">分析设计是一种实用的方法论，也是一种形而上的美的艺术，因为其艺术性所以仁者见仁，智者见智，观点很难统一。本人会单开“分析设计”系列详细论述上文观点，此文不再赘述。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">技术架构和分析设计的区别主要体现在下文的企业软件研发成熟度分析中（企业软件研发七阶段），技术架构主要做第四阶段即技术平台的工作，业务分析主要做业务平台的工作。这种区别是就其倾向性而言的，如果说这两种能力就是同一种能力也是能说得通的。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">本文的所有系列则都是说都是技术架构，技术架构和分析设计相比，技术架构一般都涉及通用的技术点，所以有具体的可视化的成果，更容易被理解和认同。技术架构关心的问题有持久层、MVC、分布式、事务、序列化等等。从另外一个角度来说，技术架构是技术人员立足于若干需求场景所做的抽象工作的分析设计，所以技术架构也算是一种分析设计。</p>
+
+<h3 style="font-size: 10pt; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(214, 214, 214); color: rgb(0, 0, 0); background-color: transparent;">1.3.2&nbsp; 企业软件研发成熟度分析</h3>
+
+<p style="margin: 10px auto;">企业软件研发成熟度分析本人于2010年总结的国内企业软件七种软件研发的模式，这其中模式是由低到高的不同阶段，所以也可以称之为企业软件研发七阶段。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="border: 1px solid silver; border-collapse: collapse; width: 800px; height: 848px;">
+	<tbody>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="center" style="margin: 10px auto;"><strong>编码</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="center" style="margin: 10px auto;"><strong>阶段</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="center" style="margin: 10px auto;"><strong>特征</strong></p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="center" style="margin: 10px auto;"><strong>达到的条件</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">1</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">硬编码</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">直接使用IDE提供的工具进行代码的编写，很少考虑使用第三方的组件，或者自己封装正规的组件。一切代码只要能实现客户需求即可，不愿意或不懂得多做一些从技术上有益于产品的工作。</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">2</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">部分组件</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">1，开始需找第三方的组件，包括界面控件、持久层、配置组件</p>
+
+			<p align="left" style="margin: 10px auto;">2，自己写一些常用的组件</p>
+
+			<p align="left" style="margin: 10px auto;">3，可能使用一些第三方工具，如PD等进行快速的代码生成</p>
+
+			<p align="left" style="margin: 10px auto;">4，有初步的分层思想</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">3</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">系统框架</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">自己写或者使用第三方的组件，特点是框架的全面性，在每个主要的技术点都有系统框架的支撑</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">1，团队技术负责人对技术热爱，希望写出高质量的代码</p>
+
+			<p align="left" style="margin: 10px auto;">1，会对比分析各种部署方式下的开发模式包括，会分析前段的各种展现方式（Silverlight/WinForm/WPF/HTML4/HTM5）,会分析分布式的各种组件（webservice/json/remoting/wcf/socket）,分析各种持久层框架，等等</p>
+
+			<p align="left" style="margin: 10px auto;">&nbsp;</p>
+
+			<p align="left" style="margin: 10px auto;">2，熟悉常见的业务展现形式，从技术角度进行整理，包括单据、列表、报表、选项、工作流、等等</p>
+
+			<p align="left" style="margin: 10px auto;">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">4</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">技术平台<br />
+			<br />
+			(业务基础软件平台)</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">1，技术平台本身即为产品</p>
+
+			<p align="left" style="margin: 10px auto;">2，在系统框架基础之上，提供友好稳定的工具维护框架下的元数据，并提供二次开发接口和工具。</p>
+
+			<p align="left" style="margin: 10px auto;">&nbsp;</p>
+
+			<p align="left" style="margin: 10px auto;">3，提供基础业务功能，包括权限管理、组织机构管理、单据编码管理、枚举管理、选项管理、工作台界面等等</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">1，被动使用平台：业务本身复杂，不使用技术平台，导致研发成本太高</p>
+
+			<p align="left" style="margin: 10px auto;">2，主动使用平台：技术负责人愿意在系统框架之上提供优良的开发工具让业务开发人员进行元数据的维护。</p>
+
+			<p align="left" style="margin: 10px auto;">&nbsp; &nbsp;技术负责人愿意对实施人员，或者有二次开发能力的客户提供接口和平台开发工具</p>
+
+			<p align="left" style="margin: 10px auto;">3，产品经理有明确的文档要求客户要自定义产品行为的</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">5</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">业务平台</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">1，在技术平台之上，业务按照领域对象为粒度，每个领域对象可以单独存在，可以和其他领域对象组合成新的的业务，可以扩展功能，可以二次开发覆盖原有的功能</p>
+
+			<p align="left" style="margin: 10px auto;">2，在第一点的基础之上，可以基于流程调整领域对象的流程关系</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">1，领域的总体设计师期望做出结构优良的产品</p>
+
+			<p align="left" style="margin: 10px auto;">2，产品经理对业务的分析抽象比较合理</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">6</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">软件生命周期管理</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">1，技术平台和业务平台是进行产品的研发，本阶段是为这两个阶段提供项目管理工具，此工具可以是自己研发的，也可以是继承第三方产品到自己的产品中。</p>
+
+			<p align="left" style="margin: 10px auto;">2，功能包括源代码管理、需求管理、BUG管理、升级和补丁管理等</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">1，研发负责人愿意使用科学的管理手段进行项目管理</p>
+
+			<p align="left" style="margin: 10px auto;">2，研发负责人愿意在自己的管理软件平台上扩展出项目管理的功能</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="51">
+			<p align="left" style="margin: 10px auto;">7</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="78">
+			<p align="left" style="margin: 10px auto;">软件生态环境</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="363">
+			<p align="left" style="margin: 10px auto;">1，前六个阶段是在产品厂商的角度来看的，此节点是站在整个社会的角度来看的。</p>
+
+			<p align="left" style="margin: 10px auto;">2，生态环境允许第三方开发人员和厂商在现有的业务平台上扩展业务功能。也允许在技术平台上构建自己的特殊的业务。典型的例子有Eclipse和淘宝电商平台。</p>
+
+			<p align="left" style="margin: 10px auto;">3，产品厂商和第三方互惠互利，合作共赢共同达成一种生态圈。</p>
+			</td>
+			<td style="border: 1px solid silver; border-collapse: collapse; padding: 3px;" valign="top" width="454">
+			<p align="left" style="margin: 10px auto;">1，技术团队、业务团队、销售团队三者目标都有志向，目标远大</p>
+
+			<p align="left" style="margin: 10px auto;">2，产品真的能为客户带来价值，物美价廉</p>
+
+			<p align="left" style="margin: 10px auto;">3，平台能为第三方的开发人员、销售人员带来利益</p>
+
+			<p align="left" style="margin: 10px auto;">4，团队有卓越的业务能力和推广能力</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<h3 style="font-size: 10pt; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: rgb(214, 214, 214); color: rgb(0, 0, 0); background-color: transparent;">1.3.3&nbsp; 企业业务基础平台</h3>
+
+<p style="margin: 10px auto;">企业业务基础软件平台，是这几年逐渐被认可的一种叫法，很多人叫技术平台或者平台，都不太准确。业务基础平台是上文“企业软件研发成熟度分析”第四个阶段，他是在一个语言（如.NET或者JAVA）平台基础之上做的一个可以快速最终产品的平台。下图介绍其同应用软件、软件开发平台、操作系统在概念上的区别：</p>
+
+<p style="margin: 10px auto;">&nbsp;<img alt="" src="/Data/Sites/1/media/LQ/IT-Arch/140401-01.png" style="width: 312px;" /></p>
+
+<p style="margin: 10px auto;">&nbsp;&nbsp;&nbsp; 企业业务基础平台本身对客户不产生直接价值，他对软件厂商有价值，可以帮助研发人员最低成本的构建面向最终客户的软件产品。</p>
+
+<p style="margin: 10px auto;">&nbsp;&nbsp;&nbsp;</p>
+
+<p style="margin: 10px auto;">国外并没有业务基础软件平台的概念，这也算是中国特色，原因是中国客户化的要求太多了，导致软件商想办法提高软件自身的复用能力和实施能力。还有一个原因是国内的环境下，没有资源做更深的技术，所以大部分的精力都在做管理软件，自然的也就都在做业务基础平台。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">本文认为企业基础业务平台是解决客户化的一个重要的方式，首先，平台本身提供了通用的基础功能如组织、权限、工作流等等，这些功能研发成本是很高的；其次，平台作为开发人员和实施人员的工具，从技术手段上可以在很大程度上不修改代码的情况下完成客户的一些个性需求；最后，平台本身也是一个框架，他完成了一些大量的基础性的技术工作，如分布式调用、持久化、并发、引用检查等功能，这些基础的技术工作，对技术的要求比较高。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">有了企业基础业务平台，并不能解决所有客户化的需求，因为客户的需求是无限的，能解决客户化需求是有其范围的，这个范围是由平台设计人员的能力决定的，也就是说，平台设计人员的能力决定了解决客户化能力。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">企业软件七阶段的第五阶段是企业业务平台，相对于业务平台来说，基础业务平台称之为技术平台是有一定道理的。业务平台是提供面向最终客户的解决管理业务的产品。一个有意思的话题是，从研发成本上考虑，技术平台和业务平台的研发投入比重都各占多少呢？答案是由技术平台的功能以及业务的客户化程度决定的，一般来说，客户化程度越低的产品，技术平台比例越高，最大的场景是，不需要业务开发代码，技术平台可直接配置满足客户需求的产品。本人所在的公司所研发的很正规的ERP产品和技术平台产品的代码量基本是对半。对于国内某些平台所声称的不需编写代码即开发产品是幼稚可笑的。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">继续考察技术平台和业务平台的关系还可以得出结论，首先技术平台为业务平台提供框架和基础技术工作，这些工作不仅仅是减少了业务开发的工作量，更大的价值是，技术平台的框架和基础类库本身就是一个研发的规范，这比制定研发规范要实际和有效的多；另一方面，技术平台提供了工具，提高工作效率，进行工作纠错，让业务开发人员从乏味的基础工作中解脱出来，如业务人员做一张销售订单的表单界面，有平台工具的支持，一般需要20分钟，但是如果硬编码，可能需要1-3天。</p>
+
+<p style="margin: 10px auto;">&nbsp;</p>
+
+<p style="margin: 10px auto;">本文特别感谢东莞<strong>许胜平</strong>的建议和校对工作。</p>
+</div>
+
+<div id="MySignature" style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 24px;">
+<table border="1">
+	<tbody>
+		<tr>
+			<td>
+			<p style="margin-top: 0px; margin-bottom: 0px;">作者 &nbsp; &nbsp;：秋时</p>
+
+			<p style="margin-top: 0px; margin-bottom: 0px;">本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="clear" style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; line-height: 24px;">&nbsp;</div>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fit-arch-140401.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fit-arch-140401.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"80270797-e71c-46cd-bb85-b196301f6b88","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

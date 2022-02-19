@@ -1,0 +1,162 @@
+参考: https://stackoverflow.com/questions/44517/tools-to-convert-asp-net-dynamic-site-into-static-site
+wget: https://gist.github.com/mikecrittenden/fe02c59fed1aeebd0a9697cf7e9f5c0c, 
+  对中文处理不好, 无法修正文件中的中文url: https://superuser.com/questions/909043/fix-wget-invalid-or-incomplete-multibyte-or-wide-character
+./wget --reject-regex '/Data/' --mirror --convert-links --adjust-extension --page-requisites --no-parent http://localhost
+wget2/bin/wget2 --reject-regex '/Data/' --mirror --convert-links --adjust-extension --page-requisites --no-parent http://localhost
+
+使用软件httrack将aspx转换为静态站点, 静态站点可放在github/heroku/集成到php, .net等.
+./httrack.exe "http://localhost/" -O "J:/ipwom_aspx_to_html/iw" -*/Data/* -*/Secure/*
+
+
+1. 设置(加载WinHTTrack.opt)httrack选项, 已保存为WinHTTrack.opt
+  !!!注意: 每次加载WinHTTrack.opt后, 代码都会将Base Path修改为WinHTTrack.opt所在的根目录文件夹, 这不对!
+  a. 排除文件夹:
+     Secure
+     Data
+     ClientScript
+  b. 速率限制清空
+  c. Html footer设置为(none)
+  d. 不使用robots.txt规则
+  --e. rewrite link,(还是保持默认值, 手工替换绝对地址)
+     默认是 Relative URL / Absolute URL, 表示已经下载到本地的用相对url, 未下载的用绝对url, 上面的排除文件夹内的链接都会被改为绝对url.
+     设置为Original URL/Original URL, 保持不变.
+
+2. 设置Base Path: J:\ipwom_aspx_to_html, !!!注意: 每次加载WinHTTrack.opt后, 都要将该值设置一次,
+   下载的文件位置: J:\ipwom_aspx_to_html\localhost\localhost
+
+3. 设置源站点, 加载配置文件后已设置
+    http://localhost/
+    http://localhost/SiteMap.ashx
+    http://localhost/Blog/BlogSiteMap.ashx
+    http://localhost/Secure/Register.aspx
+    http://localhost/Secure/Login.aspx
+    http://localhost/Secure/RecoverPassword.aspx
+
+
+4. 下载完成, 文件改名
+*.axd 文件 改名为 *.axd.js
+SiteMap.ashx 改名为 SiteMap.xml
+Blog/BlogSiteMap.ashx 改名为 Blog/BlogSiteMap.xml 
+SearchEngineInfo.ashx 改名为 SearchEngineInfo.xml
+
+5. 目录 Doc/ClientScript/Data 暂时移出去避免干扰
+
+6. 查找生成文件中, 
+   去掉 "全词匹配", "匹配大小写", (--去掉 "包含子目录"),
+   a. 替换为, 文件类型为*.html, *.css
+   http://localhost/
+   为
+   /
+   
+   b. 替换为, 文件类型*.html
+   .axd?d=
+   为
+   .axd.js?d=
+
+   csshandler.ashx?
+   为
+   csshandler2f98.css?
+
+   blog.html
+   为
+   blog-2.html
+   
+   /Secure/Register.aspx
+   为
+   /Secure/Register.html
+   
+   /Secure/Login.aspx
+   为
+   /Secure/Login.html
+   
+   /home.aspx
+   为
+   /home.html
+   
+   <!-- Added by HTTrack -->
+   为
+   
+   <!-- /Added by HTTrack -->
+   为
+
+   c. 替换为, 文件类型为*.xml 
+   http://localhost/
+   为
+   https://www.ipwom.com/
+   
+   .ashx
+   为
+   .xml
+   
+   .aspx
+   为
+   .html
+
+7.拷贝目录 
+  ClientScript
+  Data
+
+  清理目录(已清理), 仅保留必须的文件和目录
+  删除 Data\Sites\ 目录下的 2/3 子目录
+  删除 Data\Sites\1\media\LQ\Files 子目录
+
+  7.1 移回目录Doc
+
+8. 启动静态站点本地测试, 然后上传
+
+9. 修改Google控制台中的SiteMap
+   提交 SiteMap.xml
+   !不提交Blog/BlogSiteMap.xml, 因为Blog并未对外开放 
+
+10. 转换为静态站点后, 可以放到github等站点, 也可以放到docker里, 可以和.net core或wordpress等合并
+
+------------------------------
+
+--1.修改Query Strings规则, 以允许Secure目录, 无用, 只是去掉了查询字符串, 但文件还是hash命名, 生成了不同的文件名.
+
+--(已修改)1. 修改robots.txt, 
+   注释掉:
+   Disallow: /SiteMap.aspx
+  
+--(已修改)1. 修改robots.txt, 
+   取消注释(不取消):
+   Disallow: /SiteMap.aspx
+
+--1. 将robots.txt移出根目录, 允许下载ClientScript/Data, 这样页面引用到ClientScript/Data的路径会是相对路径, 否则被修改为绝对路径
+  不移robots.txt, 还是手工修改,
+  在设置项中已经设置不使用robots.txt规则.
+
+--b. 替换为, 文件类型*.html
+   var openState = Get_Cookie('openstate');
+   替换为
+   var openState = null;
+   
+--c. 替换为空, 文件类型*.html
+   <script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+   
+--d. 替换为空, 文件类型*.html
+   Sys.Application.add_init
+   
+--e. 替换为空, 文件类型*.html
+   WebForm_InitCallback();
+   
+--f. 替换为空, 文件类型*.html, 使用正则表达式
+   <script src="WebResourceb0fa.js?.*</script>
+   
+--g. 替换为空, 文件类型*.html, 使用正则表达式
+   Sys\.WebForms\..*;
+   
+--h. 替换为空, 文件类型*.html, 使用正则表达式
+   <script.*\.axd?.*</script>
+   
+--5. 去掉非.html文件 .ashx .axd
+
+--4. 查找ipwom.com 替换为/
+     查找en.ipwom.com 替换为/
+
+--3. 手工生成 Secure/
+
+--4. *.aspx 替换为 *.html
+
+--6. 关闭localhost.
+  有些资源是从localhost加载, 关闭localhost, 清空缓存测试

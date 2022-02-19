@@ -1,0 +1,957 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	谈谈对BPM的理解-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="谈谈对BPM的理解-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="谈谈对BPM的理解-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化,流程管理,流程建模,BPM" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='bpm-110001.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/bpm-110001.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="4" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw8WAh4GYWN0aW9uBRAvYnBtLTExMDAwMS5hc3B4FhACDw8PFgYeCENzc0NsYXNzBS1hcnQtbGF5b3V0LWNlbGwgYXJ0LXNpZGViYXIxIGxlZnRzaWRlIGNtc3pvbmUeBF8hU0ICAh4HVmlzaWJsZWhkZAIRDw8WBB8CBTlhcnQtbGF5b3V0LWNlbGwgYXJ0LWNvbnRlbnQtd2lkZSBjZW50ZXItbm9tYXJnaW5zIGNtc3pvbmUfAwICZBYCAgUPZBYCZg9kFgICAg8PFgQfAgUIYXJ0LXBvc3QfAwICZBYCAgMPZBYCAgMPDxYEHwIFD2FydC1wb3N0Y29udGVudB8DAgJkFgICAQ9kFgQCAQ8PFgIeC0NvbnRlbnRH" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="dWlkKClYU3lzdGVtLkd1aWQsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSQ2ZGQyYjE3Ni03MWI5LTQyZTctOGE2Yy0wZDA3YjkxZjAwZjBkFgICAQ9kFgJmD2QWBgIBD2QWAgIBDxYCHgRUZXh0BRFSYXRlIHRoaXMgQ29udGVudGQCBQ9kFgJmDxYOHgpDYWxsYmFja0lEBSljdGwwMCRtYWluQ29udGVudCRjdGwwMCRSYXRpbmckVXNlclJhdGluZx4HSnNvblVybAUzaHR0cDovL2xvY2FsaG9zdC9TZXJ2aWNlcy9Db250ZW50UmF0aW5nU2VydmljZS5hc2h4HgpCZWhhdmlvcklEBTFjdGwwMF9tYWluQ29udGVudF9jdGwwMF9SYXRpbmdfVXNlclJhdGluZ0JlaGF2aW9yHglD" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="b250ZW50SWQFJDZkZDJiMTc2LTcxYjktNDJlNy04YTZjLTBkMDdiOTFmMDBmMB4TVG90YWxWb3Rlc0VsZW1lbnRJZAUtY3RsMDBfbWFpbkNvbnRlbnRfY3RsMDBfUmF0aW5nX2xibFJhdGluZ1ZvdGVzHg9Db21tZW50c0VuYWJsZWRoHgxBdXRvUG9zdGJhY2toZAILDw8WAh8EaGQWCAIBDw8WAh8GBRjlr7nkupvlhoXlrrnlj5Hooajlj43ppohkZAIFDw8WAh8GBRXnlLXlrZDpgq7ku7YgKOWPr+mAiSlkZAIJDw8WAh8GBQblj5HpgIFkZAILDw8WAh8GBQzkuI3vvIzosKLosKJkZAINDw8WAh8EaGQWAgIBD2QWAmYPZBYCAgUPZBYCZg8WAh8HBS9jdGwwMCRtYWluQ29udGVudCRjdGwwMCRSYXRpbmdCb3R0b20kVXNlclJhdGluZ2QCEw8PFgYfAgUuYXJ0LWxheW91" />
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="dC1jZWxsIGFydC1zaWRlYmFyMiByaWdodHNpZGUgY21zem9uZR8DAgIfBGhkZAIVDw8WBh8CBRNhbHRjb250ZW50MSBjbXN6b25lHwMCAh8EaGRkAhcPDxYGHwIFE2FsdGNvbnRlbnQyIGNtc3pvbmUfAwICHwRoZGQCMw8PFgIfBGhkZAI9Dw8WAh8EaGRkAkEPDxYCHwRoZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFHWN0bDAwJFNlYXJjaElucHV0MSRidG5TZWFyY2gyl+p8MupmyODbxAlW5nl5lYUm2c8=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<script src="ScriptResource74cd.axd.js?d=MhKSckDAKy2B8D4_Jo8QTnPIqUoc2BghJ1tTPoLjBiMAZ0balsF3h9htAxEgvAqcXLGj-ybgQaDgicYRvTC4QghvHRzJPCStIglBNqE5ZNUEcVcyXtES-y1S-iwHC6gUeVq_Hyz0itE1t0rB0bB8TKD5Ksg1&amp;t=23c9c237" type="text/javascript"></script>
+<script src="ScriptResource406b.axd.js?d=QdpKcLwkQ9mALDyPJK1702bJu_wgK7-jrjlMTTOHnqCaDiSAY8smfJbdWbsH36lDb6oLkhr4iXbCVRtH6RYpinGN0-Xp9BPTMWT1E449Y4i5ECRz3DnIzvfu698mnlfe-AC2GPMhczsJz3BfrBrki8VU63heJj08Z6-4T6Mk7WPcSH4Z0&amp;t=cb62602" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAYnDv/rLFFkbip8ptlBw+EEh40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23cTNGs4WdMAlTohNqgmOhgh+Rj4WpJyIr0ATpy9okvXAZbqqU/kkTxmo+grpHespaduKiuXYZiJZxvy3AsOUVxQj8IxQA==" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$mainContent$ctl00$Rating$upRating',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<a id='module151' class='moduleanchor'></a>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div class="ratingcontainer">
+    <div id="ctl00_mainContent_ctl00_Rating_upRating">
+		
+            <span id="ctl00_mainContent_ctl00_Rating_spnPrompt" class="ratingprompt">
+                Rate this Content
+            </span>
+            <span class="rating" style="display: none;">5</span>
+                <div id="ctl00_mainContent_ctl00_Rating_UserRating" class="ratingStar">
+			<input type="hidden" name="ctl00$mainContent$ctl00$Rating$UserRating_RatingExtender_ClientState" id="ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState" value="5" /><a href="javascript:void(0)" id="ctl00_mainContent_ctl00_Rating_UserRating_A" title="5" style="text-decoration:none"><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_1" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_2" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_3" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_4" class="ratingItem Filled" style="float:left;">&nbsp;</span><span id="ctl00_mainContent_ctl00_Rating_UserRating_Star_5" class="ratingItem Filled" style="float:left;">&nbsp;</span></a>
+		</div>
+                <input type="hidden" name="ctl00$mainContent$ctl00$Rating$hdnContentGuid" id="ctl00_mainContent_ctl00_Rating_hdnContentGuid" value="6dd2b176-71b9-42e7-8a6c-0d07b91f00f0" />
+            <span id="ctl00_mainContent_ctl00_Rating_spnTotal" class="voteswrap">
+                <span id="ctl00_mainContent_ctl00_Rating_lblRatingVotes" class="ratingvotes">1 投票</span>
+                
+            </span>
+            
+        
+	</div>
+</div>
+
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<p>
+	&nbsp;</p>
+<p style="margin-left: auto; text-align: center; ">
+	&nbsp;</p>
+<p style="margin-left: auto; text-align: center; ">
+	<strong>BPM的产生缘由</strong></p>
+<p style="margin-left:auto;">
+	<br />
+	近年来，随着计算机技术的发展和互联网时代的到来，我们已经进入了信息时代，也称为数字化时代，在这数字化的时代里，企业的经营管理都受到了极大的挑战。从上世纪90年代起至今，企业的信息化工作开展的如火如荼，相继建立了很多业务系统，同时也给企业带来了巨大的效益。但是，新的问题出现了，业务已经对这些复杂的系统提出更新的需求，即需要实现系统之间整合。EAI(Enterprise Application Integration)技术风靡一时，成为了各界人士追捧的对象。热闹过后，许多人已经清晰的认识到，EAI仅仅是为解决“数据孤岛”而生，并不能解决业务流程的整合。另外，虽然很多业务系统也支持工作流技术，但是由于工作流与业务逻辑紧密结合，所以在EAI实施的效果大打折扣。实践证明，优化、高效、低成本的业务流程将为企业提供了与竞争对手拉开距离的法宝，高效的业务流程不仅提高企业的运行高效率，而且降低企业的成本，使企业达到高度自动化。所以，业务流程才是企业的核心问题。<br />
+	<br />
+	为了使业务系统适应企业的运行机制，需要对众多业务系统进行更深度的整合，包括数据整合、流程整合等，所以，BPM(Business Process Management)随之而产生。<br />
+	<br />
+	·<strong>BPM是什么</strong><br />
+	<br />
+	在IT界里，有一个不成文的规律，那就是喜欢拿概念忽悠人。“2005年是ERP年”，口号刚出，一夜之间ERP厂商风起云涌，到处鼓吹其先进理念，只要是能跟ERP挨上边儿的，都叫ERP系统，所以直接导致ERP在中国是失败的结局。BPM也是一样，由于BPM、ERP、OA、Workflow、EAI等这些概念都有一定联系，所以许多也不免俗套，开始宣扬自己的BPM理念。如果您是没学会忽悠本事的开发商，深刻理解BPM，真正提升您的产品质量，才不会被市场忽悠没了；如果您是没学会防忽悠本事的用户，深刻理解BPM，真正能评价一个好的BPM产品，才不会被开发商忽悠没了。<br />
+	<br />
+	关于“BPM是什么”这个问题，在很多资料里并没有给出非常明确的定义(确定的含义)，原因是IT界的很多概念在不同的场合下有不同的含义，并且随着时间而不断发展，所以不能叫定义，而只能叫描述，哪怕是权威的机构，如美国Gartner也是以“描述”说词。以下是Gartner对BPM的描述摘要：<br />
+	<br />
+	<strong>“Rapid change is impractical while processes are embedded in conventional applications.</strong></p>
+<p style="margin-left:auto;">
+	<strong>The Development of BPM Technologies is enabling&nbsp;&nbsp;business managers&nbsp;to</strong></p>
+<p style="margin-left:auto;">
+	<strong>abstract&nbsp;process flows and rules&nbsp;from the underlying applications and infrastructure, and&nbsp;to change them directly.”</strong><br />
+	<br />
+	以下是我对此的理解：嵌入到常规的程序中的流程需要迅速改变是不切实际的。需要具备让管理人员也可以设计业务流程，需要把流程的逻辑从底层的代码中抽取出来，并且能够直接改变他们。<br />
+	<br />
+	在理解BPM之前，我们先谈谈一个比较熟悉的名词——业务流程(Business Process)。<br />
+	业务流程是企业、政府以及其它各种组织，为了达到其业务目标，而执行的一系列<strong>活动</strong>，这些活动须由两个或两个以上的<strong>人或IT系统</strong>执行，串行或并行，活动的执行需要满足一定的<strong>规则和条件</strong>。下图是一个报表审批流程。<br />
+	<img alt="pc_GovCommonalityCareerSolution.jpg" src="/Data/Sites/1/media/LQ/BPM/110001-01.jpg" style="border-style: initial; border-color: initial; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; width: 666px; height: 465px; " /><br />
+	在上图报表审批流程中，首先相关业务人员<strong>(参与者为人)</strong>向相关领导提交费用报表<strong>(执行活动)</strong>，该领导审批后，系统自动根据预先设定的规则对费用总额Total(流程携带的业务数据)进行判断，当Total&gt;5000<strong>(规则或条件)</strong>时需要二级领导审批，审批完成后交由文档管理员归档保存<strong>(参与者为系统)</strong>。在整个流程中，包含了手工作业(暂名为AgileWork)，如提交费用报表、领导审批等，也包含了自动作业(暂名为AgilePart)，如是否批准、Total值判断、文档保存等。<br />
+	<br />
+	基于上述理解，BPM应该是一种企业中业务流程管理的方法，而支持其管理的软件系统叫BPMS(Business Process Management Suite)。所以BPM应该是企业管理中的方法，而BPMS是建立、执行、评价和管理企业业务流程的一组软件系统体系，也就是我们常说的软件平台。概括起来说，BPM应该能体现以下特性：<br />
+	<br />
+	·<strong>业务流程建模</strong>：业务人员完全以业务的视角，用流程图描述业务流程，也就是<strong>流程设计工具</strong>。<br />
+	·<strong>业务流程自动化</strong>：根据定义好的流程，在BPM系统中自动执行，完全废弃传统的纸张，流程的传递不需要人工干预，也就是<strong>智能化BPM流程引擎</strong>。<br />
+	·<strong>系统集成</strong>：BPM不仅仅是由人来参与，部分活动也可以由IT系统来参与，例如在请假流程中需要在HR系统中判断请假人是否有年休假期。这就要求BPM提供<strong>执行自动作业</strong>功能，如调用WebService、执行某类的方法。<br />
+	·<strong>业务流程管理</strong>：能够可视化的监控流程的执行情况，对流程执行过程中出现的意外进行处理，也就是提供<strong>实时流程监控</strong>。<br />
+	·<strong>业务流程优化</strong>：对流程执行的情况（包括：效率、成本、瓶颈、负载）进行统计、分析。根据统计分析结果，对流程进行改造，以优化流程的执行，也就是提供<strong>流程模拟与分析工具。</strong><br />
+	<br />
+	业务流程建模是基础，业务流程自动化和系统集成是实现手段，业务流程管理是过程，业务流程优化是目标。BPM是一个方法论和软件系统的集合，作为方法论，有其自身的规划、实施、管理办法。在该方法的指导下，由软件系统来实现业务流程的有效管理。从这个角度来讲，BPM是一个持续性的过程，而这个过程的各个环节将构成一个闭合的循环体，这恰恰迎合了企业成长的过程。所以BPMS必将给企业的信息化建设，提高企业在市场的竞争力起着非常重要的作用。<br />
+	<br />
+	·<strong>BPM与Workflow、EAI</strong><br />
+	<br />
+	首先，我们先看看BPM与Workflow。谈到Workflow，我们自然会想到OA系统。<br />
+	<br />
+	八十年代初期，随着大量PC机的生产以及普及化，有一组麻省理工的研发人员首先提出了办公自动化的概念，并在1981年发表了一篇文章：“Etude：An Integrated Document Processing System”。文章中提到开发一套集成的工具，包括办公工作台以及针对个人交互的软件系统，为办公室员工提高办公的效率。这套软件系统就是工作流与OA（办公自动化）的前身。国内的OA系统是以文档作为流转的元素，把符合中国国情的国家机关以及国营企业下发正式的红头文，通过支持复杂工作流程，复杂的人员组织，不同组织机构，不同岗位，进行比如动态会签作业，实现电子表单与人的互动处理工作。很多人误认为OA或者工作流就是BPM。其实工作流是BPM的子集，BPM与工作流有很多本质的差别，主要区别如下表所示：</p>
+<p style="margin-left:auto;">
+	&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:79px;">
+				<p align="center">
+					区别点</p>
+			</td>
+			<td style="width:264px;">
+				<p align="center">
+					<strong>OA/Workflow</strong></p>
+			</td>
+			<td style="width:224px;">
+				<p align="center">
+					<strong>BPM</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:79px;">
+				<p align="center">
+					交互</p>
+			</td>
+			<td style="width:264px;">
+				<p>
+					人与人</p>
+				<p>
+					人与系统（次要）</p>
+			</td>
+			<td style="width:224px;">
+				<p>
+					人与人</p>
+				<p>
+					系统与系统</p>
+				<p>
+					人与系统</p>
+				<p>
+					系统与人</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:79px;">
+				<p align="center">
+					整合</p>
+			</td>
+			<td style="width:264px;">
+				<p>
+					不提供，甚至恶化了企业“流程孤岛”的问题</p>
+			</td>
+			<td style="width:224px;">
+				<p>
+					能广泛整合不同业务系统</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:79px;">
+				<p align="center">
+					流程建模</p>
+			</td>
+			<td style="width:264px;">
+				<p>
+					不重要，甚至很多OA是通过Lotus系统来配置</p>
+			</td>
+			<td style="width:224px;">
+				<p>
+					至关重要，需要提供可视化流程定义</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:79px;">
+				<p align="center">
+					焦点</p>
+			</td>
+			<td style="width:264px;">
+				<p>
+					文档路由</p>
+			</td>
+			<td style="width:224px;">
+				<p>
+					业务流程生命周期管理与流程优化</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p style="margin-left:auto;">
+	<br />
+	接下来，我们来看BPM与EAI。<br />
+	<br />
+	目前，企业出现了很多分散式的应用与系统。这些系统包括ERP，CRM等业务系统。但是系统却成为了企业的“信息孤岛”，系统与系统之间无法交换信息。随之，EAI（Enterprise Application Integration）等产品开始出现。很多用户因为BPM提供的整合功能与EAI相似，误以为BPM就是EAI。但是EAI和BPM是有很多区别的，EAI从表面上看，解决了信息孤岛问题，实际上，只是解决了数据传输问题，企业中普遍存在的“流程孤岛”的问题，仍然没有被解决。随着时间与业务需要，EAI与BPM开始汇集了一些新的技术，尤其是Web Services，SOA（Service Oriented Architecture）的出现加速了整个过程。最终，BPM不是EAI，但却是EAI的未来发展方向。主要区别如下表所示：<br />
+	&nbsp;</p>
+<p style="margin-left:auto;">
+	&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					区别点</p>
+			</td>
+			<td style="width:228px;">
+				<p align="center">
+					<strong>EAI</strong></p>
+			</td>
+			<td style="width:248px;">
+				<p align="center">
+					<strong>BPM</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					关注焦点</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					重视数据整合-即系统之间交换数据</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					重视流程整合-即系统之间流程的路由</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					速度</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					速度要求非常快，如果有延迟，会造成极大的瓶颈</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					速度依赖于人工处理速度</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					用户界面</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					参与者是系统，不需要界面</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					参与者包括人，对界面易用性要求高</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					用户数</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					参与者是系统，能整合的系统超过20已经达到极限</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					可有很多人参与，参与者有很多角色与关系</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					异常处理</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					只在乎系统的异常</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					在乎系统的异常，还必须考虑人的需求，包括请假，外出等情况</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					业务规则</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					牵涉系统的信息流的业务规则</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					牵涉范围更广，不只是系统，还需要考虑业务以及与人之间的关系</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:91px;">
+				<p align="center">
+					数据格式转换</p>
+			</td>
+			<td style="width:228px;">
+				<p>
+					至关重要</p>
+			</td>
+			<td style="width:248px;">
+				<p>
+					可能提供</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p style="margin-left:auto;">
+	<br />
+	<br />
+	·<strong>BPM常见应用场景</strong><br />
+	&nbsp;</p>
+<p style="margin-left:auto;">
+	&nbsp;</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					<strong>应用领域</strong></p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					<strong>常见流程</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					生产制造</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					ISO9000流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					软件研发</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					CMMI流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="4" style="width:284px;">
+				<p align="center">
+					财务</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					合同审批流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					采购申请流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					固定资产报废流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					费用报销流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="4" style="width:284px;">
+				<p align="center">
+					人事行政</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					请假申请流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					出差申请流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					KPI绩效考核流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					人员雇佣流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:284px;">
+				<p align="center">
+					管理</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					资源申请流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					日常报告流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:284px;">
+				<p align="center">
+					市场销售</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					订单受理流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					合同执行流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:284px;">
+				<p align="center">
+					客户服务</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					保险索赔流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					投诉受理流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					售后服务流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="4" style="width:284px;">
+				<p align="center">
+					政务</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					公文审批流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					项目申报流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					服务受理流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					多政府部协作处理流程</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:284px;">
+				<p align="center">
+					B2B</p>
+			</td>
+			<td style="width:284px;">
+				<p align="center">
+					与合作伙伴的协作流程</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p style="margin-left:auto;">
+	<br />
+	<br />
+	·<strong>BPM能带来什么</strong><br />
+	<br />
+	1、提高客户服务的满意度<br />
+	&nbsp;BPM系统为客户提供单一入口，客户只要通过该单一入口提出请求即可，流程自动把任务分配到相关业务负责人。由于BPM系统执行效率远远高于人工流程，全面实施BPM系统将会给客户提供更快速的服务响应。另外，客户是流程环节中的一部分，并通过BPM参与到业务流程中来，所以，可以随时能够获得流程的进度，使客户对其需求的处理情况有直观的了解，消除了客户的“需求石沉大海”的现象。<br />
+	<br />
+	2、提高自身的市场竞争力<br />
+	&nbsp;&nbsp;·最优的业务流程运作效率<br />
+	通过BPM系统实现自动化执行流程，消除了传统纸质流程中人工传递所消耗的时间；BPM系统允许大规模的并行处理，这大大提高了流程执行的速度。BPM的任务分配机制，提供了负载平衡、任务队列、后备人选等特性，将任务分配给当前执行该任务最有效率的人；BPM的任务提醒机制，使任务执行者能够立即获知其被分配的活动；BPM的监控、统计、分析工具能够最大限度促进流程执行，并使其不断优化。<br />
+	&nbsp;&nbsp;·平衡效率、成本和质量，提供成熟的服务和生产能力<br />
+	BPM系统能通过组织机构、岗位设置详细定义流程，明确岗位职责和业务规则，减少工作失误。BPM的监控工具，能够分拣出执行中出现问题的流程，供相关人员进行干预；BPM的建模工具、仿真预演工具和统计分析工具，能够帮助流程定义者设计出最适合该组织的流程。<br />
+	<br />
+	3、提高适应变化的能力<br />
+	市场、客户、竞争者都在变化，要求一个组织必须快速变化，适应新的形势。有时之所以出现组织适应变化的能力差现象，是由于没有感知到外部变化，并且无法让组织内的人员快速学习和执行新的业务规则。BPM系统的一些特性消除了以上的问题：<br />
+	&nbsp;&nbsp;·BPM系统让客户、合作伙伴、供应商参与到流程中来，能够快速直观地获得他们的反馈，感知市场的变化。<br />
+	&nbsp;&nbsp;·BPM系统的统计分析工具，能够从历史的数据中，预测到内部外部环境的变化趋势。<br />
+	&nbsp;&nbsp;·BPM系统减少了组织内人员对新业务规则的学习成本。流程执行者不需要知道流程的变化，因为不是由人来触发后续活动，而是由BPM系统根据新的业务规则新的流程定义来触发各个活动。<br />
+	&nbsp;&nbsp;·BPM系统要求组织内人员只需要熟悉自己所参与的活动的工作即可。BPM系统如同流水线，分解复杂的工作，让每一个人的工作简化，即使流程发生变化，每个人仍然完成其负责的简单的工作。</p>
+<p style="margin-left:auto;">
+	&nbsp;</p>
+<p class="lqtext" style="margin-left: auto; ">
+	<a class="lqtextlink" href="http://www.cnblogs.com/ruochen/archive/2008/03/05/1085046.html" target="_blank">原文链接</a></p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fbpm-110001.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fbpm-110001.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(mojoAjaxControlToolkit.AjaxRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$mainContent$ctl00$Rating$UserRating","ClientStateFieldID":"ctl00_mainContent_ctl00_Rating_UserRating_RatingExtender_ClientState","ContentId":"6dd2b176-71b9-42e7-8a6c-0d07b91f00f0","EmptyStarCssClass":"Empty","FilledStarCssClass":"Filled","JsonUrl":"/Services/ContentRatingService.ashx","Rating":5,"StarCssClass":"ratingItem","TotalVotesElementId":"ctl00_mainContent_ctl00_Rating_lblRatingVotes","WaitingStarCssClass":"Saved","id":"ctl00_mainContent_ctl00_Rating_UserRatingBehavior"}, null, null, $get("ctl00_mainContent_ctl00_Rating_UserRating"));
+});
+//]]>
+</script>
+</form>
+	
+</body>
+</html>

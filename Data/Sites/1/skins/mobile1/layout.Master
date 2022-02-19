@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="mojoPortal.Web.layout" %>
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+<head id="Head1" runat="server"><title></title>
+<portal:StyleSheetCombiner id="StyleSheetCombiner" runat="server" UseIconsForAdminLinks="false" />
+<portal:ScriptLoader id="ScriptLoader1" runat="server" />
+</head>
+<body class="pagebody" id="Body" runat="server">
+ffffffffffffffffffffffff
+<form id="frmMain" runat="server">
+<div id="wrapwebsite">
+ssssssssssssssssssssssssss
+<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+	<div class="wrapcenter">
+	    <portal:LayoutPanel id="divCenter" runat="server" visible="true" cssclass="center-nomargins" SkinID="pnlPlain">
+		    <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
+	    </portal:LayoutPanel>
+		<asp:Panel id="divLeft" runat="server" cssclass="leftside" visible="True" SkinID="pnlPlain">
+		    <a id="startcontent"></a>
+		    <asp:contentplaceholder ID="leftContent" runat="server"></asp:contentplaceholder>
+	    </asp:Panel>
+		<portal:LayoutPanel id="divRight" runat="server" visible="true" cssclass="rightside" SkinID="pnlPlain">
+		    <asp:contentplaceholder ID="rightContent" runat="server"></asp:contentplaceholder>
+	    </portal:LayoutPanel>
+		<asp:ContentPlaceHolder ID="pageEditContent" runat="server"></asp:ContentPlaceHolder>
+	</div>	
+</div>
+</form>
+</body>
+</html>

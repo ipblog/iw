@@ -1,0 +1,761 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="zh-CN" lang="zh-CN">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head id="ctl00_Head1" profile="http://dublincore.org/documents/dcq-html/"><title>
+	IPGet专利检索系统
+</title><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel='stylesheet' type='text/css' href='/ClientScript/jqueryui/themes/start/jquery-ui.css' />
+<link rel='stylesheet' type='text/css' href='csshandler2f98.css?skin=artisteer-30headermenu&amp;s=1&amp;v=2.4.0.2&amp;sv=457d1d00-7e9f-4dcc-9e50-3a986aac24a9' />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="IPGet专利检索系统-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta property="og:description" content="IPGet专利检索系统-知识产权信息化网(IPWOM)提供IPGet专利检索系统/IPGet专利下载软件/IPGet专利检索软件/IPGet专利查询软件/IPGet专利搜索软件,IPSys商标管理系统/IPSys商标管理软件和专利统计分析等知识产权产品和服务" />
+<meta name="keywords" content="专利,检索,下载,查询,搜索,商标,管理,系统,软件,知识产权,信息化" />
+<link rel="search" type="application/opensearchdescription+xml" title="知识产权信息化网 网站搜索" href="SearchEngineInfo.ashx" />
+    <!--[if IE]>
+	<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" /><meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<![endif]-->
+    
+<link rel='shortcut icon' href='/Data/Sites/1/skins/artisteer-30headermenu/favicon.ico' />
+<script src="/ClientScript/jquery/jquery.min.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqmojo/jquery-migrate1-0-0.js" type="text/javascript" ></script>
+<script src="/ClientScript/jqueryui/jquery-ui.min.js" type="text/javascript" ></script>
+<link rel='canonical' href='IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html' /><style type="text/css">
+	.ctl00_SiteMenu1_ctl00_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_SiteMenu1_ctl00_1 { text-decoration:none; }
+	.ctl00_SiteMenu1_ctl00_2 {  }
+
+</style></head>
+<body id="ctl00_Body" class="pagebody">
+
+    <form method="post" action="/" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="3" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjA1OTAyNzk1MQ9kFgJmD2QWBAIBDxYCHgdwcm9maWxlBSlodHRwOi8vZHVibGluY29yZS5vcmcvZG9jdW1lbnRzL2RjcS1odG1sL2QCAw9kFgICAw9kFhACDw8PFgYeCENzc0NsYXNzBS1hcnQtbGF5b3V0LWNlbGwgYXJ0LXNpZGViYXIxIGxlZnRzaWRlIGNtc3pvbmUeBF8hU0ICAh4HVmlzaWJsZWhkZAIRDw8WBB8BBTlhcnQtbGF5b3V0LWNlbGwgYXJ0LWNvbnRlbnQtd2lkZSBjZW50ZXItbm9tYXJnaW5zIGNtc3pvbmUfAgICZBYCAgUPZBYCZg9kFgICAg8PFgQfAQUIYXJ0LXBvc3QfAgICZBYCAgMPZBYCAgMPDxYEHwEFD2FydC1wb3N0Y29udGVudB8CAgJkFgICAQ9kFgQCAQ8PFgIfA2hkFgICAQ9kFgJmD2QWAgIFD2QWAmYPFgIeCkNhbGxiYWNr" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="SUQFKWN0bDAwJG1haW5Db250ZW50JGN0bDAwJFJhdGluZyRVc2VyUmF0aW5nZAINDw8WAh8DaGQWAgIBD2QWAmYPZBYCAgUPZBYCZg8WAh8EBS9jdGwwMCRtYWluQ29udGVudCRjdGwwMCRSYXRpbmdCb3R0b20kVXNlclJhdGluZ2QCEw8PFgYfAQUuYXJ0LWxheW91dC1jZWxsIGFydC1zaWRlYmFyMiByaWdodHNpZGUgY21zem9uZR8CAgIfA2hkZAIVDw8WBh8BBRNhbHRjb250ZW50MSBjbXN6b25lHwICAh8DaGRkAhcPDxYGHwEFE2FsdGNvbnRlbnQyIGNtc3pvbmUfAgICHwNoZGQCMw8PFgIfA2hkZAI9Dw8WAh8DaGRkAkEPDxYCHwNoZGQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFHWN0bDAwJFNlYXJjaElucHV0MSRidG5TZWFyY2gyBRVj" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="dGwwMCRTaXRlTWVudTEkY3RsMDAPD2QFSWNhOTMzZTNiLWU1MGUtNGNiZi1iMzI2LTU2YjRkMWY4ZjU3M1xhMDI5MjhkNC0wYjYyLTRiMzUtYTFkNS1kMmUwNWM0YmJjNzRkAP6HcvTbj5s3NCcfTnCTt8mog6I=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourceb0fa.js?d=S5RFNmZDqPZwNw18kor0E1vHmvxXrOd30iQcVyge9VmAb85zCYcYmun__gGuYXPXLqyPbsHWZzNM4Buqjiknd1-u6RI1&amp;t=637729908413207958" type="text/javascript"></script>
+
+
+<script src="/ClientScript/jqmojo/jquery.cycle.all.min.js" type="text/javascript"></script>
+<script src="ScriptResourceb0e6.axd.js?d=7nLQbQvKChihWcZecYvFLqpIU53UYMEmuVAR3kHGFH6P5r6nfwxqVLhebr8SQh_SyIXNxowHAlJp1fuMA63QxtsRBmRqleyQ7J69qw1QOPcrnByq_DdqrHiZZJz8TPShySwt9jCqlX3oPYL22VZv0tg8xGdcfuZ9QZZgK-wSpTZDnc1jJCr_pptp_4-vNyMe4SeaFlVN1fzcejpilCcd_hCG-CwRTjy0gBJUqNKZsKr6e4cCjAO-6MO7krETFWOfyhIIXc420INwajPQDPFducgTlOCl3fbwJQVrU3pjN6Upz1vV5ZMtJNVHzp0MKRpSUJnLFgYOi6pADYqAZtOW4I3BDKcjw2dWvQbUYVyJy4dHhnEYZ_Emj5crXG0AJUHzs6P9wBBNQWLSooZ26KHrNHWPP0EZph6ngcAFnRA5sopMEcunHikk587l6ck2a0-PsqSx_rdsX5MpNfrU1sRsyZDdRB81" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAS0de+WJY0MosTc1813uHQ8h40PwVBRKJxhcUVQFDm46iNz9todWSM/Uvo/vApf23eW6qlP5JE8ZqPoK6R3rKWnP5g8mpT8dg5+GpjoW+pbFttObWU=" />
+</div>
+    
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="art-page-background-middle-texture">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl">
+            </div>
+            <div class="art-sheet-tr">
+            </div>
+            <div class="art-sheet-bl">
+            </div>
+            <div class="art-sheet-br">
+            </div>
+            <div class="art-sheet-tc">
+            </div>
+            <div class="art-sheet-bc">
+            </div>
+            <div class="art-sheet-cl">
+            </div>
+            <div class="art-sheet-cr">
+            </div>
+            <div class="art-sheet-cc">
+            </div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+					<div class="art-header-center">
+
+						<div class="art-header-jpeg"><img alt='知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务' src='/Data/Sites/1/skins/artisteer-30headermenu/images/header.jpg' /></div>
+					</div>
+                    <div class="art-logo">
+					    <h1 class='art-Logo-name art-logo-name siteheading '>知识产权信息化网(IPWOM)提供专利检索系统、专利下载软件、商标管理系统等产品及专利统计分析等服务</h1>
+
+
+                    </div>
+                
+
+                    
+                            
+                            
+
+                </div>
+                <div class="art-nav">
+                    <div class="art-nav-l"></div>
+                    <div class="art-nav-r"></div>
+                    
+
+<div class="art-nav-outer" id="ctl00_SiteMenu1_ctl00">
+		<ul class="art-hmenu">
+			<li>
+				<a href="home.html">
+					<span class="l"></span><span class="r"></span><span class="t">首页</span></a>
+			</li>
+			<li>
+				<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html" class=" active">
+					<span class="l"></span><span class="r"></span><span class="t">产品</span></a>
+				<ul>
+					<li>
+						<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPMis%e4%b8%93%e5%88%a9%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html" class="active">
+							<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+					</li>
+					<li>
+						<a href="IPCat%e8%af%8d%e6%b1%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPCat词汇管理系统</span></a>
+					</li>
+					<li>
+						<a href="IPImg%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPImg图像处理系统</span></a>
+					</li>
+					<li>
+						<a href="IPReader%e7%9f%a5%e8%af%86%e4%ba%a7%e6%9d%83%e9%98%85%e8%af%bb%e5%99%a8.html">
+							<span class="l"></span><span class="r"></span><span class="t">IPReader阅读器</span></a>
+					</li>
+					<li>
+						<a href="ipsys-releasehistory.html">
+							<span class="l"></span><span class="r"></span><span class="t">版本历史</span></a>
+					</li>
+					<li>
+						<a href="ipsys-trial.html">
+							<span class="l"></span><span class="r"></span><span class="t">下载试用</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="development.html">
+					<span class="l"></span><span class="r"></span><span class="t">服务</span></a>
+				<ul>
+					<li>
+						<a href="development.html">
+							<span class="l"></span><span class="r"></span><span class="t">软件开发</span></a>
+					</li>
+					<li>
+						<a href="web-building.html">
+							<span class="l"></span><span class="r"></span><span class="t">网站建设</span></a>
+					</li>
+					<li>
+						<a href="statistics.html">
+							<span class="l"></span><span class="r"></span><span class="t">统计分析</span></a>
+					</li>
+					<li>
+						<a href="training.html">
+							<span class="l"></span><span class="r"></span><span class="t">培训</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation.html">
+					<span class="l"></span><span class="r"></span><span class="t">支持</span></a>
+				<ul>
+					<li>
+						<a href="documentation.html">
+							<span class="l"></span><span class="r"></span><span class="t">帮助文档</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipmis-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPMis专利管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-help.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="videos.html">
+							<span class="l"></span><span class="r"></span><span class="t">视频</span></a>
+						<ul>
+							<li>
+								<a href="ipget-videos.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="tutorials.html">
+							<span class="l"></span><span class="r"></span><span class="t">教程</span></a>
+						<ul>
+							<li>
+								<a href="ipsys-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPSys知识产权管理系统</span></a>
+							</li>
+							<li>
+								<a href="ipget-tutorials.html">
+									<span class="l"></span><span class="r"></span><span class="t">IPGet专利检索系统</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="download.html">
+							<span class="l"></span><span class="r"></span><span class="t">资料下载</span></a>
+					</li>
+					<li>
+						<a href="faqs.html">
+							<span class="l"></span><span class="r"></span><span class="t">常见问题</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="forums.html">
+					<span class="l"></span><span class="r"></span><span class="t">社区</span></a>
+				<ul>
+					<li>
+						<a href="forums.html">
+							<span class="l"></span><span class="r"></span><span class="t">论坛</span></a>
+					</li>
+					<li>
+						<a href="blog-2.html">
+							<span class="l"></span><span class="r"></span><span class="t">社区博客</span></a>
+					</li>
+					<li>
+						<a href="newsletters.html">
+							<span class="l"></span><span class="r"></span><span class="t">订阅资讯</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="investment.html">
+					<span class="l"></span><span class="r"></span><span class="t">加入我们</span></a>
+				<ul>
+					<li>
+						<a href="agency.html">
+							<span class="l"></span><span class="r"></span><span class="t">代理加盟</span></a>
+					</li>
+					<li>
+						<a href="investment.html">
+							<span class="l"></span><span class="r"></span><span class="t">投资合作</span></a>
+					</li>
+					<li>
+						<a href="part-time.html">
+							<span class="l"></span><span class="r"></span><span class="t">兼职合作</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact-information.html">
+					<span class="l"></span><span class="r"></span><span class="t">联系我们</span></a>
+				<ul>
+					<li>
+						<a href="contact-information.html">
+							<span class="l"></span><span class="r"></span><span class="t">联系信息</span></a>
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="l"></span><span class="r"></span><span class="t">用户留言</span></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+</div>
+
+
+                    <div id='ctl00_SearchInput1_pnlS' class=''>
+
+<div id="ctl00_SearchInput1_pnlSearch" class="searchpanel " onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_SearchInput1_btnSearch2&#39;)" style="display:inline;">
+	
+<h2 id="ctl00_SearchInput1_heading" style="position: absolute; left:-2000px; text-indent: -999em;"><label for="ctl00_SearchInput1_txtSearch" id="ctl00_SearchInput1_lblSearchHeading">站点查找</label></h2>
+<input onfocus="javascript:watermarkEnter(this, &#39;输入搜索关键字&#39;);" onblur="javascript:watermarkLeave(this, &#39;输入搜索关键字&#39;);" name="ctl00$SearchInput1$txtSearch" type="text" id="ctl00_SearchInput1_txtSearch" title="站点查找" class="searchbox" />
+
+<input type="image" name="ctl00$SearchInput1$btnSearch2" id="ctl00_SearchInput1_btnSearch2" class="searchbutton" src="/Data/Sites/1/skins/artisteer-30headermenu/btnsearch.png" alt="搜索" />
+
+</div>
+
+</div>
+                </div>
+                <div class="art-content-layout">
+				<div class="art-content-layout-row"> 
+                    
+                    <div id="ctl00_divCenter" class="art-layout-cell art-content-wide center-nomargins cmszone">
+	
+                        
+                        
+                        <a id="startcontent"></a>
+                        
+<div id='ctl00_mainContent_ctl00_pnlOuterWrap' class='art-post'>
+<div class='art-post-tl'></div><div class='art-post-tr'></div><div class='art-post-bl'></div><div class='art-post-br'></div><div class='art-post-tc'></div><div class='art-post-bc'></div><div class='art-post-cl'></div><div class='art-post-cr'></div><div class='art-post-cc'></div><div class='art-post-body'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerWrap' class='panelwrapper htmlmodule'>
+
+<div class='art-postmetadataheader'><h2 id="module24" class="art-postheader moduletitle">IPGet专利检索系统产品介绍</h2></div>
+<div id='ctl00_mainContent_ctl00_pnlOuterBody' class='art-postcontent'>
+
+<div id='ctl00_mainContent_ctl00_pnlInnerBody' class='modulecontent'>
+
+
+<div id='ctl00_mainContent_ctl00_divContent' class=''>
+<div>
+<p class="lqtext">&nbsp;</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>是一款为专利工作者、知识产权专家、情报专家、法律专家、科研人员精心研发的专利检索、专利下载、专利管理软件。其集成了中、欧、美、日、WIPO、德等20多个权威的免费专利检索网站，可批量下载上述专利检索网站的专利著录项、法律状态、同族信息、引证信息、附图、首页、全文等信息。而且其通过提供丰富的检索条件、建立专利分类、自定义字段、时限监控、电子卷管理、专利共享等功能来提供基本的本地专利管理功能, 因此它也是一款简单的专利管理系统。<span style="font-size: 14px; text-indent: 28px;">该系统有众多免费用户,还有中国、美</span><span style="font-size: 14px; text-indent: 28px;">国</span><span style="font-size: 14px; text-indent: 28px;">、日本、台湾、澳门等国家或地区的付费用户。</span></p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>有个人单机版, 使用Access数据库, 方便个人用户建立个人专利数据库。<strong>IPGet专利检索系统</strong>也有服务器版, 使用SqlServer数据, 方便企业用户多人共同维护专利数据库, 适合企业用户进行统计分析使用。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>在保证功能强大的同时保证系统的尽可能小巧及系统运行的快速，目前全部安装文件总计约6.5M大小。安装简单快捷，普通用户可以自行安装，完全无须IT人员帮助。</p>
+
+<p class="lqtitle2"><span style="text-indent: 28px; "><strong>IPGet专利检索系统</strong></span>其主要功能如下:</p>
+
+<p class="lqtitle2">1. 内嵌浏览器，直接集成如下权威检索网站，是一款定制的“专利浏览器”</p>
+
+<ol>
+	<li class="lqtext">中国 SIPO-国家知识产权局 专利检索</li>
+	<li class="lqtext">中国&nbsp;PSS-国家知识产权局 专利检索 (此站不支持全文下载，但IPGet能从EPO下载部分全文。免费版无)</li>
+	<li class="lqtext">中国 CNIPR-知识产权网&nbsp;专利检索 (免费版无)</li>
+	<li class="lqtext">中国 IPWOM站点导航&nbsp;&nbsp;专利检索</li>
+	<li class="lqtext">欧洲 EPO&nbsp;专利检索(免费版无)</li>
+	<li class="lqtext">欧洲 Open Patent Services&nbsp;专利检索&nbsp;(免费版无)</li>
+	<li class="lqtext">世界 WIPO&nbsp;专利检索<span style="font-size: 14px; text-indent: 28px;">(免费版无)</span></li>
+	<li class="lqtext">美国 PatFT-授权专利&nbsp;专利检索(免费版无)</li>
+	<li class="lqtext">美国 AppFT-申请公布专利&nbsp;专利检索(免费版无)</li>
+	<li class="lqtext">加拿大 CPD&nbsp;专利检索</li>
+	<li class="lqtext">德国 DPMAregister&nbsp;专利检索</li>
+	<li class="lqtext">德国 DEPATISnet&nbsp;专利检索</li>
+	<li class="lqtext">日本 IPDL全部4种检索方式，暂只包括发明和实用新型专利检索，不包括外观设计专利检索。</li>
+	<li class="lqtext">台湾中文专利检索</li>
+	<li class="lqtext">台湾英文专利检索</li>
+	<li class="lqtext">香港专利检索</li>
+	<li class="lqtext">澳大利亚专利检索</li>
+	<li class="lqtext">韩国专利检索</li>
+	<li class="lqtext">印度专利检索</li>
+	<li class="lqtext">Patent Lens&nbsp;专利检索</li>
+	<li class="lqtext">Google&nbsp;专利检索</li>
+	<li class="lqtext">中国&nbsp;CPRS&nbsp;中国专利检索&nbsp;(免费版无)</li>
+	<li class="lqtext">中国&nbsp;SooPAT中国专利检索(此站不支持全文下载, 免费版无)</li>
+	<li class="lqtext">中国 InnoJoy&nbsp;专利检索&nbsp;(免费版无)</li>
+</ol>
+
+<p class="lqtext">当出现检索结果时，点击下载按钮，便可把检索结果直接添加到下载列表。</p>
+
+<p class="lqtext">由于采用集成专利检索网站的方式，因此可以充分利用各个专利检索网站的全部检索功能，因此只要通过网站上能检索到的专利，<strong>IPGet专利检索系统</strong>就可以检索到，只要网页上能下载的专利通过<strong>IPGet专利检索系统</strong>就能下载。 而且保证了检索结果与网站保持完全一致。</p>
+
+<p class="lqtitle2">2. 批量输入<span style="text-indent: 28px; ">专利</span>号码进行专利检索和下载</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对CNIPR批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对SIPO批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong><span style="font-size: 14px; text-indent: 28px;">支持对PSS批量录入申请号/公开号进行专利检索和下载。</span></p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong><span style="font-size: 14px; text-indent: 28px;">支持对CPRS批量录入申请号/公开号进行专利检索和下载。</span></p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong><span style="font-size: 14px; text-indent: 28px;">支持对SooPAT批量录入申请号进行专利检索和下载。</span></p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对US-AppFT批量录入公开号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对US-PAFTT批量录入专利号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对台湾中文批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对台湾英文批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对澳大利亚批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对韩国批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持对印度批量录入申请号进行专利检索和下载。</p>
+
+<p class="lqtitle2">3. 实现批量高速专利下载</p>
+
+<p class="lqtext">与从网站上专利下载不同，网站上只能一条一条下载专利, 而且下载的专利的说明书是一页一页的。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>自动添加本页所有的专利下载到本地，并对专利检索结果页面进行自动翻页，因此可以实现批量高速的专利检索和专利下载。</p>
+
+<p class="lqtitle2">4. 说明书合并</p>
+
+<p class="lqtext">而且<strong>IPGet专利检索系统</strong>可以将下载的专利说明书从tif、pdf、jpg等各种格式自动合并为一个pdf文件。电子卷中也提供选择任意图片或pdf格式文件合并成单一pdf文件的功能。</p>
+
+<p class="lqtext">如果下载的pdf文件被加密禁止打印、复制等，<strong>IPGet专利检索系统</strong>会自动除去加密限制。</p>
+
+<p class="lqtitle2">5. 灵活配置专利下载项</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>可以灵活的配置专利下载项实现只下载专利的著录项、只下载专利说明书首页、只下载专利法律状态等各种专利下载要求，加快专利下载速度。</p>
+
+<p class="lqtext">例如，对于专利统计分析人员来说，我们可以仅仅下载专利著录项，而不需下载专利附图，专利全文等耗时的内容，这样专利下载的速度会相当快。</p>
+
+<p class="lqtitle2">6. 多级分类管理</p>
+
+<p class="lqtext">对于已下载的专利，<strong>IPGet专利检索系统</strong>可以实现树形结构对已下载的专利进行分类管理，方便按科研项目和开发子课题进行管理，在各个分类间可以自由的复制或转移专利，</p>
+
+<p class="lqtitle2">7. 高速稳定下载, 可随时中断，可断点续传，可随时更新下载的数据。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>可设置各网站同时进行专利下载的任务书数、多任务同时下载。</p>
+
+<p class="lqtext">可以对不同的检索网站设置不同的多个代理进行轮流下载。</p>
+
+<p class="lqtext">对于暂停下载的专利，下次可继续下载该专利，而不需要重新开始下载专利。对于专利说明书下载来说，这个能节省不少专利下载的时间。</p>
+
+<p class="lqtitle2">8. 可以清晰看到专利下载翻页过程，可人工干预专利下载的过程, 实现检索结果的100%下载。</p>
+
+<p class="lqtext">例如. 由于网络故障，我们上次看到<strong>IPGet专利检索系统</strong>是在第10页暂停的，等网络好了以后，我们此次可以直接翻到专利检索结果的第10页，然后点击下载，就不需每次从头开始。大大节省了时间</p>
+
+<p class="lqtext">或由于专利下载过快出现验证码时人工可输入验证码继续下载专利，而不会出现错误。</p>
+
+<p class="lqtitle2">9. 可方便地在线浏览专利信息，是一款定制的”专利浏览器“</p>
+
+<p class="lqtext">通过<strong>IPGet专利检索系统</strong>，下载的专利可一键链接到该专利所在网页，查看专利当前的最新信息。</p>
+
+<p class="lqtitle2">10. 本地专利管理及本地专利检索　　 &nbsp; &nbsp;</p>
+
+<p class="lqtext">下载完成的专利数据放在本地的数据库中，<strong>IPGet专利检索系统</strong>具备添加、修改、删除等基本的专利管理功能。</p>
+
+<p class="lqtext">可按专利号、名称、备注等几十个检索项进行二次检索，快速查找出需要查看的专利；</p>
+
+<p class="lqtitle2">11. 自定义字段功能</p>
+
+<p class="lqtext">对于专利信息，<strong>IPGet专利检索系统</strong>还提供了几十个自定义字段供用户使用。</p>
+
+<p class="lqtitle2">12. 具备专利电子卷的管理功能。</p>
+
+<p class="lqtext">从网上下载的专利文件都放入专利电子卷中，用户也可以自己将其它电子文件放入<strong>IPGet专利检索系统</strong>中进行管理。</p>
+
+<p class="lqtitle2">13. 集成Pdf文件合并工具</p>
+
+<p class="lqtext">对电子卷中的pdf文件或图片文件可以通过pdf合并工具直接合并成一个pdf文件。</p>
+
+<p class="lqtitle2">14. 著录项批量导出功能</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>中的专利著录项可导出成Excel文件。专利全文及首页也可以批量导出。</p>
+
+<p class="lqtitle2">15.&nbsp;<span style="font-size: 14px; font-weight: bold;">著录项批量导出为ISI&nbsp;</span><span style="font-size: 14px; text-indent: 28px;">Web Of Science 格式和RIS格式。</span></p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong><span style="font-size: 14px; text-indent: 28px;">中的专利著录项可以导出为ISI格式，以便被Sci2等分析软件导入进行分析使用，也可以导出为RIS格式，被EndNote等</span><span style="font-size: 14px; text-indent: 28px;">软件导入使用。</span></p>
+
+<p class="lqtitle2">16. 下载文件批量导出重命名功能</p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong>下载的文件允许用户批量导出，在导出过程中允许用户进行不同组合的重命名。</p>
+
+<p class="lqtitle2"><span style="font-weight: bold; text-indent: 2em;">17.&nbsp;出函功能</span></p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>支持出函功能,可以通过此功能方便的把下载的专利著录项信息抓取到Word文件形成客户信函或客户汇报表。</p>
+
+<p class="lqtitle2"><span style="font-weight: bold; ">18.&nbsp;翻译集成</span></p>
+
+<p class="lqtext"><strong style="text-indent: 28px; ">IPGet专利检索系统</strong>集成了Google、微软的主流翻译站点提供的功能来对专利文本进行翻译。</p>
+
+<p class="lqtitle2">19. 时限监控</p>
+
+<p class="lqtext">在<strong>IPGet专利检索系统</strong>中允许用户<span style="text-indent: 2em;">对日期型自定义字段进行设置，实现不同的时间段</span>显示<span style="text-indent: 2em;">不同的颜色以实现时限监控的目的。</span></p>
+
+<p class="lqtitle2">20. 多代理自动切换功能</p>
+
+<p class="lqtext">在<strong>IPGet专利检索系统</strong>中允许对不同的下载站点使用多个代理，多个代理在使用过程中会进行轮流切换。</p>
+
+<p class="lqtitle2">21.错误重试</p>
+
+<p class="lqtext">在<strong>IPGet专利检索系统</strong>下载过程中如果出现下载错误，IPGet专利检索系统会可以自动恢复重试。</p>
+
+<p class="lqtitle2">22.统计功能</p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong>可以对所有专利查询结果形成不同的统计图表。<span style="text-indent: 2em;">而且,由于</span><strong>IPGet专利检索系统</strong><span style="text-indent: 2em;">是直接集成的Excel进行统计图表的生成，因此统计结果与Excel100%兼容,可以直接保存为Excel文件供用户进行二次加</span></p>
+
+<p class="lqtitle2"><span style="text-indent: 2em;">23.批量加工</span></p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong>允许用户批量修改专利信息，这样方便用户统一申请人、发明人等信息，便于用户进行深加工和统计分析。</p>
+
+<p class="lqtitle2"><span style="font-weight: bold;">24.同族图</span></p>
+
+<p class="lqtext"><strong style="font-size: 14px; text-indent: 28px;">IPGet专利检索系统</strong><span style="font-size: 14px; text-indent: 28px;">允许可以利用从EPO-OPS下载的同族信息一键生成Excel格式的同族图。</span></p>
+
+<p class="lqtitle2">25.&nbsp;<span style="text-indent: 28px; "><strong>IPGet专利检索系统</strong></span>分为个人版和企业版</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>单机个人版， 使用Access数据库, 适合个人用户管理少量专利数据。</p>
+
+<p class="lqtext">企业多人协作版，使用SqlServer数据库。适合企业多人共享加工或统计分析大量数据。</p>
+
+<p class="lqtitle2">26. 企业版有IPGet Web版</p>
+
+<p class="lqtext">IPGet 还有WEB版，IPGetWeb版客户端不需要安转其它软件，指需要通过支持Web标准的浏览器即可管理浏览下载的专利信息。</p>
+
+<p class="lqtext">IPGetWEB版的界面和操作方式与CS版基本一致。</p>
+
+<p class="lqtext">&nbsp;</p>
+</div>
+
+<p class="lqtitle2"><span style="text-indent: 28px; "><strong>IPGet专利检索系统</strong></span>的运行界面如下:</p>
+
+<div class="slides">
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 与中、日、欧、美等上十个下载站点无缝的集成, 避免查询的遗漏" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-检索界面.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 与中、日、欧、美等十几个下载站点无缝的集成, 避免查询的遗漏</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 多种下载内容的组合设置" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-启动下载.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 多种下载内容的组合设置</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 多任务同时下载,与常见下载工具类似的下载界面和操作方式" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-正在下载.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 多任务同时下载,与常见下载工具类似的下载界面和操作方式</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 友好方便的下载结果展示" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-下载结果.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 友好方便的下载结果展示</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 自动合并下载的文件" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-合并的pdf.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 自动合并下载的文件</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 直观的专利信息展示" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-专利信息.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 直观的专利信息展示</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 灵活丰富的自定义字段" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-自定义字段.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 灵活丰富的自定义字段</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 方便地在线浏览专利最新信息" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-在线查看.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 方便地在线浏览专利最新信息</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 集成了电子卷管理功能,方便用户管理其它资料" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-电子卷管理.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 集成了电子卷管理功能,方便用户管理其它资料</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - 多人共享，共同协作" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统-专利共享.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统 - 多人共享，共同协作</p>
+</div>
+</div>
+</div>
+
+<p class="lqtext"><strong>IPGet专利检索系统企业版</strong>中还提供Web版，通过Web版可以方便地从所有能上网的地方浏览到已下载的专利信息</p>
+
+<p class="lqtext"><strong style="text-indent: 28px;">IPGet专利检索系​统</strong><span style="text-indent: 28px; "><strong>Web版</strong></span>的运行界面如下:</p>
+
+<div class="slides">
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - Web版主界面" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统Web-主界面.jpg" style="width: 429px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统Web版 - 主界面</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - Web版专利信息" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统Web-专利信息.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统Web版 - 专利信息</p>
+</div>
+</div>
+
+<div style="text-align: center;width:100%; ">
+<div style="text-align: center; margin:0 auto;">
+<p><img alt="IPGet专利检索系统, IPGet专利下载软件 - Web版电子卷" src="/Data/Sites/1/media/LQ/IPGet/Presentation/IPGet专利检索系统Web-电子卷.jpg" style="width: 384px; height: 298px; " /></p>
+
+<p>IPGet专利检索系统Web版 - 电子卷</p>
+</div>
+</div>
+</div>
+
+<p class="lqtext">更详细功能及操作请参看<a class="lqtextlink" href="ipget-help.html" target="_blank" title="IPGet专利检索系统、IPGet专利下载软件帮助"><strong>IPGet专利检索系统帮助</strong></a>。</p>
+
+<p class="lqtext"><strong>IPGet专利检索系统</strong>个人网络版提供免费<a class="lqtextlink" href="ipget-trial.html" title="IPGet专利检索系统,IPGet专利下载软件,IPGet专利检索软件">试用(点击这里)</a>。</p>
+
+</div>
+<input type="hidden" name="ctl00$mainContent$ctl00$hdnIsDirty" id="ctl00_mainContent_ctl00_hdnIsDirty" />
+
+
+
+
+
+
+</div>
+<div id='ctl00_mainContent_ctl00_divFooter' class='modulefooter'>
+
+</div>
+
+</div>
+<div id='ctl00_mainContent_ctl00_divCleared' class='cleared'>
+
+</div>
+
+</div>
+
+</div><div class='cleared'></div>
+</div>
+
+                    
+</div>
+                    
+					</div>
+                </div>
+            
+            
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+						<div class="art-footer-l"></div>
+						<div class="art-footer-b"></div>
+						<div class="art-footer-r"></div>
+						<div class="art-footer-body">
+                        <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+						<div class="art-footer-text">
+                            <p>
+                            提供<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利检索系统</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">IPGet专利下载软件</a>、<a href="IPSys%e5%95%86%e6%a0%87%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html">IPSys商标管理系统</a>等产品及<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利检索</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利下载</a>、<a href="IPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.html">专利统计分析</a>服务等知识产权信息化相关的解决方案<br/>
+                            <a href="index.html">Copyright &copy; 2011 - 2022 知识产权信息化网, 保留所有权利</a>
+                            </p>
+                        </div>
+                    </div>
+                <div class="art-footer-background">
+                </div>
+                </div>
+                <div class="cleared">
+                </div>
+            </div>
+            <div class="cleared">
+            </div>
+        </div>
+    </div>
+	</div>
+	<div class="topnavwrap">
+	    <div class="topnav">
+            <ul>
+                
+                <li class="firstnav"><a class="sitelink homelink" href="index.html">首页</a></li>
+                <li class="topnavitem">
+		    <a id="ctl00_forum" class="sitelink forumlink" href="forums.html">论坛</a>
+                </li> 
+                <li class="topnavitem">
+                    <a id="ctl00_blog" class="sitelink bloglink" href="blog-2.html">博客</a>
+                </li> 
+                <li class="topnavitem"><a class="sitelink topsitemaplink" href="SiteMap.html">站点地图</a></li>
+                
+                
+                
+                
+                <li class="topnavitem"><a class="sitelink registerLink" rel="nofollow" href="/Secure/Register.html?returnurl=%2fIPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.aspx">注册</a></li>
+                <li class="topnavitem"><a class="sitelink loginlink" rel="nofollow" href="/Secure/Login.html?returnurl=%2fIPGet%e4%b8%93%e5%88%a9%e6%a3%80%e7%b4%a2%e7%b3%bb%e7%bb%9f.aspx">登录</a></li>
+                
+                <li class="topnavitem">
+                    <span id="ctl00_langSelect1_Label1" class="langlbl">语言: </span>
+
+<a id="ctl00_langSelect1_lang1" title="中文" class="langhl" href="http://www.ipwom.com/home.html"><img title="中文" src="/Data/Sites/1/skins/artisteer-30headermenu/images/China.gif" alt="中文" /></a>
+<a id="ctl00_langSelect1_lang2" title="English" class="langhl" href="http://en.ipwom.com/home.html"><img title="English" src="/Data/Sites/1/skins/artisteer-30headermenu/images/America.gif" alt="English" /></a>
+
+                </li> 
+            </ul>
+        </div>
+	</div>
+
+    <script type="text/javascript">
+        function HideMenuToolbar() { $("#toolbar").fadeOut(); $("#toolbarbut").fadeIn("slow"); }
+        function ShowMenuToolbar() { $("#toolbar").fadeIn(); $("#toolbarbut").fadeOut("slow"); }
+        $(document).ready(function() {
+            $("span.downarr a").click(function() { HideMenuToolbar(); Set_Cookie('openstate', 'closed') });
+            $("span.showbar a").click(function() { ShowMenuToolbar(); Set_Cookie('openstate', 'open') });
+            $("span.downarr a, span.showbar a").click(function() { return false; });
+            var openState = Get_Cookie('openstate');
+            if (openState != null) { if (openState == 'closed') { HideMenuToolbar(); } if (openState == 'open') { ShowMenuToolbar(); } }
+        });	
+    </script>
+
+    
+    
+    
+<script type="text/javascript">Sys.Application.add_load(function() { var form = Sys.WebForms.PageRequestManager.getInstance()._form; form._initialAction = form.action = window.location.href; }); </script>
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+
+<script type="text/javascript" > $('div.mojo-accordion').accordion({});$('div.mojo-accordion-nh').accordion({heightStyle:'content',animate:{opacity:'toggle',duration:'400'}}); $('div.mojo-tabs').tabs({}); $('input.jqbutton').button(); $('.jqtt').tooltip(); $('.faqs dd').hide();$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ $(this).next().slideToggle('normal'); });  $("a.unclickable").click(function(){ return false; });</script><script type='text/javascript'>
+<!--
+
+  var wmctl00_SearchInput1_txtSearch = document.getElementById('ctl00_SearchInput1_txtSearch'); if(wmctl00_SearchInput1_txtSearch){wmctl00_SearchInput1_txtSearch.value = '输入搜索关键字';}
+//-->
+</script>
+<script type="text/javascript">
+ //<![CDATA[ 
+$('#ctl00_mainContent_ctl00_divContent  div.slides').cycle({fx:'scrollLeft',speed:1000,timeout:5000,next:'#ctl00_mainContent_ctl00_divContent > div.slides',pause:1});  
+ //]]> 
+ </script></form>
+	
+</body>
+</html>
